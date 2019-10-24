@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="notepad" version="3">
+  <DEPS>
+    <ID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+    <COMPID name="DatabaseHelper" mc="Class" uid="56b6261f-5eb0-46ed-9a0d-d19b1415ab2f"/>
+    <COMPID name="NoteEdit" mc="Class" uid="cc5da149-7b46-452f-acca-6f6282c07498"/>
+    <COMPID name="Notepadv3" mc="Class" uid="89dc1058-1d20-4608-b982-f8b8c5841fdb"/>
+    <COMPID name="NotesDbAdapter" mc="Class" uid="556b91a3-39ed-4bf9-ae3b-bfe4a3429ae8"/>
+    <EXTID name="database" mc="Package" uid="228352e8-754d-4063-94a2-0ac36eb04981"/>
+    <EXTID name="support" mc="Package" uid="2d745519-958f-4d88-99b3-1dca4ffb06af"/>
+    <EXTID name="widget" mc="Package" uid="35dfeda3-87fc-4051-a1db-b91c03e502b7"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+    <PID name="eina" mc="Package" uid="2001b49a-e455-4941-9b1e-cc193a0ae716"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[notepad]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Notepadv3" mc="Class" uid="89dc1058-1d20-4608-b982-f8b8c5841fdb"/>
+        <COMPID name="NoteEdit" mc="Class" uid="cc5da149-7b46-452f-acca-6f6282c07498"/>
+        <COMPID name="DatabaseHelper" mc="Class" uid="56b6261f-5eb0-46ed-9a0d-d19b1415ab2f"/>
+        <COMPID name="NotesDbAdapter" mc="Class" uid="556b91a3-39ed-4bf9-ae3b-bfe4a3429ae8"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="45d7e043-ad72-4c81-b06f-1d90690c8eb7"/>
+          <PID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="support" mc="Package" uid="2d745519-958f-4d88-99b3-1dca4ffb06af"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Usage" uid="28048a7c-6784-4d11-98b4-1ad502af69b1"/>
+          <PID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="widget" mc="Package" uid="35dfeda3-87fc-4051-a1db-b91c03e502b7"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Usage" uid="5c65ddb5-8d5a-4e3e-a3e6-39dc58c1f51e"/>
+          <PID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="database" mc="Package" uid="228352e8-754d-4063-94a2-0ac36eb04981"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="send" version="3">
+  <DEPS>
+    <ID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+    <COMPID name="MailImplementator" mc="Class" uid="e98721ec-5aa3-4f6c-85ed-7917f19ae765"/>
+    <COMPID name="SMSImplementator" mc="Class" uid="dab25367-8840-44db-9757-2d804172b30d"/>
+    <COMPID name="SendAbstraction" mc="Class" uid="c0330a94-7993-4e3e-91c6-28e3f9684df9"/>
+    <COMPID name="SendAbstractionImpl" mc="Class" uid="37ac37b0-1e39-4aa4-925b-43dc876a32a1"/>
+    <COMPID name="SendImplementator" mc="Class" uid="85071ca5-1976-41a6-842b-38079f7f37ba"/>
+    <EXTID name="app" mc="Package" uid="ddb5bba6-0143-4610-92ee-22b403979477"/>
+    <EXTID name="app" mc="Package" uid="2da8ad1d-dcd0-4f7d-90a5-52097a4a1bb4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+    <PID name="eina" mc="Package" uid="2001b49a-e455-4941-9b1e-cc193a0ae716"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[send]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="SendAbstraction" mc="Class" uid="c0330a94-7993-4e3e-91c6-28e3f9684df9"/>
+        <COMPID name="SendAbstractionImpl" mc="Class" uid="37ac37b0-1e39-4aa4-925b-43dc876a32a1"/>
+        <COMPID name="SendImplementator" mc="Class" uid="85071ca5-1976-41a6-842b-38079f7f37ba"/>
+        <COMPID name="MailImplementator" mc="Class" uid="e98721ec-5aa3-4f6c-85ed-7917f19ae765"/>
+        <COMPID name="SMSImplementator" mc="Class" uid="dab25367-8840-44db-9757-2d804172b30d"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="56db57be-213e-4164-8d48-90295b2f1fd2"/>
+          <PID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="app" mc="Package" uid="ddb5bba6-0143-4610-92ee-22b403979477"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Usage" uid="1d7411cb-d351-43f2-8046-80977f48d488"/>
+          <PID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="app" mc="Package" uid="2da8ad1d-dcd0-4f7d-90a5-52097a4a1bb4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

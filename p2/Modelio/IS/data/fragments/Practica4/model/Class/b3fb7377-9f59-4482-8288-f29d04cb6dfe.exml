@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AppCompatActivity" version="3">
+  <DEPS>
+    <ID name="AppCompatActivity" mc="Class" uid="b3fb7377-9f59-4482-8288-f29d04cb6dfe"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="AppCompatActivity" mc="Class" uid="b3fb7377-9f59-4482-8288-f29d04cb6dfe"/>
+    <PID name="app" mc="Package" uid="07743a44-028c-43e8-84ec-7a640e1a6cf7"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[AppCompatActivity]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

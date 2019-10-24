@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagrama de Secuencia" version="3">
+  <DEPS>
+    <ID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="6cdf08ee-880c-446b-9644-14271d568b8c"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="6cdf08ee-880c-446b-9644-14271d568b8c"/>
+    <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">155</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Diagrama de Secuencia]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

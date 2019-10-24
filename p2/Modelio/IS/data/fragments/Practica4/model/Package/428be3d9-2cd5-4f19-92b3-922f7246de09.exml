@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sqlite" version="3">
+  <DEPS>
+    <ID name="sqlite" mc="Package" uid="428be3d9-2cd5-4f19-92b3-922f7246de09"/>
+    <COMPID name="SQLiteDatabase" mc="Class" uid="76ede08d-b557-462e-9ebc-0a3038615152"/>
+    <COMPID name="SQLiteOpenHelper" mc="Class" uid="b07dc0b3-5820-45d3-bc1c-b4fcd137a51b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="sqlite" mc="Package" uid="428be3d9-2cd5-4f19-92b3-922f7246de09"/>
+    <PID name="database" mc="Package" uid="ae7eefd6-f722-424a-b99b-b0dfccf2140d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sqlite]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="SQLiteOpenHelper" mc="Class" uid="b07dc0b3-5820-45d3-bc1c-b4fcd137a51b"/>
+        <COMPID name="SQLiteDatabase" mc="Class" uid="76ede08d-b557-462e-9ebc-0a3038615152"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

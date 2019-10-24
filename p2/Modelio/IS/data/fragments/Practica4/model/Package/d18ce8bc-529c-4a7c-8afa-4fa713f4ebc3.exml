@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analisis - Prácticas" version="3">
+  <DEPS>
+    <ID name="Analisis - Prácticas" mc="Package" uid="d18ce8bc-529c-4a7c-8afa-4fa713f4ebc3"/>
+    <COMPID name="Consultar listado notas" mc="UseCase" uid="36fd1833-65d6-4e09-a4fc-32974888e442"/>
+    <COMPID name="Crear nota" mc="UseCase" uid="b39446ed-285d-4813-bd09-1b0e762e9a56"/>
+    <COMPID name="Diagrama de Casos de Uso" mc="UseCaseDiagram" uid="6056a004-5fdb-4a03-9887-28a6c59a6a9a"/>
+    <COMPID name="Diagrama de Clases" mc="ClassDiagram" uid="a3f82101-8e49-4440-a940-c81f4c821acf"/>
+    <COMPID name="Diagramas de Secuencia" mc="Package" uid="33606495-3bfc-4bfe-ac81-9ebfe507713f"/>
+    <COMPID name="Eliminar nota" mc="UseCase" uid="89694ccd-1926-41c8-87b5-a770c236dc6e"/>
+    <COMPID name="Enviar nota por email" mc="UseCase" uid="c10275a2-9505-4e31-904f-d0a1cc83a757"/>
+    <COMPID name="Enviar nota por sms" mc="UseCase" uid="bcedd1aa-e13b-4231-8047-29e6b793ea62"/>
+    <COMPID name="ListadoNotas" mc="Class" uid="dc199b79-27c3-4c13-a8b4-c3d0ae2af674"/>
+    <COMPID name="Modificar nota" mc="UseCase" uid="cd3ffb82-4bd2-42ab-9943-e7c8292ce140"/>
+    <COMPID name="Nota" mc="Class" uid="bb46a9d1-7ac6-485c-ad71-2cec7bc86532"/>
+    <COMPID name="Usuario" mc="Actor" uid="f422ed63-c643-4771-a8a2-40e9c331823f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Analisis - Prácticas" mc="Package" uid="d18ce8bc-529c-4a7c-8afa-4fa713f4ebc3"/>
+    <PID name="IS" mc="Package" uid="00b52d4c-d9d2-4157-a168-a0291882fecd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Analisis - Prácticas]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Usuario" mc="Actor" uid="f422ed63-c643-4771-a8a2-40e9c331823f"/>
+        <COMPID name="Crear nota" mc="UseCase" uid="b39446ed-285d-4813-bd09-1b0e762e9a56"/>
+        <COMPID name="Modificar nota" mc="UseCase" uid="cd3ffb82-4bd2-42ab-9943-e7c8292ce140"/>
+        <COMPID name="Eliminar nota" mc="UseCase" uid="89694ccd-1926-41c8-87b5-a770c236dc6e"/>
+        <COMPID name="Enviar nota por email" mc="UseCase" uid="c10275a2-9505-4e31-904f-d0a1cc83a757"/>
+        <COMPID name="Consultar listado notas" mc="UseCase" uid="36fd1833-65d6-4e09-a4fc-32974888e442"/>
+        <COMPID name="Diagramas de Secuencia" mc="Package" uid="33606495-3bfc-4bfe-ac81-9ebfe507713f"/>
+        <COMPID name="Enviar nota por sms" mc="UseCase" uid="bcedd1aa-e13b-4231-8047-29e6b793ea62"/>
+        <COMPID name="ListadoNotas" mc="Class" uid="dc199b79-27c3-4c13-a8b4-c3d0ae2af674"/>
+        <COMPID name="Nota" mc="Class" uid="bb46a9d1-7ac6-485c-ad71-2cec7bc86532"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de Casos de Uso" mc="UseCaseDiagram" uid="6056a004-5fdb-4a03-9887-28a6c59a6a9a"/>
+        <COMPID name="Diagrama de Clases" mc="ClassDiagram" uid="a3f82101-8e49-4440-a940-c81f4c821acf"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

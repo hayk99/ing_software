@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Trabajo" version="3">
+  <DEPS>
+    <ID name="Trabajo" mc="Package" uid="dbbba6a7-7e09-429d-a647-c844859bc3e1"/>
+    <COMPID name="Analisis" mc="Package" uid="126dafb2-1ce8-46b1-a6ea-a137408a6232"/>
+    <COMPID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Trabajo" mc="Package" uid="dbbba6a7-7e09-429d-a647-c844859bc3e1"/>
+    <PID name="practicas" mc="Package" uid="00b52d4c-d9d2-4157-a168-a0291882fecd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Trabajo]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Analisis" mc="Package" uid="126dafb2-1ce8-46b1-a6ea-a137408a6232"/>
+        <COMPID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

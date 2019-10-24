@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="IS" version="3">
+  <DEPS>
+    <ID name="IS" mc="Package" uid="00b52d4c-d9d2-4157-a168-a0291882fecd"/>
+    <COMPID name="Analisis - Prácticas" mc="Package" uid="d18ce8bc-529c-4a7c-8afa-4fa713f4ebc3"/>
+    <COMPID name="Diseño - Practicas" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <COMPID name="Trabajo" mc="Package" uid="dbbba6a7-7e09-429d-a647-c844859bc3e1"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="IS" mc="Package" uid="00b52d4c-d9d2-4157-a168-a0291882fecd"/>
+    <PID name="Practica3" mc="Project" uid="edb6ab13-d6be-4315-98ed-77538b335d3c"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[IS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Diseño - Practicas" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+        <COMPID name="Analisis - Prácticas" mc="Package" uid="d18ce8bc-529c-4a7c-8afa-4fa713f4ebc3"/>
+        <COMPID name="Trabajo" mc="Package" uid="dbbba6a7-7e09-429d-a647-c844859bc3e1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

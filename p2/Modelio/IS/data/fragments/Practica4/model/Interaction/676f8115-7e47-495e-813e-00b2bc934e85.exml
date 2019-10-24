@@ -1,0 +1,2123 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Enviar nota" version="3">
+  <DEPS>
+    <ID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+    <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="dcdf23e2-ec9b-4755-8c00-cd18958cadf4"/>
+    <EXTID name="MailImplementator" mc="Class" uid="98858191-3505-42c4-a242-2d7a4727481b"/>
+    <EXTID name="Notepadv3" mc="Class" uid="3a337cea-250b-4c01-af71-52d754c349a3"/>
+    <EXTID name="NotesDbAdapter" mc="Class" uid="b98ddd73-89a1-4221-b841-27eddc63bb20"/>
+    <EXTID name="SMSImplementator" mc="Class" uid="65dc1ed7-9767-407b-8dae-9d9c960bf7f0"/>
+    <EXTID name="SendAbstraction" mc="Class" uid="cf57c083-cb1c-4734-af03-74079a52de55"/>
+    <EXTID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+    <EXTID name="SendImplementator" mc="Class" uid="2f4c0f8c-960e-4cbd-8698-9afdfcfaebf7"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+    <PID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Enviar nota]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c01f95eb-3391-408b-bc1b-036e0552126a"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">78</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="onContextItemSelected" mc="Message" uid="8ec2cfd6-5bad-4b52-a45c-918c05435b7c"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[item]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[onContextItemSelected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="4eff7b54-8ba1-45bb-b193-52fd93e94234"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="fb068a51-0fb3-4b78-8928-2e759c99f8f5"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4eff7b54-8ba1-45bb-b193-52fd93e94234"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">78</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="ab6fdea7-0ef4-4fc4-b746-8278aa5fd9e0"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3b9cfa2e-95e4-4400-9646-471a456631eb"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">773</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="ccc30375-3912-41ab-846e-92616259f0be"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b89469ec-9a36-4735-8e5f-0ad869e6b0ba"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="ab6fdea7-0ef4-4fc4-b746-8278aa5fd9e0"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">78</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="3b9cfa2e-95e4-4400-9646-471a456631eb"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b89469ec-9a36-4735-8e5f-0ad869e6b0ba"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">773</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="fb068a51-0fb3-4b78-8928-2e759c99f8f5"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="328b2d99-e30e-4a56-b8ee-e0883df761a7"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">AltOp</ATT>
+            <ATT name="LineNumber">131</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="df039334-1af7-4939-8711-dc1f7a354b94"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[EMAIL_ID]]></ATT>
+                  <ATT name="EndLineNumber">470</ATT>
+                  <ATT name="LineNumber">131</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="06da51bc-b21c-4645-86fb-66b949d1250b"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[SMS_ID]]></ATT>
+                  <ATT name="EndLineNumber">755</ATT>
+                  <ATT name="LineNumber">471</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="InteractionOperand" mc="InteractionOperand" uid="06da51bc-b21c-4645-86fb-66b949d1250b"/>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c6875ca1-96d8-4b05-b594-cbc762ccd6f2"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">138</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d8edfa89-5103-413a-bd3a-4839e8588bd3"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">162</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="78932163-a803-4f15-b9f0-882abda92258"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">160</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="723e8b64-c4e9-40b6-afc2-cd42df6cf6b8"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d0dab46b-0858-453e-9c86-a9f9c33adb72"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">454</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="acbfcdea-941c-4c6c-9813-0e5f3d5790be"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d88e9a30-1780-4fab-b604-153d43996aac"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="723e8b64-c4e9-40b6-afc2-cd42df6cf6b8"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">160</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="d0dab46b-0858-453e-9c86-a9f9c33adb72"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="afef67bd-7b33-4378-8890-68ef1d56cb10"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">149</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="sendNote" mc="Message" uid="6f701bca-ebe3-44a7-95c3-fdffe5f1bde8"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[item, EMAIL_ID]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[sendNote]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d8edfa89-5103-413a-bd3a-4839e8588bd3"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="sendNote" mc="Operation" uid="11cd8a69-0c17-4c84-b0cc-7616752f7bbc"/>
+                      <PID name="Notepadv3" mc="Class" uid="3a337cea-250b-4c01-af71-52d754c349a3"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d88e9a30-1780-4fab-b604-153d43996aac"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">454</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0c02cc47-cbdd-4775-bad2-1d335a2af293"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">188</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="fetchNote" mc="Message" uid="014a43d8-b23d-452f-b1bd-7cae5bb83c4f"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[fetchNote]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="6460a295-1115-4b0b-9824-937b1948747d"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="6460a295-1115-4b0b-9824-937b1948747d"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">188</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="bafbee70-dc19-4f59-96a9-b1019466fbd8"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5f468cbf-99ed-4faa-a012-bed63f0e4d15"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">230</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="33a13a2f-1dac-421d-881f-83a0c1e12fdd"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="aa703b3e-bdac-43bc-9ca1-bfd89c1a4208"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="bafbee70-dc19-4f59-96a9-b1019466fbd8"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">188</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="5f468cbf-99ed-4faa-a012-bed63f0e4d15"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="aa703b3e-bdac-43bc-9ca1-bfd89c1a4208"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">230</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="76f4ad7d-766d-4d19-a1fd-8fecf14384ec"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">266</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="SendAbstractionImpl" mc="Message" uid="2e00e00f-0e11-448e-a4b0-927c4c09fd89"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[this, " "]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[SendAbstractionImpl]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="759fcbb6-e051-4893-be7a-807364b8625d"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="SendAbstraction" mc="Operation" uid="8b1f32cb-3993-4d85-87e4-25dc1243efd5"/>
+                      <PID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="759fcbb6-e051-4893-be7a-807364b8625d"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">266</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a646e092-2340-4c7e-be96-a83570fc01c1"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">315</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="MailImplementator" mc="Message" uid="3127ca17-89d4-4c54-b69a-e42c8824bebf"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[sourceActivity]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[MailImplementator]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="892413c9-8642-46e8-a01d-107615e26def"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="MailImplementator" mc="Operation" uid="38ba5206-aedb-420d-9f30-df81f8610a7f"/>
+                      <PID name="MailImplementator" mc="Class" uid="98858191-3505-42c4-a242-2d7a4727481b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="892413c9-8642-46e8-a01d-107615e26def"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">315</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="06d54f0c-662a-4c28-8742-64ef3bd5e362"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d1b27087-3a5b-4bfe-9204-ef930c716d33"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">329</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="send" mc="Message" uid="f144d487-e997-40f4-ad84-5b5994e72b7d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[subject, body]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[send]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f8f4cfce-3ac6-499d-8afd-baebd1d6f76a"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="send" mc="Operation" uid="6f76dac0-9ccb-434d-a110-3122fd504d8a"/>
+                      <PID name="SendAbstraction" mc="Class" uid="cf57c083-cb1c-4734-af03-74079a52de55"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f8f4cfce-3ac6-499d-8afd-baebd1d6f76a"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">329</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="f7252b4f-b4f4-4313-960c-c6e521d92a9e"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7d1d375c-2618-4c01-8dfb-dcb1f3b616f5"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">387</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="a8d95ad0-03c5-4ea6-ad51-72981302e094"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f6c5f242-8ee6-42c4-b201-f5c59609ddac"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="f7252b4f-b4f4-4313-960c-c6e521d92a9e"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">329</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="7d1d375c-2618-4c01-8dfb-dcb1f3b616f5"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f6c5f242-8ee6-42c4-b201-f5c59609ddac"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">387</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b8143611-ccce-4b49-942d-ab15a59305be"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">345</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="send" mc="Message" uid="1f75e344-9249-42e3-9196-23d6ec867dc6"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[subject, body]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[send]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="2706e4a4-b795-42e7-9411-ecabee424fba"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="send" mc="Operation" uid="14c4708a-22cf-41cf-8326-fd0c73c8c4d8"/>
+                      <PID name="SendImplementator" mc="Class" uid="2f4c0f8c-960e-4cbd-8698-9afdfcfaebf7"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2706e4a4-b795-42e7-9411-ecabee424fba"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">345</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="3bde9f10-248b-4985-982c-881aa7c88035"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="06d54f0c-662a-4c28-8742-64ef3bd5e362"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="63e1564d-b868-4aee-96d0-1d13e73bf512"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">374</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="122d42c3-4bd8-4276-aaa4-8104555c8591"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="cf010e00-d3d3-4f1a-800f-3e0004b792ab"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="06d54f0c-662a-4c28-8742-64ef3bd5e362"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="3bde9f10-248b-4985-982c-881aa7c88035"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">345</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="63e1564d-b868-4aee-96d0-1d13e73bf512"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="06d54f0c-662a-4c28-8742-64ef3bd5e362"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cf010e00-d3d3-4f1a-800f-3e0004b792ab"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">374</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5933751a-e949-4b0f-887e-f64fb54b2846"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">500</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="b53b876e-816b-4407-82ec-571de9e82950"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1c8c42a8-2907-43bc-943d-89771559de36"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">741</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="786bb900-1af6-483d-8ab8-73abdc415581"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="50756be0-d1f5-4c77-9b8e-e7d06ebf44fe"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="b53b876e-816b-4407-82ec-571de9e82950"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">500</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="1c8c42a8-2907-43bc-943d-89771559de36"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0b1f9f4a-0a7d-49dc-a31b-1549408a3aba"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">477</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="sendNote" mc="Message" uid="38716851-afb1-47e6-818b-534ab7430eeb"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[item, SMS_ID]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[sendNote]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="102ce0c8-b115-4f07-9cea-1e619b322107"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="102ce0c8-b115-4f07-9cea-1e619b322107"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">502</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="50756be0-d1f5-4c77-9b8e-e7d06ebf44fe"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">741</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9bbcb9f4-748a-4d98-90b7-67562c283e66"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">533</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="fetchNote" mc="Message" uid="9e007522-cb8e-40c9-8ca9-7d1cb936a42a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[fetchNote]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="2445d6e7-95a5-43c8-b4ff-649c36411f51"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2445d6e7-95a5-43c8-b4ff-649c36411f51"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">533</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="099f46de-2b37-41af-9cc1-d55f0146defd"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c2b08156-b603-4965-90a4-a522e16bb3ac"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">585</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="082dc215-fd21-40fa-8a5b-64ec0c595149"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ddb908c4-3153-405f-b972-7af218ca571e"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="099f46de-2b37-41af-9cc1-d55f0146defd"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">533</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="c2b08156-b603-4965-90a4-a522e16bb3ac"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ddb908c4-3153-405f-b972-7af218ca571e"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">585</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9d143769-54c1-4e26-a622-8996abbab906"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">620</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="SendAbstractionImpl" mc="Message" uid="0b4d0b74-8626-424f-bfb2-d4ce71a4e890"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[this, "SMS"]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[SendAbstractionImpl]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f4273b8a-6d26-4e19-a880-cd176b2b0689"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="SendAbstraction" mc="Operation" uid="8b1f32cb-3993-4d85-87e4-25dc1243efd5"/>
+                      <PID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f4273b8a-6d26-4e19-a880-cd176b2b0689"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">620</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="af34b059-124a-468f-9c12-bcd8629459f2"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">657</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="SMSImplementator" mc="Message" uid="6692ea7f-8bc5-4ee0-9f8a-d0059cf37603"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[sourceActivity]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[SMSImplementator]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="3cc4ccb1-3514-4432-baa6-99bbb79f3251"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="SMSImplementator" mc="Operation" uid="6aa2bdbe-b6fb-41bb-949c-7218d1c98afd"/>
+                      <PID name="SMSImplementator" mc="Class" uid="65dc1ed7-9767-407b-8dae-9d9c960bf7f0"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3cc4ccb1-3514-4432-baa6-99bbb79f3251"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">657</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="aca8c00c-1d78-4320-b808-63ab407fea6d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8ea11718-40b7-445e-a611-4b36595bd563"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">675</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="send" mc="Message" uid="4d99fd1b-3b1b-4cd3-a1cf-871038802e31"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[subject,body]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[send]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="967cc234-83da-4a6e-82c4-80a1c1d6fc64"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="send" mc="Operation" uid="6f76dac0-9ccb-434d-a110-3122fd504d8a"/>
+                      <PID name="SendAbstraction" mc="Class" uid="cf57c083-cb1c-4734-af03-74079a52de55"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="967cc234-83da-4a6e-82c4-80a1c1d6fc64"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">675</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="a2ff23b2-c51b-4a6d-9f1d-dd7c4a00a6fa"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1d1ee3c7-7e15-4663-b5f7-95900707934d"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">713</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="f07ed182-7eaa-4af2-ae94-bbc7c7720512"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="0060e9bf-2f7e-433d-9b0b-90f2bbc7e12b"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="a2ff23b2-c51b-4a6d-9f1d-dd7c4a00a6fa"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">675</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="1d1ee3c7-7e15-4663-b5f7-95900707934d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0060e9bf-2f7e-433d-9b0b-90f2bbc7e12b"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">713</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="38b6f6b7-d850-4eb0-9220-597ecadce97c"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">684</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="send" mc="Message" uid="19f24d5a-61e7-442c-b024-18eb9adf90f3"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[subject,body]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[send]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="47669ccf-eb1b-4bd6-a1e6-042b411e9fff"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="send" mc="Operation" uid="14c4708a-22cf-41cf-8326-fd0c73c8c4d8"/>
+                      <PID name="SendImplementator" mc="Class" uid="2f4c0f8c-960e-4cbd-8698-9afdfcfaebf7"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="47669ccf-eb1b-4bd6-a1e6-042b411e9fff"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">684</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="7ee57d0f-5606-491e-9325-d6ec19caccf4"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="aca8c00c-1d78-4320-b808-63ab407fea6d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d84805e1-89bd-4820-ac97-3a36c2d737ee"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">704</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="78bf04e7-c3b0-43a0-a1f2-c89dfb2734c2"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="64d98319-58a1-4091-92bb-9382602b8708"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="aca8c00c-1d78-4320-b808-63ab407fea6d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="7ee57d0f-5606-491e-9325-d6ec19caccf4"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">684</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="d84805e1-89bd-4820-ac97-3a36c2d737ee"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="implementator" mc="Lifeline" uid="aca8c00c-1d78-4320-b808-63ab407fea6d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="64d98319-58a1-4091-92bb-9382602b8708"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">704</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a2413248-985a-46d6-83a2-c7285baa71ca"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">181</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="9dbe3639-b7c5-4083-8269-ccacde145e49"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[mRowId]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5da1db05-427e-46de-a8ad-d5527ec79de5"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="fetchNote" mc="Operation" uid="df97f35b-60b9-459f-9fc4-bce24c575d6c"/>
+                      <PID name="NotesDbAdapter" mc="Class" uid="b98ddd73-89a1-4221-b841-27eddc63bb20"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5da1db05-427e-46de-a8ad-d5527ec79de5"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">181</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="f6355af0-33b6-4ae8-b677-e4c68cbd6f2e"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a2e3a024-981e-4245-8a06-7fd692d36091"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">213</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="ecc23b24-a61b-4865-8ea2-93897c16b922"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="a48bb79c-d3ac-4714-9b89-033cc4d4124d"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="f6355af0-33b6-4ae8-b677-e4c68cbd6f2e"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">181</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="a2e3a024-981e-4245-8a06-7fd692d36091"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a48bb79c-d3ac-4714-9b89-033cc4d4124d"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">213</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2de72c2f-92a8-4029-b9b8-30581be14b32"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">526</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="407de90e-74b8-4b55-8e30-ebc15923e37d"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[mRowId]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b4b48b2b-b142-4853-aa1a-dcf1fc1f5817"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="fetchNote" mc="Operation" uid="df97f35b-60b9-459f-9fc4-bce24c575d6c"/>
+                      <PID name="NotesDbAdapter" mc="Class" uid="b98ddd73-89a1-4221-b841-27eddc63bb20"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b4b48b2b-b142-4853-aa1a-dcf1fc1f5817"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">526</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="248da9b9-5c45-42fb-9642-392de6966e2b"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="fe804071-d9c0-480f-9fa1-987115a5ef78"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">565</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="20d3eb5a-b44a-4b33-af4b-3d2c518795aa"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ba87437e-4c2a-4b8a-9a41-60a8e7bf35da"/>
+                      <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="248da9b9-5c45-42fb-9642-392de6966e2b"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">526</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="fe804071-d9c0-480f-9fa1-987115a5ef78"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ba87437e-4c2a-4b8a-9a41-60a8e7bf35da"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">565</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="fb068a51-0fb3-4b78-8928-2e759c99f8f5"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Notepadv3" mc="Lifeline" uid="29e08680-d378-4d18-b99b-de01cfe84069"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Notepadv3]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="a" mc="Lifeline" uid="815e30b9-ce12-44fa-a607-cc044aa565e7"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[a]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="a" mc="BindableInstance" uid="381a3517-1926-4b1a-a69c-b4d6aecacff2"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="implementator" mc="Lifeline" uid="06d54f0c-662a-4c28-8742-64ef3bd5e362"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[implementator]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="implementator" mc="BindableInstance" uid="1e48f86d-bdc4-4a3e-a8b8-e0a894282e2c"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="a" mc="Lifeline" uid="d830bda1-20d5-4a0f-b319-4d0f333c287a"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[a]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="a" mc="BindableInstance" uid="cd23268d-3f67-4fa9-9f7b-1e2bfa7508c9"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="implementator" mc="Lifeline" uid="aca8c00c-1d78-4320-b808-63ab407fea6d"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[implementator]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="implementator" mc="BindableInstance" uid="16d7cf20-2d92-40ef-8aae-b433abe581f8"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDbHelper" mc="Lifeline" uid="b2c76c6f-d847-4b20-818f-58b7df85d14a"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDbHelper]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="BindableInstance" uid="c3b2a6c1-2d63-42ad-8585-d6ed813be9ce"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="cf64a4df-62d8-402f-b082-fbe00abab8b6"/>
+          <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="mDbHelper" mc="BindableInstance" uid="d0128beb-9744-4537-97d4-68fea1704108"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[mDbHelper]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="a" mc="BindableInstance" uid="381a3517-1926-4b1a-a69c-b4d6aecacff2"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[a]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="implementator" mc="BindableInstance" uid="1e48f86d-bdc4-4a3e-a8b8-e0a894282e2c"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[implementator]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="MailImplementator" mc="Class" uid="98858191-3505-42c4-a242-2d7a4727481b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="a" mc="BindableInstance" uid="cd23268d-3f67-4fa9-9f7b-1e2bfa7508c9"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[a]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="implementator" mc="BindableInstance" uid="16d7cf20-2d92-40ef-8aae-b433abe581f8"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[implementator]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SMSImplementator" mc="Class" uid="65dc1ed7-9767-407b-8dae-9d9c960bf7f0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="mDbHelper" mc="BindableInstance" uid="c3b2a6c1-2d63-42ad-8585-d6ed813be9ce"/>
+                <PID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[mDbHelper]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="NotesDbAdapter" mc="Class" uid="b98ddd73-89a1-4221-b841-27eddc63bb20"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="dcdf23e2-ec9b-4755-8c00-cd18958cadf4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

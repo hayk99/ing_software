@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramas de secuencia" version="3">
+  <DEPS>
+    <ID name="Diagramas de secuencia" mc="Package" uid="4fc5b4c7-e7b3-4ec1-afc1-7c2c7a6c990f"/>
+    <COMPID name="Asignar categoria nota" mc="Interaction" uid="542a4ba3-303b-4ebe-a773-ff13e1523e6d"/>
+    <COMPID name="Consultar listado notas" mc="Interaction" uid="3babb1dc-3772-4852-8921-7389e1c95c48"/>
+    <COMPID name="Crear categoria" mc="Interaction" uid="cfeb58b6-5a95-4109-87be-2fbafd313105"/>
+    <COMPID name="Crear nota" mc="Interaction" uid="01c131bf-7318-425d-b2ba-ee78bb08eb14"/>
+    <COMPID name="Editar categoria" mc="Interaction" uid="afbea42e-1259-47aa-a6ca-98e7ed605732"/>
+    <COMPID name="Editar categoria nota" mc="Interaction" uid="75a8b030-4c91-42d5-9fac-494c0fd51a9b"/>
+    <COMPID name="Editar nota" mc="Interaction" uid="59bbdb9b-63a5-425d-9478-4b3410440394"/>
+    <COMPID name="Eliminar categoria" mc="Interaction" uid="48cc7607-b93b-48df-a885-4419306f0f4a"/>
+    <COMPID name="Eliminar categoria nota" mc="Interaction" uid="7b6fc9f1-6fca-4736-8eac-c3a5073a0e8b"/>
+    <COMPID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+    <COMPID name="Enviar nota" mc="Interaction" uid="aa02e0be-1e9a-42b2-8ce7-303d28c13677"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diagramas de secuencia" mc="Package" uid="4fc5b4c7-e7b3-4ec1-afc1-7c2c7a6c990f"/>
+    <PID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramas de secuencia]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Crear nota" mc="Interaction" uid="01c131bf-7318-425d-b2ba-ee78bb08eb14"/>
+        <COMPID name="Editar nota" mc="Interaction" uid="59bbdb9b-63a5-425d-9478-4b3410440394"/>
+        <COMPID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+        <COMPID name="Enviar nota" mc="Interaction" uid="aa02e0be-1e9a-42b2-8ce7-303d28c13677"/>
+        <COMPID name="Crear categoria" mc="Interaction" uid="cfeb58b6-5a95-4109-87be-2fbafd313105"/>
+        <COMPID name="Editar categoria" mc="Interaction" uid="afbea42e-1259-47aa-a6ca-98e7ed605732"/>
+        <COMPID name="Eliminar categoria" mc="Interaction" uid="48cc7607-b93b-48df-a885-4419306f0f4a"/>
+        <COMPID name="Asignar categoria nota" mc="Interaction" uid="542a4ba3-303b-4ebe-a773-ff13e1523e6d"/>
+        <COMPID name="Editar categoria nota" mc="Interaction" uid="75a8b030-4c91-42d5-9fac-494c0fd51a9b"/>
+        <COMPID name="Eliminar categoria nota" mc="Interaction" uid="7b6fc9f1-6fca-4736-8eac-c3a5073a0e8b"/>
+        <COMPID name="Consultar listado notas" mc="Interaction" uid="3babb1dc-3772-4852-8921-7389e1c95c48"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

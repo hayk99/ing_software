@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramas de Secuencia" version="3">
+  <DEPS>
+    <ID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+    <COMPID name="Asignar categoría a nota" mc="Interaction" uid="c0978b3b-6092-4484-ab6c-088bddf24697"/>
+    <COMPID name="Consultar listado notas" mc="Interaction" uid="12c10b94-f912-40ad-814c-131c9583211a"/>
+    <COMPID name="Crear categoría" mc="Interaction" uid="3f7c7a37-1480-4cde-968f-ef698fe16dde"/>
+    <COMPID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+    <COMPID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+    <COMPID name="Eliminar categoría nota" mc="Interaction" uid="7923e2b5-ef43-49d9-9305-dd6009ec5495"/>
+    <COMPID name="Eliminar nota" mc="Interaction" uid="493ea3fb-6f2c-4ef5-8fba-fb3c6618d4b4"/>
+    <COMPID name="Enviar nota SMS" mc="Interaction" uid="a8f404a8-5b95-4668-a541-2cc92693722d"/>
+    <COMPID name="Enviar nota email" mc="Interaction" uid="cb84c391-f6ea-4985-8d7c-0946b538eae4"/>
+    <COMPID name="Modificar categoría" mc="Interaction" uid="9f3c2219-b621-424a-a9c6-2409c1932150"/>
+    <COMPID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+    <COMPID name="Modificar nota" mc="Interaction" uid="b7ed46c0-b807-4d17-8089-7897e64b246d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+    <PID name="Analisis" mc="Package" uid="126dafb2-1ce8-46b1-a6ea-a137408a6232"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramas de Secuencia]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+        <COMPID name="Modificar nota" mc="Interaction" uid="b7ed46c0-b807-4d17-8089-7897e64b246d"/>
+        <COMPID name="Eliminar nota" mc="Interaction" uid="493ea3fb-6f2c-4ef5-8fba-fb3c6618d4b4"/>
+        <COMPID name="Consultar listado notas" mc="Interaction" uid="12c10b94-f912-40ad-814c-131c9583211a"/>
+        <COMPID name="Crear categoría" mc="Interaction" uid="3f7c7a37-1480-4cde-968f-ef698fe16dde"/>
+        <COMPID name="Modificar categoría" mc="Interaction" uid="9f3c2219-b621-424a-a9c6-2409c1932150"/>
+        <COMPID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+        <COMPID name="Asignar categoría a nota" mc="Interaction" uid="c0978b3b-6092-4484-ab6c-088bddf24697"/>
+        <COMPID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+        <COMPID name="Eliminar categoría nota" mc="Interaction" uid="7923e2b5-ef43-49d9-9305-dd6009ec5495"/>
+        <COMPID name="Enviar nota email" mc="Interaction" uid="cb84c391-f6ea-4985-8d7c-0946b538eae4"/>
+        <COMPID name="Enviar nota SMS" mc="Interaction" uid="a8f404a8-5b95-4668-a541-2cc92693722d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

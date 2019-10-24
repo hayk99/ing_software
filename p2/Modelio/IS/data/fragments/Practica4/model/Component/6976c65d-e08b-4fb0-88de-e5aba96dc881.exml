@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="application" version="3">
+  <DEPS>
+    <ID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+    <EXTID name="android" mc="Package" uid="a88eb263-b59a-4184-8069-310596666749"/>
+    <EXTID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+    <EXTID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+    <EXTID name="database" mc="Component" uid="93aebcd9-0d6f-4b1d-8f1f-c6ad4b25f683"/>
+    <EXTID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+    <EXTID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+    <PID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[application]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="7fed9534-940b-4a22-8289-5cb0376963f1"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="6de6d896-fa66-44f7-ab45-a284d7d6a5c9"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="c8fbe6d1-14a3-4470-8728-840c70981066"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="47b69005-41f5-49fd-b5bb-6ec75a176887"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="b2766b13-7e40-4b54-b9ce-e380d17d7718"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="b7544788-6476-4952-87fa-8314a2940fbf"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="android" mc="Package" uid="a88eb263-b59a-4184-8069-310596666749"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="23a02110-be0c-431c-adfa-8ef7c36ed6d4"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="613ab369-4df9-4913-a264-457fec456d88"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="7255895a-43b5-49a3-91dd-f561977a6e44"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="database" mc="Component" uid="93aebcd9-0d6f-4b1d-8f1f-c6ad4b25f683"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Usage" uid="2c806399-f691-48c6-a81d-ca02a04ba873"/>
+          <PID name="application" mc="Component" uid="6976c65d-e08b-4fb0-88de-e5aba96dc881"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="database" mc="Component" uid="93aebcd9-0d6f-4b1d-8f1f-c6ad4b25f683"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

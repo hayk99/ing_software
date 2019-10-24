@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Practica3" version="3">
+  <DEPS>
+    <ID name="Practica3" mc="AnalystProject" uid="58dfe708-2b6d-4aad-aeca-65a429d24d99"/>
+    <COMPID name="Practica3" mc="PropertyContainer" uid="62903aed-338d-439c-a7e9-b2b1fcadf8ae"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Practica3" mc="AnalystProject" uid="58dfe708-2b6d-4aad-aeca-65a429d24d99"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Practica3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="Practica3" mc="PropertyContainer" uid="62903aed-338d-439c-a7e9-b2b1fcadf8ae"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

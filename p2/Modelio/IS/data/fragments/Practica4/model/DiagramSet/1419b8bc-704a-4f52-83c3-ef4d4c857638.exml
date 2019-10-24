@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Practica3" version="3">
+  <DEPS>
+    <ID name="Practica3" mc="DiagramSet" uid="1419b8bc-704a-4f52-83c3-ef4d4c857638"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Practica3" mc="DiagramSet" uid="1419b8bc-704a-4f52-83c3-ef4d4c857638"/>
+    <PID name="Trabajo" mc="DiagramSet" uid="07eae5fe-9ca7-41ed-a867-9bcdc253ed22"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Practica3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

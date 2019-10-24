@@ -1,0 +1,1298 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Eliminar nota" version="3">
+  <DEPS>
+    <ID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+    <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="c0dfaefb-1540-4368-b729-41e7985e0a20"/>
+    <EXTID name="Notepadv3" mc="Class" uid="89dc1058-1d20-4608-b982-f8b8c5841fdb"/>
+    <EXTID name="NotesDbAdapter" mc="Class" uid="556b91a3-39ed-4bf9-ae3b-bfe4a3429ae8"/>
+    <EXTID name="SQLiteDatabase" mc="Class" uid="9dd27443-6b80-4e11-92c9-f9b87a287b59"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+    <PID name="Diagramas de secuencia" mc="Package" uid="4fc5b4c7-e7b3-4ec1-afc1-7c2c7a6c990f"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Eliminar nota]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d9d9f872-632b-44c2-aa1c-fb3185af119b"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">72</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="1dcddbe5-54ba-4c16-bb62-91e978f5c5bc"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[item]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="4e33c550-6008-4bab-90bd-3d07bd48886f"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="onContextItemSelected" mc="Operation" uid="dfe326bf-365b-4b07-bb95-d9cc693203d1"/>
+                      <PID name="Notepadv3" mc="Class" uid="89dc1058-1d20-4608-b982-f8b8c5841fdb"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="81d40ceb-1721-4141-9cd7-6665819f3e05"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4e33c550-6008-4bab-90bd-3d07bd48886f"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">72</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="61420681-cabe-4192-900e-42e639627e62"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="81bbbb6f-5512-4345-952d-1187995f3725"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">531</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="421efe46-c411-4af7-9d9d-022af7c01f70"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5d51ab34-5806-4cf2-b8fa-1e93a2344f98"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="61420681-cabe-4192-900e-42e639627e62"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">72</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="81bbbb6f-5512-4345-952d-1187995f3725"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5d51ab34-5806-4cf2-b8fa-1e93a2344f98"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">531</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="81d40ceb-1721-4141-9cd7-6665819f3e05"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="de064217-f195-4fe7-906e-eb1106066854"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="b28ae563-888a-4494-b7b8-5776e6655ea2"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[info.id]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="1768237c-2212-4d1f-89fc-c8aecf293b29"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="deleteNote" mc="Operation" uid="95481f95-41e2-4454-b6d6-70b0ba77d5e4"/>
+                      <PID name="NotesDbAdapter" mc="Class" uid="556b91a3-39ed-4bf9-ae3b-bfe4a3429ae8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1768237c-2212-4d1f-89fc-c8aecf293b29"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="72890059-7489-40cf-bf71-b947fbc40155"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5d39b579-9be6-401d-85fd-e9fee3d6a536"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">171</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="ae4d5193-f072-4105-b054-7f523dc8aedb"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="cedeb047-971a-4df8-8fcf-1e82e01f479c"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="72890059-7489-40cf-bf71-b947fbc40155"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="5d39b579-9be6-401d-85fd-e9fee3d6a536"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cedeb047-971a-4df8-8fcf-1e82e01f479c"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">171</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="108b55bc-d6a5-4fb5-bd6c-6da97a11f6c4"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="cde3540b-b70a-4ed2-8f76-b8d5991e634e"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[DATABASE_TABLE,KEY_ROWID+"="+rowid,null]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="7f156008-7712-4b91-960f-da62e7358de0"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="delete" mc="Operation" uid="6e1ce7f1-ca8b-42b7-aedf-fa67e02fbe0c"/>
+                      <PID name="SQLiteDatabase" mc="Class" uid="9dd27443-6b80-4e11-92c9-f9b87a287b59"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7f156008-7712-4b91-960f-da62e7358de0"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="2857e35e-8832-44ff-abe0-a71946c828a9"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5f9a224c-65cb-4af7-995f-c74925cceef8"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">142</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="fdad910d-7cee-47cb-82ab-00104cb17cda"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="7af3930d-10fb-4ad1-942d-c3cf44022978"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="2857e35e-8832-44ff-abe0-a71946c828a9"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="5f9a224c-65cb-4af7-995f-c74925cceef8"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7af3930d-10fb-4ad1-942d-c3cf44022978"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">142</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="71730657-2761-4d30-ad10-fb38c0b8e125"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">240</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="505eca5d-6761-4c53-b5eb-036bb955bfa5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="80c24072-769c-4e80-93e6-43a66de523bb"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">512</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="cbf63244-bee8-4dd3-9d5a-8056cf18cb87"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="3eed4e18-c85f-473e-b4f5-2867b278a457"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="505eca5d-6761-4c53-b5eb-036bb955bfa5"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">240</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="80c24072-769c-4e80-93e6-43a66de523bb"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="393c91bd-10c2-4216-a954-81bfcdad7dcb"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="bbbbabb9-aaee-4318-9860-da4d19f4e75e"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="03f31d6c-0406-4ba0-b00b-638ac0d0747d"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="fillData" mc="Operation" uid="bd583189-354d-4b61-9dc0-b47c02d1818b"/>
+                      <PID name="Notepadv3" mc="Class" uid="89dc1058-1d20-4608-b982-f8b8c5841fdb"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="03f31d6c-0406-4ba0-b00b-638ac0d0747d"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">241</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3eed4e18-c85f-473e-b4f5-2867b278a457"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">512</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7d8f12e3-a4e1-47ee-83bc-fd2c70c72181"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">265</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="87949d6c-c459-4cb6-8a25-1c685f510cbe"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[mByCategory]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="81eb3474-2e80-45aa-b263-b558dcef71ca"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="fetchAllNotes" mc="Operation" uid="a66f6919-4602-40f7-b85c-9a132a016a1a"/>
+                      <PID name="NotesDbAdapter" mc="Class" uid="556b91a3-39ed-4bf9-ae3b-bfe4a3429ae8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="81eb3474-2e80-45aa-b263-b558dcef71ca"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">265</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="5e8760a7-bb83-47d8-bb26-0f77d8ea8959"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="35c803d2-45f9-4950-8392-8f9005fc24d2"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">486</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="7a46603d-55cf-471e-b2eb-1d29fe964c9d"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b9748f0f-d9df-48dc-bc38-4bd859f32c3d"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="5e8760a7-bb83-47d8-bb26-0f77d8ea8959"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">265</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="35c803d2-45f9-4950-8392-8f9005fc24d2"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b9748f0f-d9df-48dc-bc38-4bd859f32c3d"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">486</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f74a0d47-6928-425e-8c3c-7a9f91949e7b"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">271</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="01425a00-274a-41e0-8181-bacf83999b0a"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">271</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="498aa7ec-d8c2-465b-b19d-5145cd03f4f4"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">291</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="364b6e9c-d119-4df1-ab90-3d4e5cc889fc"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">291</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="7bee2a71-ad0e-4ef3-98cd-431157c875f3"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">AltOp</ATT>
+            <ATT name="LineNumber">311</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="10aaf718-418f-493b-940c-5adb3791ec23"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[mByCategory = true]]></ATT>
+                  <ATT name="EndLineNumber">390</ATT>
+                  <ATT name="LineNumber">311</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="82815b18-b1e4-4441-94ff-6cf147437b07"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[mByCategory = false]]></ATT>
+                  <ATT name="EndLineNumber">470</ATT>
+                  <ATT name="LineNumber">391</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cfaab095-8156-4620-9042-b4ca12f013d2"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">343</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="20829a1d-5202-4da4-a6bd-f765f5b95afb"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[...]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="3a9c9af8-e053-4d05-81e8-73b835b5bc37"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="query" mc="Operation" uid="248d61f2-7d19-4b9d-9d30-b4365dc9eec2"/>
+                      <PID name="SQLiteDatabase" mc="Class" uid="9dd27443-6b80-4e11-92c9-f9b87a287b59"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3a9c9af8-e053-4d05-81e8-73b835b5bc37"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">343</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="f9ec02b1-5a2e-4fc2-b5d2-152e5621dbdc"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ff03067c-014d-4ba9-a543-c18f9e6675d7"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">363</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="078dfa0f-d7bc-4a98-8a05-fe2dd4f03b41"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="54e384e7-00b6-4da2-a50f-c5a78fa68ae6"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="f9ec02b1-5a2e-4fc2-b5d2-152e5621dbdc"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">343</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="ff03067c-014d-4ba9-a543-c18f9e6675d7"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="54e384e7-00b6-4da2-a50f-c5a78fa68ae6"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">363</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="InteractionOperand" mc="InteractionOperand" uid="82815b18-b1e4-4441-94ff-6cf147437b07"/>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="466ecba3-1339-4180-808b-6cfa67f9ee2e"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="4373032e-97af-4710-a847-7a022d0b0f93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[...]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="4f9fbd5e-7f15-4063-b1fd-8bb2471849c5"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="query" mc="Operation" uid="248d61f2-7d19-4b9d-9d30-b4365dc9eec2"/>
+                      <PID name="SQLiteDatabase" mc="Class" uid="9dd27443-6b80-4e11-92c9-f9b87a287b59"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4f9fbd5e-7f15-4063-b1fd-8bb2471849c5"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="4dc559f7-3f1f-49e0-876f-2ae9c663c8a6"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="50c5db00-4b48-40af-b8c2-7915e4ee4078"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">440</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="ed116ca3-7a16-416a-9198-c2a0326ee922"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="3fc3ce1e-440a-4b10-ba72-7a94d4e8645e"/>
+                      <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="4dc559f7-3f1f-49e0-876f-2ae9c663c8a6"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="50c5db00-4b48-40af-b8c2-7915e4ee4078"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3fc3ce1e-440a-4b10-ba72-7a94d4e8645e"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">440</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="81d40ceb-1721-4141-9cd7-6665819f3e05"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Lifeline" uid="7fe755d3-281c-40ab-a309-b0ad9e3dcaf5"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="" mc="BindableInstance" uid="d955ea8d-5b02-456e-9c0a-1a3e0a398832"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDbHelper" mc="Lifeline" uid="c20d71f7-ba12-495d-9cf8-9420aeb8d983"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDbHelper]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="mDbHelper" mc="BindableInstance" uid="45dba1f3-d010-4b9f-adf1-b6ff37e8e10b"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDb" mc="Lifeline" uid="0bb6fd4c-defa-4f96-a4a3-3b9901490a93"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDb]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="mDb" mc="BindableInstance" uid="c915bba2-4a7d-4095-a490-e3146ec3d61f"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="5b3e0e63-09a5-4a6b-b6af-c7abff9c4a32"/>
+          <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="" mc="BindableInstance" uid="d955ea8d-5b02-456e-9c0a-1a3e0a398832"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Notepadv3" mc="Class" uid="89dc1058-1d20-4608-b982-f8b8c5841fdb"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="mDbHelper" mc="BindableInstance" uid="45dba1f3-d010-4b9f-adf1-b6ff37e8e10b"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[mDbHelper]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="NotesDbAdapter" mc="Class" uid="556b91a3-39ed-4bf9-ae3b-bfe4a3429ae8"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="mDb" mc="BindableInstance" uid="c915bba2-4a7d-4095-a490-e3146ec3d61f"/>
+                <PID name="Eliminar nota" mc="Interaction" uid="37851af8-8996-4add-9507-45140f16e751"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[mDb]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SQLiteDatabase" mc="Class" uid="9dd27443-6b80-4e11-92c9-f9b87a287b59"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="c0dfaefb-1540-4368-b729-41e7985e0a20"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

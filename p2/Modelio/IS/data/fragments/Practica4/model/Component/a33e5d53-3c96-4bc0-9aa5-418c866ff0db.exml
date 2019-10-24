@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="database" version="3">
+  <DEPS>
+    <ID name="database" mc="Component" uid="a33e5d53-3c96-4bc0-9aa5-418c866ff0db"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="database" mc="Component" uid="a33e5d53-3c96-4bc0-9aa5-418c866ff0db"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[database]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

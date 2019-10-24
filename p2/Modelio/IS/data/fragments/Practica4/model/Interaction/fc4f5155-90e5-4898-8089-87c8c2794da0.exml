@@ -1,0 +1,329 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Eliminar categoría" version="3">
+  <DEPS>
+    <ID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+    <COMPID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="6cdf08ee-880c-446b-9644-14271d568b8c"/>
+    <EXTID name="Categoria" mc="Class" uid="ca05ee03-87c3-4cca-861c-a58ac3cd795b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+    <PID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Eliminar categoría]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dc301bd5-7494-4b50-ab95-08dcec3db0a4"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">71</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="eliminarCategoría" mc="Message" uid="5d489997-ed55-4a46-8592-252d81a71e78"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[nombre]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[eliminarCategoría]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="515a8583-01a4-49f2-81be-31d76368e856"/>
+                      <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="349526d3-9dd7-4d76-95e0-9e88dae9ad5c"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="515a8583-01a4-49f2-81be-31d76368e856"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">71</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="fe7bd11a-d9d8-4b64-b029-0293effa1ebb"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="509b17d5-a7c6-4764-9ead-6cfe3a4c25b6"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">110</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="953e06d0-39b4-4dee-bf82-8b1cfe356058"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="299d4ab2-4a39-431c-a386-b44ea3ca58df"/>
+                      <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="fe7bd11a-d9d8-4b64-b029-0293effa1ebb"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">71</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="509b17d5-a7c6-4764-9ead-6cfe3a4c25b6"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="299d4ab2-4a39-431c-a386-b44ea3ca58df"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">110</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="349526d3-9dd7-4d76-95e0-9e88dae9ad5c"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c9845fa4-4ad7-4133-a28c-fe6c9f5f656e"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">85</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f2366e12-52eb-4476-b8be-1b2844040f01"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">75</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="eliminarCategoria" mc="Message" uid="f4eab7db-cb6c-4165-bcd7-67b06281cbcd"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[eliminarCategoria]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d429825f-644d-4e81-bf37-db1c3d70c341"/>
+                      <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="349526d3-9dd7-4d76-95e0-9e88dae9ad5c"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d429825f-644d-4e81-bf37-db1c3d70c341"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">75</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5c8ea80e-0a41-4e4e-ad1c-8a992dc053d1"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">92</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="destroy" mc="Message" uid="91009c09-0d1f-4f32-9db0-04f3d17a6753"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[destroy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="35b5d66f-59d3-4578-9ebb-9da625ba3cb7"/>
+                      <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="eliminar" mc="Operation" uid="903715bd-df51-407c-a442-f0298e5c28be"/>
+                      <PID name="Categoria" mc="Class" uid="ca05ee03-87c3-4cca-861c-a58ac3cd795b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="349526d3-9dd7-4d76-95e0-9e88dae9ad5c"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="35b5d66f-59d3-4578-9ebb-9da625ba3cb7"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">92</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="c" mc="Lifeline" uid="d603a020-c4b5-4028-86fd-ca12d2b88b42"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="349526d3-9dd7-4d76-95e0-9e88dae9ad5c"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="c" mc="Lifeline" uid="d603a020-c4b5-4028-86fd-ca12d2b88b42"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[c]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="c" mc="BindableInstance" uid="92b9ffff-1364-46e0-9618-23ad619c7270"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="8fb05e9a-fdec-42e3-93ef-08750f1d727f"/>
+          <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="c" mc="BindableInstance" uid="92b9ffff-1364-46e0-9618-23ad619c7270"/>
+                <PID name="Eliminar categoría" mc="Interaction" uid="fc4f5155-90e5-4898-8089-87c8c2794da0"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[c]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Categoria" mc="Class" uid="ca05ee03-87c3-4cca-861c-a58ac3cd795b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="6cdf08ee-880c-446b-9644-14271d568b8c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

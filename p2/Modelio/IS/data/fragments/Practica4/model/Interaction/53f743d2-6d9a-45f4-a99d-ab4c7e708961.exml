@@ -1,0 +1,782 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modificar categoría nota" version="3">
+  <DEPS>
+    <ID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+    <COMPID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="6ec96dd1-8f1b-4c31-850f-be80809de273"/>
+    <EXTID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+    <PID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Modificar categoría nota]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d48063e6-f8ad-4299-b57e-a8fa092b95a3"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">69</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="asignarNotaACategoria" mc="Message" uid="f4b7d93d-16e1-4d30-96f1-37b834461c00"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[nota, categoría]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[asignarNotaACategoria]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="8a28aa9b-6919-4498-8e06-f43f558ce0a6"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8a28aa9b-6919-4498-8e06-f43f558ce0a6"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">69</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="5be8340c-ee94-407c-966a-fba544f5e67b"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="491f194e-0d45-4d49-ad35-9b7a6567ecf5"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">296</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="9b71a2e4-9fba-4eca-bd66-791f95dfca17"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="7bc08a56-68ac-491c-b498-b827350edf03"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="5be8340c-ee94-407c-966a-fba544f5e67b"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">69</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="491f194e-0d45-4d49-ad35-9b7a6567ecf5"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7bc08a56-68ac-491c-b498-b827350edf03"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">296</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1a459ad0-9549-47fa-989c-7856c8450855"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">180</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="modificarCategoria" mc="Message" uid="5e60aabd-936b-4ccc-a4b9-b02151513739"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[categoría]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[modificarCategoria]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f73581f6-58d4-42b8-8746-086cd4cea3a0"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="modificarCategoria" mc="Operation" uid="5b442f37-c90f-4d7f-ade8-be8e4f6d3019"/>
+                      <PID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f73581f6-58d4-42b8-8746-086cd4cea3a0"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">180</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5bb1c0fd-99bc-4e8e-9677-3f03d8870593"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="e53c00dc-3fd4-405c-8d6a-5a6c2b384fd0"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="78b058ff-c6b7-446e-a01f-5d7b404966b8"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="78b058ff-c6b7-446e-a01f-5d7b404966b8"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0dbcadae-b7ab-4abc-9201-3ec69309a239"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">82</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="eliminarNota" mc="Message" uid="831cab2a-41a6-4302-8f6c-39c5e06fa346"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[idNota]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[eliminarNota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="9161b3e7-066e-4ba4-822c-02407fc9c306"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9161b3e7-066e-4ba4-822c-02407fc9c306"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">82</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="1470c8f1-778e-463c-b59b-4fd19bb97f3b"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c52551c8-ebe1-476c-95a4-2297bd046bea"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">102</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="8d99aba6-7be8-4557-94be-83270df122f0"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="837851f6-fb83-4edb-ac0e-532b6ad3a60a"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="1470c8f1-778e-463c-b59b-4fd19bb97f3b"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">82</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="c52551c8-ebe1-476c-95a4-2297bd046bea"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="837851f6-fb83-4edb-ac0e-532b6ad3a60a"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">102</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="69a0c220-2cab-42b8-9ab4-5939865e3559"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">260</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="guardarNota" mc="Message" uid="f458e2b4-17f2-49cf-939f-60dd76aab148"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[idNota]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[guardarNota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="38482264-be7c-46a4-b73e-a167b799ddbd"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="38482264-be7c-46a4-b73e-a167b799ddbd"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">260</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="0277167a-7eb7-4ed9-8f31-f33bb7d28539"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1923b5b8-b823-42b3-84c8-7198e808aa9e"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">280</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="4ea573dc-2793-4637-b480-fb74622ebf1f"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5497ff23-c33e-435a-885a-90f5ada4a6cc"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="0277167a-7eb7-4ed9-8f31-f33bb7d28539"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">260</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="1923b5b8-b823-42b3-84c8-7198e808aa9e"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5497ff23-c33e-435a-885a-90f5ada4a6cc"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">280</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2bf0a1f7-7ba9-4471-bd9b-5782eea2fb98"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">94</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="modificarCategoria(c)" mc="Message" uid="ae2e2c2e-a1a7-4476-8bd4-6f3b018ca2b6"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[modificarCategoria(c)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="dcb6ab4b-48f9-41b0-b80a-55fb073dfc89"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dcb6ab4b-48f9-41b0-b80a-55fb073dfc89"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">94</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="ee851ba0-0271-4c0a-9759-0d2137cbf7b8"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="531a1f1c-dc73-4301-a5fc-5d18977d40d7"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">148</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="d99a7248-d67f-4676-8331-2da05f833ad1"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="50229240-74f9-4200-ba70-db80806e2e9e"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="ee851ba0-0271-4c0a-9759-0d2137cbf7b8"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">94</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="531a1f1c-dc73-4301-a5fc-5d18977d40d7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="50229240-74f9-4200-ba70-db80806e2e9e"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">148</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="abe59ae8-819b-4aab-b3fa-8998b2cbecef"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">87</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="f4c7df40-2795-4511-a74e-577c725251f6"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[nombre]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d1f2202f-c90c-47b9-a758-4f55aacd6f57"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="modificarCategoria" mc="Operation" uid="5b442f37-c90f-4d7f-ade8-be8e4f6d3019"/>
+                      <PID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d1f2202f-c90c-47b9-a758-4f55aacd6f57"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">87</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="17d084d7-4c36-4ed4-89e2-af5c230f17c5"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n" mc="Lifeline" uid="1432e521-bd59-47a5-a66d-9ed87aaa70ce"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="92b1331b-4983-46fd-8db9-40627addae33"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">152</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="f5fe881b-015d-4c7d-a728-cd62e6f567bd"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="0a0aeaad-d1c6-41ce-99a5-cd1f1ca55b9c"/>
+                      <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n" mc="Lifeline" uid="1432e521-bd59-47a5-a66d-9ed87aaa70ce"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="17d084d7-4c36-4ed4-89e2-af5c230f17c5"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">87</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="92b1331b-4983-46fd-8db9-40627addae33"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n" mc="Lifeline" uid="1432e521-bd59-47a5-a66d-9ed87aaa70ce"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0a0aeaad-d1c6-41ce-99a5-cd1f1ca55b9c"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">152</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="84f95d43-ce3b-4a9d-abc6-57462a1113f7"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="n" mc="Lifeline" uid="1432e521-bd59-47a5-a66d-9ed87aaa70ce"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[n]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="n" mc="BindableInstance" uid="7e394f26-1b9f-4adf-b606-612ec67e5f73"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="5d734b9e-51f1-40be-996d-a7fc08d9a407"/>
+          <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="n" mc="BindableInstance" uid="7e394f26-1b9f-4adf-b606-612ec67e5f73"/>
+                <PID name="Modificar categoría nota" mc="Interaction" uid="53f743d2-6d9a-45f4-a99d-ab4c7e708961"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[n]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="6ec96dd1-8f1b-4c31-850f-be80809de273"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DispositivoAndroid" version="3">
+  <DEPS>
+    <ID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+    <EXTID name="SQLite" mc="Artifact" uid="f8c4da5c-1f44-41ab-aaee-59bea7463f2a"/>
+    <EXTID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+    <EXTID name="ServidorGmail" mc="Node" uid="5931a55a-ed64-41ae-94a7-9e63a685592f"/>
+    <EXTID name="ServidorOrange" mc="Node" uid="f7fdab11-7a36-4e9e-b47c-53d50cb1bd04"/>
+    <EXTID name="ServidorOrange" mc="Node" uid="155fdbe9-1fb1-4654-a1ef-866849af33b6"/>
+    <EXTID name="app-debug.apk" mc="Artifact" uid="ec9fec5e-aa68-4ca9-ab25-294751ab0532"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[DispositivoAndroid]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="f6354196-0df0-42be-9855-e81f2b1546a5"/>
+          <PID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="e8954258-aed6-4d54-845f-42507d6a21c4"/>
+          <PID name="ServidorOrange" mc="Node" uid="155fdbe9-1fb1-4654-a1ef-866849af33b6"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="545efb35-2798-440d-9ec1-5a0277c32e68"/>
+          <PID name="ServidorOrange" mc="Node" uid="f7fdab11-7a36-4e9e-b47c-53d50cb1bd04"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="0f26d1ea-3c69-4dc5-9270-287356b65478"/>
+          <PID name="ServidorGmail" mc="Node" uid="5931a55a-ed64-41ae-94a7-9e63a685592f"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="1d6f1c87-aa34-4e5a-8ce1-0f936d629fae"/>
+          <PID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="app-debug.apk" mc="Artifact" uid="ec9fec5e-aa68-4ca9-ab25-294751ab0532"/>
+            </LINK>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Usage" uid="f9301f4f-905f-4c3c-94dc-506a292c0a13"/>
+                <PID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="" mc="BindableInstance" uid="10614c74-228b-4610-baa0-c30ebb679d39"/>
+                      <PID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="10614c74-228b-4610-baa0-c30ebb679d39"/>
+          <PID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="SQLite" mc="Artifact" uid="f8c4da5c-1f44-41ab-aaee-59bea7463f2a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

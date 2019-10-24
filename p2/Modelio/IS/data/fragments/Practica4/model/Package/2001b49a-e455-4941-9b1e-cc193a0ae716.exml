@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="eina" version="3">
+  <DEPS>
+    <ID name="eina" mc="Package" uid="2001b49a-e455-4941-9b1e-cc193a0ae716"/>
+    <COMPID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+    <COMPID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+    <COMPID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+    <COMPID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="eina" mc="Package" uid="2001b49a-e455-4941-9b1e-cc193a0ae716"/>
+    <PID name="unizar" mc="Package" uid="52897880-cf55-4183-bba0-3ee9a4c37ff9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[eina]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="notepad" mc="Package" uid="e10aca4a-44f5-4c89-96e8-1f60dedc8530"/>
+        <COMPID name="send" mc="Package" uid="05966530-f5d1-4e31-ae19-9bb368df3893"/>
+        <COMPID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+        <COMPID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

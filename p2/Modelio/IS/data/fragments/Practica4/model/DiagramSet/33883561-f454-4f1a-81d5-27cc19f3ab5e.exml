@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Practica3" version="3">
+  <DEPS>
+    <ID name="Practica3" mc="DiagramSet" uid="33883561-f454-4f1a-81d5-27cc19f3ab5e"/>
+    <COMPID name="Trabajo" mc="DiagramSet" uid="813f7bbb-ce21-4723-b7f1-2d1182f6c70d"/>
+    <COMPID name="Trabajo" mc="DiagramSet" uid="07eae5fe-9ca7-41ed-a867-9bcdc253ed22"/>
+    <COMPID name="Trabajo" mc="DiagramSet" uid="33d31bde-8fa9-45e7-b9e3-0bb82a5919d9"/>
+    <COMPID name="Trabajo" mc="DiagramSet" uid="4e7d2b17-2a2b-4c5c-9cfe-6c5def6515b2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Practica3" mc="DiagramSet" uid="33883561-f454-4f1a-81d5-27cc19f3ab5e"/>
+    <PID name="Practica3" mc="Project" uid="edb6ab13-d6be-4315-98ed-77538b335d3c"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Practica3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Sub">
+        <COMPID name="Trabajo" mc="DiagramSet" uid="33d31bde-8fa9-45e7-b9e3-0bb82a5919d9"/>
+        <COMPID name="Trabajo" mc="DiagramSet" uid="4e7d2b17-2a2b-4c5c-9cfe-6c5def6515b2"/>
+        <COMPID name="Trabajo" mc="DiagramSet" uid="07eae5fe-9ca7-41ed-a867-9bcdc253ed22"/>
+        <COMPID name="Trabajo" mc="DiagramSet" uid="813f7bbb-ce21-4723-b7f1-2d1182f6c70d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ServidorGmail" version="3">
+  <DEPS>
+    <ID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+    <EXTID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+    <EXTID name="ServidorCorreo.war" mc="Artifact" uid="91d989cb-2d41-4076-83e0-c2a0ea0cacfd"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ServidorGmail]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="" mc="AssociationEnd" uid="9e7448e8-0499-441a-a990-af75843ab689"/>
+          <PID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="f6354196-0df0-42be-9855-e81f2b1546a5"/>
+                <PID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="" mc="AssociationEnd" uid="9e7448e8-0499-441a-a990-af75843ab689"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="fbb757ab-b5fd-4bd8-a6a8-bc3c8385f8da"/>
+                      <PID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Association" uid="fbb757ab-b5fd-4bd8-a6a8-bc3c8385f8da"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="73e46b82-15d6-47f5-84a8-47e451fc7b20"/>
+          <PID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="ServidorCorreo.war" mc="Artifact" uid="91d989cb-2d41-4076-83e0-c2a0ea0cacfd"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

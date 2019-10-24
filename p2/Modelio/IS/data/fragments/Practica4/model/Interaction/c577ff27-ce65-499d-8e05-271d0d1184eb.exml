@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Enviar nota SMS" version="3">
+  <DEPS>
+    <ID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+    <COMPID name="Diagrama de secuencia" mc="SequenceDiagram" uid="ed2f68f2-36b1-4cad-8b3a-48cce3a19263"/>
+    <EXTID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+    <PID name="Diagramas de Secuencia" mc="Package" uid="33606495-3bfc-4bfe-ac81-9ebfe507713f"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Enviar nota SMS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="503679be-8823-4514-81f7-dfd8987f75f4"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">93</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="enviarPorSMS" mc="Message" uid="20cc9562-9c9a-45a9-813a-4afb7312dd00"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[destino]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[enviarPorSMS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="950b126c-468e-41f3-b587-4fa710b5e5b9"/>
+                      <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="enviarPorSMS" mc="Operation" uid="b29adfb2-65a0-45b1-9637-eac4d7dd1501"/>
+                      <PID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84307980-e4c2-402b-b856-82f425021231"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="950b126c-468e-41f3-b587-4fa710b5e5b9"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">93</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="98adb4c1-e7b8-4e8e-a877-c54b16982ed4"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n:Nota" mc="Lifeline" uid="a018ee2b-52d5-4190-b478-750e91a6b774"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8fe5258c-b2d8-4baf-8b72-c7a4798f029d"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">155</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="89174659-3b56-45ab-ae6e-2c8490782145"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="3bb08551-2c50-4d26-8bb9-fc6bf1ea5399"/>
+                      <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n:Nota" mc="Lifeline" uid="a018ee2b-52d5-4190-b478-750e91a6b774"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="98adb4c1-e7b8-4e8e-a877-c54b16982ed4"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">93</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="8fe5258c-b2d8-4baf-8b72-c7a4798f029d"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n:Nota" mc="Lifeline" uid="a018ee2b-52d5-4190-b478-750e91a6b774"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3bb08551-2c50-4d26-8bb9-fc6bf1ea5399"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">155</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="84307980-e4c2-402b-b856-82f425021231"/>
+                <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="84307980-e4c2-402b-b856-82f425021231"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="n:Nota" mc="Lifeline" uid="a018ee2b-52d5-4190-b478-750e91a6b774"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[n:Nota]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="b7c234ba-02d8-449b-8e05-5edca2412742"/>
+          <PID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de secuencia" mc="SequenceDiagram" uid="ed2f68f2-36b1-4cad-8b3a-48cce3a19263"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

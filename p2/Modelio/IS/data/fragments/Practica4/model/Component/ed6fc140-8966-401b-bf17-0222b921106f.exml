@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="application" version="3">
+  <DEPS>
+    <ID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+    <EXTID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+    <EXTID name="database" mc="Component" uid="a33e5d53-3c96-4bc0-9aa5-418c866ff0db"/>
+    <EXTID name="notepad" mc="Package" uid="1f2faa10-66ec-4258-9f45-e679b0271b32"/>
+    <EXTID name="send" mc="Package" uid="37cbf289-3c37-499b-bc89-658446002037"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[application]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="4ec8de24-063b-40d2-9a3a-002b6bcb0bb1"/>
+          <PID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="notepad" mc="Package" uid="1f2faa10-66ec-4258-9f45-e679b0271b32"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="9fe1ca53-9fe4-4ff3-ba73-01e1d723b110"/>
+          <PID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="fa667e2e-6dfb-4168-90e6-df5a67478632"/>
+          <PID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="send" mc="Package" uid="37cbf289-3c37-499b-bc89-658446002037"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="85815580-d0e9-4ab1-8448-c214afccd4c0"/>
+          <PID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="database" mc="Component" uid="a33e5d53-3c96-4bc0-9aa5-418c866ff0db"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

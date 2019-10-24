@@ -1,0 +1,349 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Buscar nota" version="3">
+  <DEPS>
+    <ID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+    <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="ac8b855b-7c8e-40cc-827b-f5357643ba72"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+    <PID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Buscar nota]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="06bf4d62-86ab-40d6-a06f-3fea975b49a1"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">97</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="fetchNote()" mc="Message" uid="f6440351-0dee-43b1-9a37-51f981a38a59"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[fetchNote()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d80f2912-31db-454a-96ab-308cf0935656"/>
+                      <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv1" mc="Lifeline" uid="e8a956f1-da78-4363-aea8-798eff640b83"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d80f2912-31db-454a-96ab-308cf0935656"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">97</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="39dafb41-e7f2-446e-893a-6936a3bc9c1f"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="9a862d6a-e02c-42f0-925a-d882c92cacf6"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="095bf003-f5a9-4b56-bacc-9673d20149f4"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">196</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="71ac96b1-65ef-4d31-bc4e-d03d8b0e9f79"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="36d18425-6d8c-41b6-9495-2a415dc881a5"/>
+                      <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="9a862d6a-e02c-42f0-925a-d882c92cacf6"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="39dafb41-e7f2-446e-893a-6936a3bc9c1f"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">97</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="095bf003-f5a9-4b56-bacc-9673d20149f4"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="9a862d6a-e02c-42f0-925a-d882c92cacf6"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="36d18425-6d8c-41b6-9495-2a415dc881a5"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">196</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv1" mc="Lifeline" uid="e8a956f1-da78-4363-aea8-798eff640b83"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d5daad1f-5a99-4c88-b7ae-5b4d4696f72a"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">132</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="query()" mc="Message" uid="5779342f-abc1-43a9-94a8-c9c5e16c14fc"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[query()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="fce573f1-fc6f-428c-8e86-9f6cb6c9eb9e"/>
+                      <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="9a862d6a-e02c-42f0-925a-d882c92cacf6"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="fce573f1-fc6f-428c-8e86-9f6cb6c9eb9e"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">132</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="5f677c64-f17b-420f-a792-2636916ce68b"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="67eaf8eb-d440-4513-9c0e-707e8b9aeb25"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b5ac897f-7562-4637-a9d3-92117efc7b97"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">168</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="ee98db97-6df8-4354-85a6-370976a6a173"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="17b005a0-9667-49ae-9e21-ed1d4a073d50"/>
+                      <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="67eaf8eb-d440-4513-9c0e-707e8b9aeb25"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="5f677c64-f17b-420f-a792-2636916ce68b"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">132</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="b5ac897f-7562-4637-a9d3-92117efc7b97"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="67eaf8eb-d440-4513-9c0e-707e8b9aeb25"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="17b005a0-9667-49ae-9e21-ed1d4a073d50"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">168</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="9a862d6a-e02c-42f0-925a-d882c92cacf6"/>
+                <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name=":Notepadv1" mc="Lifeline" uid="e8a956f1-da78-4363-aea8-798eff640b83"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[:Notepadv1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="9a862d6a-e02c-42f0-925a-d882c92cacf6"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDbHelper:NotesDbAdapter]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="67eaf8eb-d440-4513-9c0e-707e8b9aeb25"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDb:SQLiteDataBase]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="bb04ef39-aa7e-406e-a293-181dfea7c555"/>
+          <PID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="ac8b855b-7c8e-40cc-827b-f5357643ba72"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

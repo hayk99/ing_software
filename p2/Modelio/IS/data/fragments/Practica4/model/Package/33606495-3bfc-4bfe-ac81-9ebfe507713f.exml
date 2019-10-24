@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramas de Secuencia" version="3">
+  <DEPS>
+    <ID name="Diagramas de Secuencia" mc="Package" uid="33606495-3bfc-4bfe-ac81-9ebfe507713f"/>
+    <COMPID name="Consultar listado notas" mc="Interaction" uid="d0f7e568-3ccf-4ce3-a494-6f346df7ebe3"/>
+    <COMPID name="Crear nota" mc="Interaction" uid="18325701-a834-435b-aad6-ff61d01917ff"/>
+    <COMPID name="Eliminar nota" mc="Interaction" uid="cab4ce1a-061b-49a6-b2a8-0df8b9c197e3"/>
+    <COMPID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+    <COMPID name="Enviar nota email" mc="Interaction" uid="021d27df-771d-4f8e-9f52-9096c2cbf660"/>
+    <COMPID name="Modificar nota" mc="Interaction" uid="8c3be08e-fbb6-4c0a-a4ee-478fcb4fb226"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diagramas de Secuencia" mc="Package" uid="33606495-3bfc-4bfe-ac81-9ebfe507713f"/>
+    <PID name="Analisis" mc="Package" uid="d18ce8bc-529c-4a7c-8afa-4fa713f4ebc3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramas de Secuencia]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Crear nota" mc="Interaction" uid="18325701-a834-435b-aad6-ff61d01917ff"/>
+        <COMPID name="Modificar nota" mc="Interaction" uid="8c3be08e-fbb6-4c0a-a4ee-478fcb4fb226"/>
+        <COMPID name="Eliminar nota" mc="Interaction" uid="cab4ce1a-061b-49a6-b2a8-0df8b9c197e3"/>
+        <COMPID name="Consultar listado notas" mc="Interaction" uid="d0f7e568-3ccf-4ce3-a494-6f346df7ebe3"/>
+        <COMPID name="Enviar nota SMS" mc="Interaction" uid="c577ff27-ce65-499d-8e05-271d0d1184eb"/>
+        <COMPID name="Enviar nota email" mc="Interaction" uid="021d27df-771d-4f8e-9f52-9096c2cbf660"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

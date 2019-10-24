@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="app" version="3">
+  <DEPS>
+    <ID name="app" mc="Package" uid="2da8ad1d-dcd0-4f7d-90a5-52097a4a1bb4"/>
+    <COMPID name="Activity" mc="Class" uid="91040822-4c81-40ca-b029-3075722f973c"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="app" mc="Package" uid="2da8ad1d-dcd0-4f7d-90a5-52097a4a1bb4"/>
+    <PID name="android" mc="Package" uid="a88eb263-b59a-4184-8069-310596666749"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[app]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Activity" mc="Class" uid="91040822-4c81-40ca-b029-3075722f973c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

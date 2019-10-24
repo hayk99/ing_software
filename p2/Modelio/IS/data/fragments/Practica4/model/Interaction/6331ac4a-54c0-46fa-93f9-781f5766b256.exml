@@ -1,0 +1,1759 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Inicializar app" version="3">
+  <DEPS>
+    <ID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+    <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="f2393c8a-e267-4d71-a2f9-cba3bb2bd738"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+    <PID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Inicializar app]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1d1a085a-c0ee-48e4-bede-89c0306a08f1"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">82</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="onCreate(saveInstanceState)" mc="Message" uid="28c3618e-76d9-4c0c-85cc-d83341255afb"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[onCreate(saveInstanceState)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b8fabfc8-2430-4ccf-b1c8-016f914b8855"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b8fabfc8-2430-4ccf-b1c8-016f914b8855"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">82</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="fab76d46-61ee-4d9b-97ba-109e65e56bee"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="50763330-4fa6-4149-b970-70acebda2578"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="33125c2f-070c-4be6-bd14-c6618a9b8352"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="8eaaedb5-7064-4eda-8a2b-80d46c10a6f6"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="fab76d46-61ee-4d9b-97ba-109e65e56bee"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">82</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="50763330-4fa6-4149-b970-70acebda2578"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8eaaedb5-7064-4eda-8a2b-80d46c10a6f6"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">165</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7bf77d4e-1019-44ae-b098-b4fee2d26c6b"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">206</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="b14eacc1-6f41-47e7-bcff-c48164c61864"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="00217d04-25cc-4803-8e19-b0a98131328e"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="00217d04-25cc-4803-8e19-b0a98131328e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">206</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2f6322da-b37c-4c5b-9935-111bc36abd54"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">253</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="open()" mc="Message" uid="bd79e164-ab1f-438f-9994-7e0fc421b8c1"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[open()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b70f97b1-1624-4785-8f55-23e0d159ff11"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b70f97b1-1624-4785-8f55-23e0d159ff11"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">253</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="3b905b86-0e03-432d-b11e-b93453328ac6"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="07205a33-6131-4fb9-b871-8b87fa43ce2d"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">336</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="da105ef9-93ed-4546-9a93-dc4ad32e6993"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5322f134-88d6-46de-a866-9b13e1f4ceea"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="3b905b86-0e03-432d-b11e-b93453328ac6"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">253</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="07205a33-6131-4fb9-b871-8b87fa43ce2d"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5322f134-88d6-46de-a866-9b13e1f4ceea"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">336</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="505573a4-71d2-4c9d-98e1-f5e995462830"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">289</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="findViewById(R.id.list)" mc="Message" uid="6830f07b-e4a5-40a9-ab21-8d07baa617a1"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[findViewById(R.id.list)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="e39bce24-7e91-4150-9dfc-4b9da45d42d3"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e39bce24-7e91-4150-9dfc-4b9da45d42d3"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">289</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="19926ea1-6aad-4397-9cad-9a006584e36e"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ffc3d9fd-f20b-4ff2-9579-8eacf734aa0a"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">309</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="fadbf5e0-fb75-4597-8d25-fc8d1967026e"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b9058f84-3923-44d7-81cd-b4227d4bcd81"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="19926ea1-6aad-4397-9cad-9a006584e36e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">289</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="ffc3d9fd-f20b-4ff2-9579-8eacf734aa0a"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b9058f84-3923-44d7-81cd-b4227d4bcd81"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">309</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="022d6623-aa5a-4651-8ad5-177887af9994"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">417</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="6839e035-5870-4be8-bda7-edff1b29b96d"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="fillData()" mc="Message" uid="57acf3eb-aa34-452e-8902-67b5115f9811"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[fillData()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="082374fb-d416-4d11-8372-34415de41f26"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8c6cea21-bafe-4a4f-be4c-8be0d15d466c"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">445</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="004d608c-a37a-4df6-ab49-2d95e2a87444"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">388</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="9edffc61-c190-4ece-b0db-a43a94c869f6"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b8da2a8b-1d35-4d3a-a722-689ba7a9988e"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b8da2a8b-1d35-4d3a-a722-689ba7a9988e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">388</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e6e449b7-1ea3-42d0-9183-6c80f3538006"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">54</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="bb169c8b-1ea1-49e9-9569-a0e67df42219"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="7d26bfeb-64e7-49f9-a1e6-6883fa527c34"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="a1be2365-c588-4ab5-bf52-4db540b5a6b9"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="60f8e46c-d4e7-40da-a4ea-a4148097cb3f"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">120</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="4968c40f-9d31-46cb-bca8-5c2fb146c04e"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="bc88ca35-8f88-4090-a01a-8c697972a0c7"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">628</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="4968c40f-9d31-46cb-bca8-5c2fb146c04e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">120</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="bc88ca35-8f88-4090-a01a-8c697972a0c7"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="16ecaaf4-3b7c-4a4a-ae89-7bf89a29c1da"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">628</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="a1be2365-c588-4ab5-bf52-4db540b5a6b9"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3deb352d-b1a0-425d-b4c3-af582201fd88"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">146</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="01ddc6d5-102d-4fde-a5e9-3272fb5803cc"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">185</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b2b27a0e-8c87-47d9-8659-56aa47ac6874"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">181</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a836d62c-b600-43f9-9fe8-3e99feafb98e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">265</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="72663668-0b2a-43f0-9080-456fbbcd18f1"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="cd5cf09e-5197-48aa-a9a1-4b873b74d15d"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cd5cf09e-5197-48aa-a9a1-4b873b74d15d"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">265</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:DatabaseHelper" mc="Lifeline" uid="d5447390-d169-4894-b953-bd3cbfc5d56d"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="124d7bf5-5997-4e26-9d77-c3e6b8625a80"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">301</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="getWritableDatabase()" mc="Message" uid="3ced6026-2af4-4bf8-965a-865b1a5ce80b"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[getWritableDatabase()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5645a3fb-7372-4fd6-b7c1-38abca45a808"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5645a3fb-7372-4fd6-b7c1-38abca45a808"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">301</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="d55022a0-6bb9-4971-b79a-ee572a284b17"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:DatabaseHelper" mc="Lifeline" uid="d5447390-d169-4894-b953-bd3cbfc5d56d"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e726a6fa-ff61-4eaa-8e00-badc50bc4799"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">321</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="ee66e879-3557-4b5f-a010-940679d6dadf"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d1a61cc8-3a27-44ad-affa-1f82f9988d38"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:DatabaseHelper" mc="Lifeline" uid="d5447390-d169-4894-b953-bd3cbfc5d56d"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="d55022a0-6bb9-4971-b79a-ee572a284b17"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">301</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="e726a6fa-ff61-4eaa-8e00-badc50bc4799"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:DatabaseHelper" mc="Lifeline" uid="d5447390-d169-4894-b953-bd3cbfc5d56d"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d1a61cc8-3a27-44ad-affa-1f82f9988d38"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">321</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="efdeaaf8-b854-4f91-8910-77f19805e85e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0dce00e9-03cf-49e6-9cba-b55fb47e8feb"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">418</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="096e02d2-77e7-4534-b6ab-c3512700c109"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">536</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="setAdapter(notes)" mc="Message" uid="1d07109f-a9a3-4f58-8d43-49c0beeac5a5"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[setAdapter(notes)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="44099134-ce42-4bd5-a5dc-f2dbd0420873"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="082374fb-d416-4d11-8372-34415de41f26"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">458</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="4e9eeafa-903a-4233-a871-83e3feea0206"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="054ce48f-c442-43e7-b7b8-6fd404cdda88"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">576</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="dd61274f-3bac-4108-ac66-f20db7446c68"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="bba3664e-163a-4db8-a0ff-dc5bfbbcf7a6"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="4e9eeafa-903a-4233-a871-83e3feea0206"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">458</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="054ce48f-c442-43e7-b7b8-6fd404cdda88"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="bba3664e-163a-4db8-a0ff-dc5bfbbcf7a6"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">576</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e8054db1-12fb-440a-a304-9c58c2d2eee4"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">469</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ce5ec5d7-f32e-4af9-9ab4-e38f0e5f9193"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">469</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ed53b0a7-1530-4eb8-ae41-144e4a81c9d0"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">489</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1f8eab7a-3378-4d50-9423-e8b80d75f42d"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">489</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c3e9213f-58a6-4d1c-99d2-3fa5dceddbfc"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">482</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="fetchAllNotes()" mc="Message" uid="81b4070b-6844-4a21-b13e-edafa259a1f8"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[fetchAllNotes()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="33823285-7a92-4c90-a0e1-f2ac8ba0ee7a"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="33823285-7a92-4c90-a0e1-f2ac8ba0ee7a"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">482</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="10b1d763-d2c9-4b32-93e1-630367f1bc83"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b80f260b-1c03-4b02-9bf7-a4cffc2a0ef5"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">543</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="60417236-8fca-4e95-9d26-0c29f204a00e"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="799ea83d-584c-4734-9ba6-c009373f4898"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="10b1d763-d2c9-4b32-93e1-630367f1bc83"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">482</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="b80f260b-1c03-4b02-9bf7-a4cffc2a0ef5"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="799ea83d-584c-4734-9ba6-c009373f4898"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">543</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="44099134-ce42-4bd5-a5dc-f2dbd0420873"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">536</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="1719d399-2860-4551-907c-483251371e3c"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1f15cd2c-c1b9-4500-9d83-9481839e8e64"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">556</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="7260217f-cf48-4ef4-8381-ad62cabc2501"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="3663bb73-f2f5-40c4-890f-491e81fe40dc"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="1719d399-2860-4551-907c-483251371e3c"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">536</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="1f15cd2c-c1b9-4500-9d83-9481839e8e64"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3663bb73-f2f5-40c4-890f-491e81fe40dc"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">556</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7d26bfeb-64e7-49f9-a1e6-6883fa527c34"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">54</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7aaabbe8-083e-400f-828a-56b3d3300e0e"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">81</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="onCreate()" mc="Message" uid="92e10910-1532-4d5b-b8be-cfd377231e61"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[onCreate()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b6b86805-8f55-447c-9d2e-bbef7b91b7d2"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b6b86805-8f55-447c-9d2e-bbef7b91b7d2"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="37f1f878-cc77-4d09-bb9a-b8e251dc1105"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">610</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7c969abc-6698-4c90-ba56-cf83dbb80b64"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">627</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7a3d68f8-9d44-4e0f-8872-df8d46c8f513"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">314</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="8256928e-2cc2-4d8b-8203-633e5ebe2b44"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="28328499-fdb3-42c3-a2c7-4b4300d412c7"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:DatabaseHelper" mc="Lifeline" uid="d5447390-d169-4894-b953-bd3cbfc5d56d"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="28328499-fdb3-42c3-a2c7-4b4300d412c7"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">314</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="d1d0ed38-225d-45df-8805-55c406e57f07"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cfe4c5cd-88fb-435f-b27b-95667214bb11"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">494</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="query()" mc="Message" uid="d6ed4f6f-960f-49d1-909f-fcdbbd4590c4"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[query()]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="33cc48e9-7803-4f35-8314-a1900080180c"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="33cc48e9-7803-4f35-8314-a1900080180c"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">494</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="3bdf8756-8541-467b-8755-b8bc3898aee0"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="d1d0ed38-225d-45df-8805-55c406e57f07"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="971776af-0dec-4c28-9fc8-6775a9a137e7"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">514</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Cursor" mc="Message" uid="68746653-c573-4480-b44c-ea44c5665233"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Cursor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="75eba3ad-1593-42bc-a4a0-a9a4c77a536a"/>
+                      <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="d1d0ed38-225d-45df-8805-55c406e57f07"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="3bdf8756-8541-467b-8755-b8bc3898aee0"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">494</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="971776af-0dec-4c28-9fc8-6775a9a137e7"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="d1d0ed38-225d-45df-8805-55c406e57f07"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="75eba3ad-1593-42bc-a4a0-a9a4c77a536a"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">514</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+                <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name=":Notepadv3" mc="Lifeline" uid="8e940b1a-8862-4054-9008-60d900705587"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[:Notepadv3]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDbHelper:NotesDbAdapter" mc="Lifeline" uid="5408c193-a5bf-4534-8eed-48b9aa3eb598"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDbHelper:NotesDbAdapter]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="a1be2365-c588-4ab5-bf52-4db540b5a6b9"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDbHelper:DatabaseHelper" mc="Lifeline" uid="d5447390-d169-4894-b953-bd3cbfc5d56d"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDbHelper:DatabaseHelper]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="mDb:SQLiteDataBase" mc="Lifeline" uid="d1d0ed38-225d-45df-8805-55c406e57f07"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[mDb:SQLiteDataBase]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="10cb959b-1c5c-44f2-9796-b92f555f2c28"/>
+          <PID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="f2393c8a-e267-4d71-a2f9-cba3bb2bd738"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

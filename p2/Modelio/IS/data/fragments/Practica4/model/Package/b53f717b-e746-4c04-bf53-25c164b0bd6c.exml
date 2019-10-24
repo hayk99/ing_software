@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="catlist" version="3">
+  <DEPS>
+    <ID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+    <COMPID name="CatDbAdapter" mc="Class" uid="8d6ae41b-5619-46c3-bfb8-8bcf8096a7b8"/>
+    <COMPID name="CatEdit" mc="Class" uid="ff8a8da5-f6f7-4add-a641-902dcf843af3"/>
+    <COMPID name="CatList" mc="Class" uid="837810ae-27cd-4061-925d-4f95b4e0d57e"/>
+    <COMPID name="DatabaseHelper" mc="Class" uid="fd4c4320-167e-453d-bfd6-b3750bf2ffc8"/>
+    <EXTID name="database" mc="Package" uid="228352e8-754d-4063-94a2-0ac36eb04981"/>
+    <EXTID name="support" mc="Package" uid="2d745519-958f-4d88-99b3-1dca4ffb06af"/>
+    <EXTID name="widget" mc="Package" uid="35dfeda3-87fc-4051-a1db-b91c03e502b7"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+    <PID name="eina" mc="Package" uid="2001b49a-e455-4941-9b1e-cc193a0ae716"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[catlist]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="CatEdit" mc="Class" uid="ff8a8da5-f6f7-4add-a641-902dcf843af3"/>
+        <COMPID name="CatDbAdapter" mc="Class" uid="8d6ae41b-5619-46c3-bfb8-8bcf8096a7b8"/>
+        <COMPID name="CatList" mc="Class" uid="837810ae-27cd-4061-925d-4f95b4e0d57e"/>
+        <COMPID name="DatabaseHelper" mc="Class" uid="fd4c4320-167e-453d-bfd6-b3750bf2ffc8"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="090cac9c-d90a-4d40-84b4-46d4b97b4856"/>
+          <PID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="widget" mc="Package" uid="35dfeda3-87fc-4051-a1db-b91c03e502b7"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Usage" uid="89cb60ad-0dc4-4a43-b16f-25ed52674ad2"/>
+          <PID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="support" mc="Package" uid="2d745519-958f-4d88-99b3-1dca4ffb06af"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Usage" uid="f9132620-30df-4171-b824-12e17b020a30"/>
+          <PID name="catlist" mc="Package" uid="b53f717b-e746-4c04-bf53-25c164b0bd6c"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="database" mc="Package" uid="228352e8-754d-4063-94a2-0ac36eb04981"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

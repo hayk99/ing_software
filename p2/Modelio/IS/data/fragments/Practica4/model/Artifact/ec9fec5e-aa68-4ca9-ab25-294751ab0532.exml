@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="app-debug.apk" version="3">
+  <DEPS>
+    <ID name="app-debug.apk" mc="Artifact" uid="ec9fec5e-aa68-4ca9-ab25-294751ab0532"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="app-debug.apk" mc="Artifact" uid="ec9fec5e-aa68-4ca9-ab25-294751ab0532"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="FileName"></ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[app-debug.apk]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

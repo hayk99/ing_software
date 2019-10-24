@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="android" version="3">
+  <DEPS>
+    <ID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+    <COMPID name="app" mc="Package" uid="ddb5bba6-0143-4610-92ee-22b403979477"/>
+    <COMPID name="database" mc="Package" uid="ae7eefd6-f722-424a-b99b-b0dfccf2140d"/>
+    <COMPID name="support" mc="Package" uid="796b251d-e9ff-4716-b043-881b3a6d9e08"/>
+    <COMPID name="widget" mc="Package" uid="065dfa37-ba52-4df2-a288-459b10c2768b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[android]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="widget" mc="Package" uid="065dfa37-ba52-4df2-a288-459b10c2768b"/>
+        <COMPID name="database" mc="Package" uid="ae7eefd6-f722-424a-b99b-b0dfccf2140d"/>
+        <COMPID name="support" mc="Package" uid="796b251d-e9ff-4716-b043-881b3a6d9e08"/>
+        <COMPID name="app" mc="Package" uid="ddb5bba6-0143-4610-92ee-22b403979477"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

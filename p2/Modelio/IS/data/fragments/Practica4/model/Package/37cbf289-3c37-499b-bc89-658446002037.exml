@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="send" version="3">
+  <DEPS>
+    <ID name="send" mc="Package" uid="37cbf289-3c37-499b-bc89-658446002037"/>
+    <COMPID name="MailImplementator" mc="Class" uid="98858191-3505-42c4-a242-2d7a4727481b"/>
+    <COMPID name="SMSImplementator" mc="Class" uid="65dc1ed7-9767-407b-8dae-9d9c960bf7f0"/>
+    <COMPID name="SendAbstraction" mc="Class" uid="cf57c083-cb1c-4734-af03-74079a52de55"/>
+    <COMPID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+    <COMPID name="SendImplementator" mc="Class" uid="2f4c0f8c-960e-4cbd-8698-9afdfcfaebf7"/>
+    <EXTID name="app" mc="Package" uid="ddb5bba6-0143-4610-92ee-22b403979477"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="send" mc="Package" uid="37cbf289-3c37-499b-bc89-658446002037"/>
+    <PID name="eina" mc="Package" uid="a5a74239-8ac5-4711-ad3c-772d86342685"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[send]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="SendAbstraction" mc="Class" uid="cf57c083-cb1c-4734-af03-74079a52de55"/>
+        <COMPID name="SendAbstractionImpl" mc="Class" uid="a8008cf2-d763-4754-9d94-6de74901eb3b"/>
+        <COMPID name="SendImplementator" mc="Class" uid="2f4c0f8c-960e-4cbd-8698-9afdfcfaebf7"/>
+        <COMPID name="MailImplementator" mc="Class" uid="98858191-3505-42c4-a242-2d7a4727481b"/>
+        <COMPID name="SMSImplementator" mc="Class" uid="65dc1ed7-9767-407b-8dae-9d9c960bf7f0"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="37b6e828-5fbf-4aab-a767-5917f5e84079"/>
+          <PID name="send" mc="Package" uid="37cbf289-3c37-499b-bc89-658446002037"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="app" mc="Package" uid="ddb5bba6-0143-4610-92ee-22b403979477"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

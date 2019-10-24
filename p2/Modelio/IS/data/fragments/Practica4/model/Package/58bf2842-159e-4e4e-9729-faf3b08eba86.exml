@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramas de secuencia" version="3">
+  <DEPS>
+    <ID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+    <COMPID name="Actualizar nota" mc="Interaction" uid="40e89f20-5b6b-449b-a091-2873162800f5"/>
+    <COMPID name="Borrar nota" mc="Interaction" uid="2f6284d3-17c2-420a-bce1-415cf988953c"/>
+    <COMPID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+    <COMPID name="Buscar todas notas" mc="Interaction" uid="bc1df771-aae5-4504-a56c-a5fa514ef37c"/>
+    <COMPID name="Crear nota" mc="Interaction" uid="306e544e-3d63-438a-b781-349249beb930"/>
+    <COMPID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+    <COMPID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramas de secuencia]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Inicializar app" mc="Interaction" uid="6331ac4a-54c0-46fa-93f9-781f5766b256"/>
+        <COMPID name="Crear nota" mc="Interaction" uid="306e544e-3d63-438a-b781-349249beb930"/>
+        <COMPID name="Actualizar nota" mc="Interaction" uid="40e89f20-5b6b-449b-a091-2873162800f5"/>
+        <COMPID name="Borrar nota" mc="Interaction" uid="2f6284d3-17c2-420a-bce1-415cf988953c"/>
+        <COMPID name="Buscar nota" mc="Interaction" uid="da1843a2-be78-4014-8a43-46e644bb6055"/>
+        <COMPID name="Buscar todas notas" mc="Interaction" uid="bc1df771-aae5-4504-a56c-a5fa514ef37c"/>
+        <COMPID name="Enviar nota" mc="Interaction" uid="676f8115-7e47-495e-813e-00b2bc934e85"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

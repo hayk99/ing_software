@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="database" version="3">
+  <DEPS>
+    <ID name="database" mc="Package" uid="ae7eefd6-f722-424a-b99b-b0dfccf2140d"/>
+    <COMPID name="sqlite" mc="Package" uid="428be3d9-2cd5-4f19-92b3-922f7246de09"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="database" mc="Package" uid="ae7eefd6-f722-424a-b99b-b0dfccf2140d"/>
+    <PID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[database]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="sqlite" mc="Package" uid="428be3d9-2cd5-4f19-92b3-922f7246de09"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

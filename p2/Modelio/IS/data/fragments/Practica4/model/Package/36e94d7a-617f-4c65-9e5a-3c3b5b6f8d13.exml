@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="credits" version="3">
+  <DEPS>
+    <ID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+    <COMPID name="Credits" mc="Class" uid="646f91c9-3f00-40ad-852b-6a20c9b8da56"/>
+    <EXTID name="support" mc="Package" uid="2d745519-958f-4d88-99b3-1dca4ffb06af"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+    <PID name="eina" mc="Package" uid="2001b49a-e455-4941-9b1e-cc193a0ae716"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[credits]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Credits" mc="Class" uid="646f91c9-3f00-40ad-852b-6a20c9b8da56"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Usage" uid="25c68a50-2605-4c53-b83c-e3963f588688"/>
+          <PID name="credits" mc="Package" uid="36e94d7a-617f-4c65-9e5a-3c3b5b6f8d13"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="support" mc="Package" uid="2d745519-958f-4d88-99b3-1dca4ffb06af"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

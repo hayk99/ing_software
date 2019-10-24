@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SQLite" version="3">
+  <DEPS>
+    <ID name="SQLite" mc="Artifact" uid="f8c4da5c-1f44-41ab-aaee-59bea7463f2a"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SQLite" mc="Artifact" uid="f8c4da5c-1f44-41ab-aaee-59bea7463f2a"/>
+    <PID name="Diseño" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <ATTRIBUTES>
+      <ATT name="FileName"></ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[SQLite]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

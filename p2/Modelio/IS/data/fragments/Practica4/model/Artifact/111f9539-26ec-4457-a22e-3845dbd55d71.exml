@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ServidorCorreo.war" version="3">
+  <DEPS>
+    <ID name="ServidorCorreo.war" mc="Artifact" uid="111f9539-26ec-4457-a22e-3845dbd55d71"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ServidorCorreo.war" mc="Artifact" uid="111f9539-26ec-4457-a22e-3845dbd55d71"/>
+    <PID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+    <ATTRIBUTES>
+      <ATT name="FileName"></ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ServidorCorreo.war]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

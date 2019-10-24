@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="es" version="3">
+  <DEPS>
+    <ID name="es" mc="Package" uid="5c3b0c2a-b882-4f1b-a346-c7c65f8f055c"/>
+    <COMPID name="unizar" mc="Package" uid="52897880-cf55-4183-bba0-3ee9a4c37ff9"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="es" mc="Package" uid="5c3b0c2a-b882-4f1b-a346-c7c65f8f055c"/>
+    <PID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[es]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="unizar" mc="Package" uid="52897880-cf55-4183-bba0-3ee9a4c37ff9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

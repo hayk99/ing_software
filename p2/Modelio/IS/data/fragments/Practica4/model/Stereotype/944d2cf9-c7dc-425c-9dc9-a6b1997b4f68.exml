@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Interface" version="3">
+  <DEPS>
+    <ID name="Interface" mc="Stereotype" uid="944d2cf9-c7dc-425c-9dc9-a6b1997b4f68"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Interface" mc="Stereotype" uid="944d2cf9-c7dc-425c-9dc9-a6b1997b4f68"/>
+    <PID name="LocalProfile" mc="Profile" uid="1b5e5baf-c468-45d1-ba14-5b11980aecfb"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[Interface]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[Interface]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

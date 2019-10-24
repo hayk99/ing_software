@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diseño - Practicas" version="3">
+  <DEPS>
+    <ID name="Diseño - Practicas" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <COMPID name="Diagrama de clases" mc="ClassDiagram" uid="6ff48131-7aa0-4195-a225-8713c767860a"/>
+    <COMPID name="Diagrama de clases - Bridge" mc="ClassDiagram" uid="b645ab01-041b-4597-b78a-8048d44b8bf0"/>
+    <COMPID name="Diagrama de componentes" mc="ClassDiagram" uid="4ffe99b0-29de-473b-8f7f-f13b9d912474"/>
+    <COMPID name="Diagrama de despliegue" mc="DeploymentDiagram" uid="242a6224-a10e-4377-a4fe-70d6828fd571"/>
+    <COMPID name="Diagrama de paquetes" mc="ClassDiagram" uid="95c82edf-7714-4dbe-9dfb-66e49071e51a"/>
+    <COMPID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+    <COMPID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+    <COMPID name="SQLite" mc="Artifact" uid="f8c4da5c-1f44-41ab-aaee-59bea7463f2a"/>
+    <COMPID name="ServidorCorreo.war" mc="Artifact" uid="91d989cb-2d41-4076-83e0-c2a0ea0cacfd"/>
+    <COMPID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+    <COMPID name="ServidorMensajeria.war" mc="Artifact" uid="d51cd5b7-d940-4885-9fc3-0ce61b4089cc"/>
+    <COMPID name="ServidorOrange" mc="Node" uid="155fdbe9-1fb1-4654-a1ef-866849af33b6"/>
+    <COMPID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+    <COMPID name="app-debug.apk" mc="Artifact" uid="ec9fec5e-aa68-4ca9-ab25-294751ab0532"/>
+    <COMPID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+    <COMPID name="database" mc="Component" uid="a33e5d53-3c96-4bc0-9aa5-418c866ff0db"/>
+    <COMPID name="es" mc="Package" uid="c9b7f52f-2d63-4cdd-8888-06eb881a8790"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diseño - Practicas" mc="Package" uid="e75b2580-68cd-4b63-9392-9737627b1d72"/>
+    <PID name="IS" mc="Package" uid="00b52d4c-d9d2-4157-a168-a0291882fecd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diseño - Practicas]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Diagramas de secuencia" mc="Package" uid="58bf2842-159e-4e4e-9729-faf3b08eba86"/>
+        <COMPID name="es" mc="Package" uid="c9b7f52f-2d63-4cdd-8888-06eb881a8790"/>
+        <COMPID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+        <COMPID name="DispositivoAndroid" mc="Node" uid="f4457b75-fc67-4e21-aaf9-c2c2e81ab958"/>
+        <COMPID name="application" mc="Component" uid="ed6fc140-8966-401b-bf17-0222b921106f"/>
+        <COMPID name="database" mc="Component" uid="a33e5d53-3c96-4bc0-9aa5-418c866ff0db"/>
+        <COMPID name="app-debug.apk" mc="Artifact" uid="ec9fec5e-aa68-4ca9-ab25-294751ab0532"/>
+        <COMPID name="SQLite" mc="Artifact" uid="f8c4da5c-1f44-41ab-aaee-59bea7463f2a"/>
+        <COMPID name="ServidorGmail" mc="Node" uid="afec1d89-b4d2-4c79-9f8b-0ec0e5275639"/>
+        <COMPID name="ServidorCorreo.war" mc="Artifact" uid="91d989cb-2d41-4076-83e0-c2a0ea0cacfd"/>
+        <COMPID name="ServidorOrange" mc="Node" uid="155fdbe9-1fb1-4654-a1ef-866849af33b6"/>
+        <COMPID name="ServidorMensajeria.war" mc="Artifact" uid="d51cd5b7-d940-4885-9fc3-0ce61b4089cc"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de paquetes" mc="ClassDiagram" uid="95c82edf-7714-4dbe-9dfb-66e49071e51a"/>
+        <COMPID name="Diagrama de componentes" mc="ClassDiagram" uid="4ffe99b0-29de-473b-8f7f-f13b9d912474"/>
+        <COMPID name="Diagrama de despliegue" mc="DeploymentDiagram" uid="242a6224-a10e-4377-a4fe-70d6828fd571"/>
+        <COMPID name="Diagrama de clases - Bridge" mc="ClassDiagram" uid="b645ab01-041b-4597-b78a-8048d44b8bf0"/>
+        <COMPID name="Diagrama de clases" mc="ClassDiagram" uid="6ff48131-7aa0-4195-a225-8713c767860a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

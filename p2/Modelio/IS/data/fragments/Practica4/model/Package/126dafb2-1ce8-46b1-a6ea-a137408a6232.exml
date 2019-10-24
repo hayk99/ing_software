@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analisis" version="3">
+  <DEPS>
+    <ID name="Analisis" mc="Package" uid="126dafb2-1ce8-46b1-a6ea-a137408a6232"/>
+    <COMPID name="Asignar categoría a nota" mc="UseCase" uid="d49d300d-ebce-470b-bff8-b62b3a623f10"/>
+    <COMPID name="Categoria" mc="Class" uid="ca05ee03-87c3-4cca-861c-a58ac3cd795b"/>
+    <COMPID name="Consultar listado notas categoría" mc="UseCase" uid="79563f42-6642-4ef5-be8c-33b67803a60a"/>
+    <COMPID name="Consultar listado notas por categoría" mc="UseCase" uid="349b554e-e91f-4246-9cac-3c4f23588275"/>
+    <COMPID name="Consultar listado notas por título" mc="UseCase" uid="cc55bb59-c5f9-486c-8343-2f9fbe6b933c"/>
+    <COMPID name="Consultar listado notas total" mc="UseCase" uid="b0139e55-d5d9-476d-a38c-0f4650032d8b"/>
+    <COMPID name="Crear categoría" mc="UseCase" uid="6c09bf98-1059-4027-bc14-d903ca2201ac"/>
+    <COMPID name="Crear nota" mc="UseCase" uid="14d204ef-a262-4d9f-8687-1116f6c14898"/>
+    <COMPID name="Diagrama de Casos de Uso" mc="UseCaseDiagram" uid="133d9b33-3542-4589-94f5-a0330dd7df1c"/>
+    <COMPID name="Diagrama de Clases" mc="ClassDiagram" uid="7e9ed451-d508-4da3-bdd5-39190c0e939e"/>
+    <COMPID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+    <COMPID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+    <COMPID name="Eliminar categoría" mc="UseCase" uid="4716a9e1-a499-41e2-960c-b9725ede79d4"/>
+    <COMPID name="Eliminar categoría nota" mc="UseCase" uid="24d8d7ce-43e6-468a-8b12-7c8d935fc89f"/>
+    <COMPID name="Eliminar nota" mc="UseCase" uid="da8469d8-117e-4731-9490-10cf24740b4e"/>
+    <COMPID name="Enviar nota por SMS" mc="UseCase" uid="6c61174e-d087-4c5b-ab78-9d71d1e11089"/>
+    <COMPID name="Enviar nota por email" mc="UseCase" uid="1884b344-c811-48af-bd3b-d66dbdd93a78"/>
+    <COMPID name="ListadoNotas" mc="Class" uid="4782b89b-2b60-44b3-bf21-d3f5611dbb5c"/>
+    <COMPID name="Modificar categoría" mc="UseCase" uid="7dfd2798-d0ae-4896-92e9-9cf6180360c4"/>
+    <COMPID name="Modificar categoría nota" mc="UseCase" uid="525f0bba-5ee3-4b09-b286-57a7f66ee0cd"/>
+    <COMPID name="Modificar nota" mc="UseCase" uid="ada87456-93d0-4eda-9a2a-e7b5538cc8e4"/>
+    <COMPID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+    <COMPID name="Usuario" mc="Actor" uid="4797e070-099a-45c4-ac1f-647a72a8fccd"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Analisis" mc="Package" uid="126dafb2-1ce8-46b1-a6ea-a137408a6232"/>
+    <PID name="Trabajo" mc="Package" uid="dbbba6a7-7e09-429d-a647-c844859bc3e1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Analisis]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+        <COMPID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+        <COMPID name="ListadoNotas" mc="Class" uid="4782b89b-2b60-44b3-bf21-d3f5611dbb5c"/>
+        <COMPID name="Usuario" mc="Actor" uid="4797e070-099a-45c4-ac1f-647a72a8fccd"/>
+        <COMPID name="Crear nota" mc="UseCase" uid="14d204ef-a262-4d9f-8687-1116f6c14898"/>
+        <COMPID name="Modificar nota" mc="UseCase" uid="ada87456-93d0-4eda-9a2a-e7b5538cc8e4"/>
+        <COMPID name="Eliminar nota" mc="UseCase" uid="da8469d8-117e-4731-9490-10cf24740b4e"/>
+        <COMPID name="Crear categoría" mc="UseCase" uid="6c09bf98-1059-4027-bc14-d903ca2201ac"/>
+        <COMPID name="Modificar categoría" mc="UseCase" uid="7dfd2798-d0ae-4896-92e9-9cf6180360c4"/>
+        <COMPID name="Eliminar categoría" mc="UseCase" uid="4716a9e1-a499-41e2-960c-b9725ede79d4"/>
+        <COMPID name="Asignar categoría a nota" mc="UseCase" uid="d49d300d-ebce-470b-bff8-b62b3a623f10"/>
+        <COMPID name="Modificar categoría nota" mc="UseCase" uid="525f0bba-5ee3-4b09-b286-57a7f66ee0cd"/>
+        <COMPID name="Eliminar categoría nota" mc="UseCase" uid="24d8d7ce-43e6-468a-8b12-7c8d935fc89f"/>
+        <COMPID name="Consultar listado notas por categoría" mc="UseCase" uid="349b554e-e91f-4246-9cac-3c4f23588275"/>
+        <COMPID name="Consultar listado notas total" mc="UseCase" uid="b0139e55-d5d9-476d-a38c-0f4650032d8b"/>
+        <COMPID name="Consultar listado notas categoría" mc="UseCase" uid="79563f42-6642-4ef5-be8c-33b67803a60a"/>
+        <COMPID name="Consultar listado notas por título" mc="UseCase" uid="cc55bb59-c5f9-486c-8343-2f9fbe6b933c"/>
+        <COMPID name="Enviar nota por email" mc="UseCase" uid="1884b344-c811-48af-bd3b-d66dbdd93a78"/>
+        <COMPID name="Enviar nota por SMS" mc="UseCase" uid="6c61174e-d087-4c5b-ab78-9d71d1e11089"/>
+        <COMPID name="Categoria" mc="Class" uid="ca05ee03-87c3-4cca-861c-a58ac3cd795b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de Casos de Uso" mc="UseCaseDiagram" uid="133d9b33-3542-4589-94f5-a0330dd7df1c"/>
+        <COMPID name="Diagrama de Clases" mc="ClassDiagram" uid="7e9ed451-d508-4da3-bdd5-39190c0e939e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

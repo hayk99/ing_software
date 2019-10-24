@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DispositivoAndroid" version="3">
+  <DEPS>
+    <ID name="DispositivoAndroid" mc="Node" uid="7c3a5040-c77c-43be-ab35-beded95a25c1"/>
+    <EXTID name="SQLite" mc="Artifact" uid="a12c8f71-d4c6-45a0-b746-a7129f5fb771"/>
+    <EXTID name="ServidorGmail" mc="Node" uid="5931a55a-ed64-41ae-94a7-9e63a685592f"/>
+    <EXTID name="ServidorOrange" mc="Node" uid="f7fdab11-7a36-4e9e-b47c-53d50cb1bd04"/>
+    <EXTID name="app-debug.apk" mc="Artifact" uid="62dc7a78-b384-47b7-b23e-219221a89ff0"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="DispositivoAndroid" mc="Node" uid="7c3a5040-c77c-43be-ab35-beded95a25c1"/>
+    <PID name="Diseño" mc="Package" uid="3d1a6bdf-9790-4dbe-8ad4-566cdd150317"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[DispositivoAndroid]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="1ea8a554-d180-43aa-94d9-bbfff57be869"/>
+          <PID name="ServidorGmail" mc="Node" uid="5931a55a-ed64-41ae-94a7-9e63a685592f"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="a3096d69-7412-4c71-88be-5cb8eb63a9a3"/>
+          <PID name="ServidorOrange" mc="Node" uid="f7fdab11-7a36-4e9e-b47c-53d50cb1bd04"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="d7e3d0ab-114e-488e-93c4-d5102d3dacba"/>
+          <PID name="DispositivoAndroid" mc="Node" uid="7c3a5040-c77c-43be-ab35-beded95a25c1"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="app-debug.apk" mc="Artifact" uid="62dc7a78-b384-47b7-b23e-219221a89ff0"/>
+            </LINK>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Usage" uid="adabee8f-e7b1-4bec-a798-b6c9ef9b443b"/>
+                <PID name="DispositivoAndroid" mc="Node" uid="7c3a5040-c77c-43be-ab35-beded95a25c1"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="" mc="BindableInstance" uid="90761ea5-c906-4acb-91fe-db72884526bf"/>
+                      <PID name="DispositivoAndroid" mc="Node" uid="7c3a5040-c77c-43be-ab35-beded95a25c1"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="BindableInstance" uid="90761ea5-c906-4acb-91fe-db72884526bf"/>
+          <PID name="DispositivoAndroid" mc="Node" uid="7c3a5040-c77c-43be-ab35-beded95a25c1"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="SQLite" mc="Artifact" uid="a12c8f71-d4c6-45a0-b746-a7129f5fb771"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

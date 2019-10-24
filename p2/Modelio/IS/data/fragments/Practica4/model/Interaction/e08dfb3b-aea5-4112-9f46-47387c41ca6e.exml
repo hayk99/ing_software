@@ -1,0 +1,378 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Crear nota" version="3">
+  <DEPS>
+    <ID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+    <COMPID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="29977095-1413-4343-b443-dfe9c9fdeabd"/>
+    <EXTID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+    <PID name="Diagramas de Secuencia" mc="Package" uid="218c463b-72f9-44cb-87b2-0552b95a3024"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Crear nota]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="bb4990ca-4b04-4051-a655-297baaf3d13b"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">81</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="crearNota" mc="Message" uid="9d467bea-4d34-41e6-9c88-b6af2960790b"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[título, texto]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[crearNota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="e5e931b0-b836-46c9-83ba-2673eb7238cc"/>
+                      <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="crear" mc="Operation" uid="ad0f5d7a-315a-4f64-9203-377ec7a61d02"/>
+                      <PID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="1ae9167a-7818-4792-90c5-f532469e3646"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e5e931b0-b836-46c9-83ba-2673eb7238cc"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">81</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0b893f32-cad6-4c4d-b386-4664899e9685"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">132</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="guardarNota" mc="Message" uid="63734f18-ae5e-42fa-9b3f-165a8acea104"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[Nota]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[guardarNota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="fcb01e6c-a238-4246-a301-b952e8ae4401"/>
+                      <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="fcb01e6c-a238-4246-a301-b952e8ae4401"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">132</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="6815b55c-b129-45ba-a743-60c9cd18f534"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="91cc7cd7-8b73-4752-afcb-5c6428018ad7"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">152</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="0c9c13c3-913e-45a8-8965-4289f956bf21"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="687b3393-e2cf-4c21-a868-21f835c6964e"/>
+                      <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="6815b55c-b129-45ba-a743-60c9cd18f534"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">132</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="91cc7cd7-8b73-4752-afcb-5c6428018ad7"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="687b3393-e2cf-4c21-a868-21f835c6964e"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">152</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="022cc83c-3550-49c4-b039-011abfb84622"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">170</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="97aa31b6-8544-4493-9804-36807ef60d0c"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="9c343be5-d1e2-4461-b4cc-a5b68a5c1f64"/>
+                      <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9c343be5-d1e2-4461-b4cc-a5b68a5c1f64"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">170</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="1ae9167a-7818-4792-90c5-f532469e3646"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="049b26cc-a259-4ace-9869-1d50fbe4968d"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">190</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="1ae9167a-7818-4792-90c5-f532469e3646"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1f576925-5251-4514-b859-758e96ad0f21"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">72</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="crear" mc="Message" uid="ade04e78-748f-4a47-bb13-47959f446ab3"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[titulo,texto]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[crear]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="88a0d02d-551d-4c0c-a881-5e2036255c67"/>
+                      <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="crear" mc="Operation" uid="ad0f5d7a-315a-4f64-9203-377ec7a61d02"/>
+                      <PID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Usuario" mc="Lifeline" uid="1ae9167a-7818-4792-90c5-f532469e3646"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="88a0d02d-551d-4c0c-a881-5e2036255c67"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">72</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="n" mc="Lifeline" uid="1017eb08-af37-4f0b-bfbe-50bae19bbd6e"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Usuario" mc="Lifeline" uid="1ae9167a-7818-4792-90c5-f532469e3646"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="n" mc="Lifeline" uid="1017eb08-af37-4f0b-bfbe-50bae19bbd6e"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[n]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="n" mc="BindableInstance" uid="4d64f65a-f905-498a-8a46-78e615464482"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="1e1a3beb-c279-49e3-8e2f-d631e87e3771"/>
+          <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="n" mc="BindableInstance" uid="4d64f65a-f905-498a-8a46-78e615464482"/>
+                <PID name="Crear nota" mc="Interaction" uid="e08dfb3b-aea5-4112-9f46-47387c41ca6e"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[n]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Nota" mc="Class" uid="de5c2f69-43c5-4da4-af45-56cac42a04b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de Secuencia" mc="SequenceDiagram" uid="29977095-1413-4343-b443-dfe9c9fdeabd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

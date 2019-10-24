@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="widget" version="3">
+  <DEPS>
+    <ID name="widget" mc="Package" uid="065dfa37-ba52-4df2-a288-459b10c2768b"/>
+    <COMPID name="ListView" mc="Class" uid="c3dadae9-bd1b-44b0-a4b1-c0fcf36ae8a7"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="widget" mc="Package" uid="065dfa37-ba52-4df2-a288-459b10c2768b"/>
+    <PID name="android" mc="Package" uid="9c30fd05-c1ce-47d4-a765-a5112fdecca9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[widget]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ListView" mc="Class" uid="c3dadae9-bd1b-44b0-a4b1-c0fcf36ae8a7"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

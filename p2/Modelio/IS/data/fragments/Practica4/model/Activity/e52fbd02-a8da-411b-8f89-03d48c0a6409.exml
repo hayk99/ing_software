@@ -1,0 +1,769 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagrama de actividad" version="3">
+  <DEPS>
+    <ID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+    <COMPID name="Activity Activity diagram" mc="ActivityDiagram" uid="79a4ae21-b82f-41e8-a38e-77083412f0ae"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+    <PID name="Analisis" mc="Package" uid="126dafb2-1ce8-46b1-a6ea-a137408a6232"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Diagrama de actividad]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedGroup">
+        <OBJECT>
+          <ID name="Usuario" mc="ActivityPartition" uid="1d769ab3-d070-4cd0-957d-5c2d95612dc8"/>
+          <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Usuario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Eliminar categoria" mc="OpaqueAction" uid="1caefe79-6822-4419-be32-671fc7009bf9"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Eliminar categoria]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="71b52f13-17db-4d2b-a107-9cfa602bac52"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="df5a030e-bc04-4f30-871f-45a07d007fc3"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Initial Node" mc="InitialNode" uid="51be26c1-5715-4e51-a051-4ed9b61c65b8"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="4a7fc702-7bca-491d-aa46-751958231c7f"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Abrir aplicación" mc="OpaqueAction" uid="753e7bb4-f36f-464d-89e7-9f56d6542de4"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Crear categoria" mc="OpaqueAction" uid="3eee4cc0-6aaf-4766-b41a-4ea352838026"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Crear categoria]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="256b0b8d-a191-42ae-b35c-e5249ab3c774"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Rellenar campos" mc="OpaqueAction" uid="078d1cf4-1290-4d4c-a1b6-db23e62eef94"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Ver listado" mc="OpaqueAction" uid="a68597dd-29df-4b1d-a484-2b3ddb71edfa"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Ver listado]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="5a48f426-e209-4c5d-8bb0-7a27891786f4"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Crear nota" mc="OpaqueAction" uid="9f903003-16a6-4c28-bfd8-3fba49c3a7bd"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="a7b8ec0b-1016-4457-b452-5e71b5c01b20"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Crear categoria" mc="OpaqueAction" uid="3eee4cc0-6aaf-4766-b41a-4ea352838026"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="3bc18459-05fb-40d5-b3cc-22e00943adef"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Editar nota" mc="OpaqueAction" uid="e69b2e19-9f63-46c0-bd73-0ba07e384eb8"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="40ec5e3f-0401-4f4a-bade-46a9fd50c0fa"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Editar categoria" mc="OpaqueAction" uid="218d15f0-540f-4b8c-94d0-1454af90ba2c"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="5e8b9f26-4098-493a-b306-26d746f91af1"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Eliminar nota" mc="OpaqueAction" uid="38d65fad-29a8-464c-bb99-3509d8fd8c55"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="2b6add76-06cc-4aa6-adae-52acd171f234"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Eliminar categoria" mc="OpaqueAction" uid="1caefe79-6822-4419-be32-671fc7009bf9"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="b47b447d-158f-4bb1-a4fe-eb94ae471752"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Cambiar listado" mc="OpaqueAction" uid="1397552b-978b-4939-9d83-cdb967a9d1ec"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Eliminar nota" mc="OpaqueAction" uid="38d65fad-29a8-464c-bb99-3509d8fd8c55"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Eliminar nota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="c1f71c14-0e4d-44d1-916b-fefe88bf9cc1"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="df5a030e-bc04-4f30-871f-45a07d007fc3"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Editar categoria" mc="OpaqueAction" uid="218d15f0-540f-4b8c-94d0-1454af90ba2c"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Editar categoria]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="c66cc344-c651-4454-a719-c8e08bff29df"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Rellenar campos" mc="OpaqueAction" uid="078d1cf4-1290-4d4c-a1b6-db23e62eef94"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Cambiar listado" mc="OpaqueAction" uid="1397552b-978b-4939-9d83-cdb967a9d1ec"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Cambiar listado]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="ac64168d-de6c-4f23-8406-e804dbcffa98"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="df5a030e-bc04-4f30-871f-45a07d007fc3"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Editar nota" mc="OpaqueAction" uid="e69b2e19-9f63-46c0-bd73-0ba07e384eb8"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Editar nota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="b9b17501-4760-47ee-a5e2-b33f3f6d9988"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Rellenar campos" mc="OpaqueAction" uid="078d1cf4-1290-4d4c-a1b6-db23e62eef94"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Crear nota" mc="OpaqueAction" uid="9f903003-16a6-4c28-bfd8-3fba49c3a7bd"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Crear nota]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="24edd1b2-b942-43d6-9687-e7fbc38b9a17"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Rellenar campos" mc="OpaqueAction" uid="078d1cf4-1290-4d4c-a1b6-db23e62eef94"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Rellenar campos" mc="OpaqueAction" uid="078d1cf4-1290-4d4c-a1b6-db23e62eef94"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Rellenar campos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e881a27a-05fc-4b4a-b6b3-50f656b1c5c0"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="df5a030e-bc04-4f30-871f-45a07d007fc3"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Abrir aplicación" mc="OpaqueAction" uid="753e7bb4-f36f-464d-89e7-9f56d6542de4"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Abrir aplicación]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="4fcb9fd5-c386-485a-9d4f-310fc4b86324"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Ver listado" mc="OpaqueAction" uid="a68597dd-29df-4b1d-a484-2b3ddb71edfa"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Sistema" mc="ActivityPartition" uid="42e18e4d-1bc9-43df-aa01-64ec15d9972e"/>
+          <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Sistema]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Actualizar listado" mc="OpaqueAction" uid="31ca26ac-9758-4308-99e1-6cfd70b8df68"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Actualizar listado]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="d327180b-6af5-42a5-b981-aeb7e4961d27"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="df5a030e-bc04-4f30-871f-45a07d007fc3"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Esperar pulsación botón" mc="OpaqueAction" uid="aa77a42e-14f7-4195-a919-f17ffba4a747"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Esperar pulsación botón]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="b4e6ebff-ab97-4d85-9c07-10ba37e8ad9a"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="5406bf84-bebd-4f1b-b203-45194ed3d335"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="5406bf84-bebd-4f1b-b203-45194ed3d335"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="173b92ff-3887-45ec-87ae-95df9ef23692"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[Eliminar]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Modificar base de datos" mc="OpaqueAction" uid="f602b3b1-8400-4ae3-8d40-95b6d9edd355"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="fd5b1d4a-cd4f-401b-82f1-dc7ea908086b"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[Crear o editar]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Leer campos" mc="OpaqueAction" uid="f741f1c5-027f-43a2-afb8-814eaa967c14"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="b25c5f1b-fc78-4693-81da-e7d6b49f90f5"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[Listar]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Actualizar listado" mc="OpaqueAction" uid="31ca26ac-9758-4308-99e1-6cfd70b8df68"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Leer campos" mc="OpaqueAction" uid="f741f1c5-027f-43a2-afb8-814eaa967c14"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Leer campos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e4bd9458-0726-40ef-844b-e91dfb66a84c"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Modificar base de datos" mc="OpaqueAction" uid="f602b3b1-8400-4ae3-8d40-95b6d9edd355"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="df5a030e-bc04-4f30-871f-45a07d007fc3"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="f863972e-3b65-4418-a0e7-ca2ab7189aa7"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Esperar pulsación botón" mc="OpaqueAction" uid="aa77a42e-14f7-4195-a919-f17ffba4a747"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Modificar base de datos" mc="OpaqueAction" uid="f602b3b1-8400-4ae3-8d40-95b6d9edd355"/>
+                <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Modificar base de datos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="b0a8a8ba-42f4-40cb-b6a6-09aaf18ef872"/>
+                      <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Actualizar listado" mc="OpaqueAction" uid="31ca26ac-9758-4308-99e1-6cfd70b8df68"/>
+                            <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="9a623cfb-bcc8-43be-9772-4dfcafcc3b6d"/>
+          <PID name="Diagrama de actividad" mc="Activity" uid="e52fbd02-a8da-411b-8f89-03d48c0a6409"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity Activity diagram" mc="ActivityDiagram" uid="79a4ae21-b82f-41e8-a38e-77083412f0ae"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
