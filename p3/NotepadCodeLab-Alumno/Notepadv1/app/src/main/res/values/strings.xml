@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notepadv1</string>
+    <string name="no_notes">No Notes Yet</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_insert">Add  Item</string>
+    <string name="edit_note">Edit Note</string>
+</resources>
