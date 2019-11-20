@@ -109,39 +109,16 @@ public class Notepadv3 extends AppCompatActivity {
 
 
     protected void editNote(int position, long id) {
-        Cursor c = mNotesCursor;
-        c.moveToPosition(position);
         Intent i = new Intent(this, NoteEdit.class);
         i.putExtra(NotesDbAdapter.KEY_ROWID, id);
-        i.putExtra(NotesDbAdapter.KEY_TITLE, c.getString(
-                c.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
-        i.putExtra(NotesDbAdapter.KEY_BODY, c.getString(
-                c.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
         startActivityForResult(i, ACTIVITY_EDIT);
     }
 
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        super.onActivityResult(requestCode, resultCode, intent);
-        Bundle extras = intent.getExtras();
-        switch(requestCode) {
-            case ACTIVITY_CREATE:
-                String title = extras.getString(NotesDbAdapter.KEY_TITLE);
-                String body = extras.getString(NotesDbAdapter.KEY_BODY);
-                mDbHelper.createNote(title, body);
-                fillData();
-                break;
-            case ACTIVITY_EDIT:
-                Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
-                if (rowId != null) {
-                    String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
-                    String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
-                    mDbHelper.updateNote(rowId, editTitle, editBody);
-                }
-                fillData();
-                break;
-        }
+    protected  void  onActivityResult(int  requestCode , int resultCode , Intent  intent) {
+        super.onActivityResult(requestCode , resultCode ,intent);
+        fillData ();
     }
 
 }
