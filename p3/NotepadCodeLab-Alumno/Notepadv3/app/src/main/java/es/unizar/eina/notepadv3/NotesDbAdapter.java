@@ -103,6 +103,7 @@ public class NotesDbAdapter {
      */
     public long createNote(String title, String body) {
         ContentValues initialValues = new ContentValues();
+
         initialValues.put(KEY_TITLE, title);
         initialValues.put(KEY_BODY, body);
 
@@ -110,7 +111,7 @@ public class NotesDbAdapter {
     }
 
     /**
-     * Delete the note with the given rowId
+     * Delete the note with the given rowIdss
      *
      * @param rowId id of note to delete
      * @return true if deleted, false otherwise
@@ -128,7 +129,7 @@ public class NotesDbAdapter {
     public Cursor fetchAllNotes() {
 
         return mDb.query(DATABASE_TABLE, new String[] {KEY_ROWID, KEY_TITLE,
-                KEY_BODY}, null, null, null, null, null);
+                KEY_BODY}, null, null, null, null, KEY_TITLE);
     }
 
     /**
@@ -164,6 +165,7 @@ public class NotesDbAdapter {
      */
     public boolean updateNote(long rowId, String title, String body) {
         ContentValues args = new ContentValues();
+        args.put(KEY_ROWID, rowId);
         args.put(KEY_TITLE, title);
         args.put(KEY_BODY, body);
 

@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 public class NoteEdit extends AppCompatActivity {
 
+    private EditText mRowIdText;
     private EditText mTitleText;
     private EditText mBodyText;
     private Long mRowId;
@@ -17,10 +18,17 @@ public class NoteEdit extends AppCompatActivity {
 
     private  void  populateFields () {
         if (mRowId  != null) {
-            Cursor note = mDbHelper.fetchNote(mRowId);startManagingCursor(note);
+            Cursor note = mDbHelper.fetchNote(mRowId);
+            startManagingCursor(note);
+            mRowIdText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID)));
             mTitleText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
             mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
         }
+    }
+
+    public  void  onClick(View  view) {
+        setResult(RESULT_OK);
+        finish ();
     }
 
     @Override
@@ -33,7 +41,7 @@ public class NoteEdit extends AppCompatActivity {
 
         mTitleText = (EditText) findViewById(R.id.title);
         mBodyText = (EditText) findViewById(R.id.body);
-
+        mRowIdText = (EditText) findViewById(R.id.idRow);
         Button confirmButton = (Button) findViewById(R.id.confirm);
 
         mRowId = (savedInstanceState  == null) ? null :(Long) savedInstanceState.getSerializable(NotesDbAdapter.KEY_ROWID);
@@ -41,7 +49,6 @@ public class NoteEdit extends AppCompatActivity {
             Bundle  extras = getIntent ().getExtras ();
             mRowId = (extras  != null) ? extras.getLong(NotesDbAdapter.KEY_ROWID): null;
         }
-
         populateFields();
         confirmButton.setOnClickListener(new View.OnClickListener() {
 
@@ -61,11 +68,6 @@ public class NoteEdit extends AppCompatActivity {
             }
 
         });
-    }
-
-    public  void  onClick(View  view) {
-        setResult(RESULT_OK);
-        finish ();
     }
 
     private  void  saveState () {

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import java.util.Arrays;
 
 
 public class Notepadv3 extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int EDIT_ID = Menu.FIRST + 2;
 
     private NotesDbAdapter mDbHelper;
+    private Cursor mNotesCursor;
     private ListView mList;
 
 
@@ -82,6 +84,7 @@ public class Notepadv3 extends AppCompatActivity {
                                     ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         menu.add(Menu.NONE, DELETE_ID, Menu.NONE, R.string.menu_delete);
+
         menu.add(Menu.NONE, EDIT_ID, Menu.NONE, R.string.menu_edit);
     }
 
@@ -108,8 +111,10 @@ public class Notepadv3 extends AppCompatActivity {
 
 
     protected void editNote(int position, long id) {
+
         Intent i = new Intent(this, NoteEdit.class);
         i.putExtra(NotesDbAdapter.KEY_ROWID, id);
+
         startActivityForResult(i, ACTIVITY_EDIT);
     }
 
@@ -117,8 +122,25 @@ public class Notepadv3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
-        fillData();
-    }
+        Bundle extras = intent.getExtras();
+        switch(requestCode) {
+            case ACTIVITY_CREATE:
+                String title = extras.getString(NotesDbAdapter.KEY_TITLE);
+                String body = extras.getString(NotesDbAdapter.KEY_BODY);
+                mDbHelper.createNote(title, body);
+                fillData();
+                break;
+            case ACTIVITY_EDIT:
+                Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
+                if (rowId != null) {
 
+                    String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
+                    String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
+                    mDbHelper.updateNote(rowId, editTitle, editBody);
+                }
+                fillData();
+                break;
+        }
+    }
 
 }
