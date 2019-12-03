@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="create_Nota" version="4">
   <OBJECT>
     <ID name="create_Nota" mc="Standard.Interaction" uid="be2935e1-1f1c-4142-a769-904a54430606"/>
-    <PID name="project1" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <PID name="Diagramas de secuencias" mc="Standard.Package" uid="7764d12a-1032-497a-b68f-f96c2cd4c03e"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[create_Nota]]></ATT>
@@ -560,7 +560,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="NotepadV1" mc="Standard.Class" uid="10821a3b-2e97-4d63-ae19-a616bb53b410"/>
+                    <ID name="NotepadV3" mc="Standard.Class" uid="10821a3b-2e97-4d63-ae19-a616bb53b410"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

@@ -1,4 +1,7 @@
-#Sun Nov 24 19:10:47 CET 2019
-org.modelio.diagram.editor.OpenedDiagrams2='create_Note' {3b4c3b5f-ef51-4f76-acc4-20a24eb06633} Standard.SequenceDiagram
-org.modelio.diagram.editor.OpenedDiagrams1='Init' {d3ecfad7-ac30-4062-ab48-9775422386ab} Standard.SequenceDiagram
+#Tue Dec 03 15:21:47 CET 2019
+org.modelio.diagram.editor.OpenedDiagrams5='Diagrama de Paquetes' {0d7da091-45a9-43fa-9d02-c3178ff64d37} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Init' {d3ecfad7-ac30-4062-ab48-9775422386ab} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='crearCategoria' {f86f0ada-0b76-47e2-8514-88c16db06d13} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='analisis de clases' {20651bb1-1678-4dca-a77e-dacb0eb22500} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='create_Note' {3b4c3b5f-ef51-4f76-acc4-20a24eb06633} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='project1 Class diagram' {09b210d2-7d5e-4e5f-a5c5-7211a42f75aa} Standard.ClassDiagram

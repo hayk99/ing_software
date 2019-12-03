@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SQLiteOpenHelper" version="4">
   <OBJECT>
     <ID name="SQLiteOpenHelper" mc="Standard.Class" uid="c6bc6ab8-046d-4c82-9b0f-e0f3e513f994"/>
-    <PID name="project1" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <PID name="SQLite" mc="Standard.Package" uid="088eba29-7e2c-4857-ab69-30525c233bc2"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

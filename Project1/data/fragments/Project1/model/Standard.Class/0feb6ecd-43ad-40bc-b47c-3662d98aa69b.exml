@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ListView" version="4">
   <OBJECT>
     <ID name="ListView" mc="Standard.Class" uid="0feb6ecd-43ad-40bc-b47c-3662d98aa69b"/>
-    <PID name="project1" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <PID name="Widget" mc="Standard.Package" uid="a58ae4d1-85bf-4614-afc8-6131e8d9d395"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

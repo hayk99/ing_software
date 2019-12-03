@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="project1" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="NotepadV3" version="4">
   <OBJECT>
-    <ID name="project1" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <ID name="NotepadV3" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
     <PID name="Project1" mc="Standard.Project" uid="97f9a393-a9bf-4e58-bc15-b8409776d157"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,24 +9,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[project1]]></ATT>
+      <ATT name="Name"><![CDATA[NotepadV3]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
-      <COMP relation="OwnedBehavior">
-        <COMPID name="Init" mc="Standard.Interaction" uid="0cdbaf9a-608d-4737-bd2f-0c1f1081b290"/>
-        <COMPID name="create_Nota" mc="Standard.Interaction" uid="be2935e1-1f1c-4142-a769-904a54430606"/>
-      </COMP>
       <COMP relation="OwnedElement">
-        <COMPID name="NotepadV1" mc="Standard.Class" uid="10821a3b-2e97-4d63-ae19-a616bb53b410"/>
-        <COMPID name="NotesDbAdapter" mc="Standard.Class" uid="0afd5335-a484-42e9-9dc3-f9a792b5f5a8"/>
-        <COMPID name="ListView" mc="Standard.Class" uid="0feb6ecd-43ad-40bc-b47c-3662d98aa69b"/>
-        <COMPID name="SQLiteDatabase " mc="Standard.Class" uid="ae77a4ad-c952-4c84-ac4d-0243e7427067"/>
-        <COMPID name="DatabaseHelper" mc="Standard.Class" uid="4abef61b-2bb1-4056-8389-e6dc13548f86"/>
-        <COMPID name="SQLiteOpenHelper" mc="Standard.Class" uid="c6bc6ab8-046d-4c82-9b0f-e0f3e513f994"/>
         <COMPID name="User" mc="Standard.Actor" uid="38f9400a-8ab3-4aba-a980-22d7b0b6242d"/>
         <COMPID name="Cursor" mc="Standard.DataType" uid="46eea6e4-acb7-43d8-9c2a-203e97d8e7b1"/>
-        <COMPID name="Categoria" mc="Standard.Class" uid="769adcf9-0510-4cba-ad4f-4c425ed21f06"/>
         <COMPID name="Context" mc="Standard.DataType" uid="b17a7e6c-15c3-4fb6-8a96-35e043e1cc1c"/>
         <COMPID name="Bundle" mc="Standard.DataType" uid="1028b5f2-9ff4-4a25-abc6-397308386bc7"/>
         <COMPID name="Menu" mc="Standard.DataType" uid="b28986d2-8b09-4fcc-b5f1-0059338ce985"/>
@@ -34,11 +23,29 @@
         <COMPID name="View" mc="Standard.DataType" uid="f15a8be1-7d40-4cc6-889f-ec49c4e73472"/>
         <COMPID name="Intent" mc="Standard.DataType" uid="f2dc658c-2f41-41a3-bf66-c9d1e5ec20ef"/>
         <COMPID name="MenuItem" mc="Standard.DataType" uid="b08fc157-1ce8-47e3-bf18-489f3ca273da"/>
-        <COMPID name="NoteEdit" mc="Standard.Class" uid="cc8831fc-7726-47e7-972a-9fe9cf69606d"/>
         <COMPID name="EditText" mc="Standard.DataType" uid="351aaad8-a4b4-4b02-a153-950027fc7071"/>
+        <COMPID name="Usuario" mc="Standard.Actor" uid="520e760e-4d9f-42f9-9f15-550615061833"/>
+        <COMPID name="Crear nota" mc="Standard.UseCase" uid="0e378d55-0176-432b-9061-f9369ff5c71a"/>
+        <COMPID name="Editar nota" mc="Standard.UseCase" uid="84465ef3-121c-4ec6-9e9d-bde78345e87b"/>
+        <COMPID name="Eliminar nota" mc="Standard.UseCase" uid="8aff5e81-70d0-407c-b7bc-dcaf362a1089"/>
+        <COMPID name="Mostrar notas" mc="Standard.UseCase" uid="58c4c606-b698-4318-be21-97ef09d07b17"/>
+        <COMPID name="Crear categoría" mc="Standard.UseCase" uid="61f1b1b9-6c89-46d8-a406-a37b7e8a0c7c"/>
+        <COMPID name="Editar catagoría" mc="Standard.UseCase" uid="a6939d38-d533-425c-a1e0-1f7dd5d7b609"/>
+        <COMPID name="Eliminar categoría" mc="Standard.UseCase" uid="bb83ff18-3f35-4b94-9c39-58b8ff070056"/>
+        <COMPID name="Mostrar categorías" mc="Standard.UseCase" uid="d60982bd-0e30-4dcb-9209-72a416f2e40d"/>
+        <COMPID name="Ordenar alfabeticamente" mc="Standard.UseCase" uid="4e31e7d6-46bc-4af0-947b-5b3e6bb8e62d"/>
+        <COMPID name="Ordenar por categoría" mc="Standard.UseCase" uid="f1212fea-3906-44e7-945a-39cf9bdc84ed"/>
+        <COMPID name="Mostrar todas" mc="Standard.UseCase" uid="099ab97f-5d4e-4dfc-a569-ba65ef739895"/>
+        <COMPID name="Mostrar una determinada categoría" mc="Standard.UseCase" uid="57fb38bd-3d1a-4475-9e80-1079a84abb48"/>
+        <COMPID name="es" mc="Standard.Package" uid="f1885ecd-59e8-4bb8-8804-37d2ff1da729"/>
+        <COMPID name="Diagramas de secuencias" mc="Standard.Package" uid="7764d12a-1032-497a-b68f-f96c2cd4c03e"/>
+        <COMPID name="Android" mc="Standard.Package" uid="f8390dea-8cc4-4290-9641-d0d406706c2a"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="project1 Class diagram" mc="Standard.ClassDiagram" uid="09b210d2-7d5e-4e5f-a5c5-7211a42f75aa"/>
+        <FOREIGNID name="project1 Use Case diagram" mc="Standard.UseCaseDiagram" uid="0671c990-dc63-4c73-ba8c-c4567c3f96ea"/>
+        <COMPID name="analisis de clases" mc="Standard.ClassDiagram" uid="20651bb1-1678-4dca-a77e-dacb0eb22500"/>
+        <COMPID name="Diagrama de Paquetes" mc="Standard.ClassDiagram" uid="0d7da091-45a9-43fa-9d02-c3178ff64d37"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
