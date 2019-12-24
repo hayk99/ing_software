@@ -1,5 +1,10 @@
 package es.unizar.eina.notepadv3;
 
+
+import es.unizar.eina.send.SendAbstraction;
+import es.unizar.eina.send.SendAbstractionImpl;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,16 +16,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import java.util.Arrays;
 
 
 public class Notepadv3 extends AppCompatActivity {
 
     private static final int ACTIVITY_CREATE=0;
     private static final int ACTIVITY_EDIT=1;
+    private static final int ACTIVITY_SEND=2;
 
     private static final int INSERT_ID = Menu.FIRST;
     private static final int DELETE_ID = Menu.FIRST + 1;
     private static final int EDIT_ID = Menu.FIRST + 2;
+    private static final int SEND_ID = Menu.FIRST + 3;
 
     private NotesDbAdapter mDbHelper;
     private Cursor mNotesCursor;
@@ -45,8 +53,8 @@ public class Notepadv3 extends AppCompatActivity {
 
     private void fillData() {
         // Get all of the notes from the database and create the item list
-        mNotesCursor = mDbHelper.fetchAllNotes();
-        startManagingCursor(mNotesCursor);
+        Cursor  notesCursor = mDbHelper.fetchAllNotes ();
+        startManagingCursor(notesCursor);
 
         // Create an array to specify the fields we want to display in the list (only TITLE)
         String[] from = new String[] { NotesDbAdapter.KEY_TITLE };
@@ -56,7 +64,7 @@ public class Notepadv3 extends AppCompatActivity {
 
         // Now create an array adapter and set it to display using our row
         SimpleCursorAdapter notes =
-                new SimpleCursorAdapter(this, R.layout.notes_row, mNotesCursor, from, to);
+                new SimpleCursorAdapter(this, R.layout.notes_row, notesCursor, from, to);
         mList.setAdapter(notes);
     }
 
@@ -83,7 +91,10 @@ public class Notepadv3 extends AppCompatActivity {
                                     ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         menu.add(Menu.NONE, DELETE_ID, Menu.NONE, R.string.menu_delete);
+
         menu.add(Menu.NONE, EDIT_ID, Menu.NONE, R.string.menu_edit);
+
+        menu.add(Menu.NONE, SEND_ID, Menu.NONE, R.string.menu_send);
     }
 
     @Override
@@ -98,6 +109,10 @@ public class Notepadv3 extends AppCompatActivity {
                 info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 editNote(info.position, info.id);
                 return true;
+            case SEND_ID:
+                info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+                sendNote(info.position, info.id);
+                return true;
         }
         return super.onContextItemSelected(item);
     }
@@ -109,15 +124,19 @@ public class Notepadv3 extends AppCompatActivity {
 
 
     protected void editNote(int position, long id) {
-        Cursor c = mNotesCursor;
-        c.moveToPosition(position);
+
         Intent i = new Intent(this, NoteEdit.class);
         i.putExtra(NotesDbAdapter.KEY_ROWID, id);
-        i.putExtra(NotesDbAdapter.KEY_TITLE, c.getString(
-                c.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
-        i.putExtra(NotesDbAdapter.KEY_BODY, c.getString(
-                c.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
+
         startActivityForResult(i, ACTIVITY_EDIT);
+    }
+
+    protected void sendNote(int position, long id) {
+
+        Intent i = new Intent(this, NoteEdit.class);
+        i.putExtra(NotesDbAdapter.KEY_ROWID, id);
+
+        startActivityForResult(i, ACTIVITY_SEND);
     }
 
 
@@ -129,18 +148,34 @@ public class Notepadv3 extends AppCompatActivity {
             case ACTIVITY_CREATE:
                 String title = extras.getString(NotesDbAdapter.KEY_TITLE);
                 String body = extras.getString(NotesDbAdapter.KEY_BODY);
-                mDbHelper.createNote(title, body);
-                fillData();
+                //mDbHelper.createNote(title, body);
+                //fillData();
                 break;
             case ACTIVITY_EDIT:
                 Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
                 if (rowId != null) {
+
                     String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
                     String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
-                    mDbHelper.updateNote(rowId, editTitle, editBody);
+                    //mDbHelper.updateNote(rowId, editTitle, editBody);
                 }
-                fillData();
+                //fillData();
                 break;
+            case ACTIVITY_SEND:
+                Long rowId2 = extras.getLong(NotesDbAdapter.KEY_ROWID);
+                if (rowId2 != null){
+                    String sendTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
+                    String sendBody = extras.getString(NotesDbAdapter.KEY_BODY);
+                    SendAbstractionImpl mensaje = null;
+                    if (sendBody.length()>100){
+                        mensaje = new  SendAbstractionImpl( this, "mail");
+                    }
+                    else {
+                        mensaje = new  SendAbstractionImpl( this, "SMS");
+
+                    }
+                    mensaje.send(sendTitle, sendBody);
+                }
         }
     }
 
