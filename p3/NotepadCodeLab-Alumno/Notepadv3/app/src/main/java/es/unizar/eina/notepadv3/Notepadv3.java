@@ -3,7 +3,7 @@ package es.unizar.eina.notepadv3;
 
 import es.unizar.eina.send.SendAbstraction;
 import es.unizar.eina.send.SendAbstractionImpl;
-
+import es.unizar.eina.Test.Tests;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+
 import java.util.Arrays;
 
 
@@ -29,6 +30,7 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int DELETE_ID = Menu.FIRST + 1;
     private static final int EDIT_ID = Menu.FIRST + 2;
     private static final int SEND_ID = Menu.FIRST + 3;
+    private static final int TEST = Menu.FIRST +4;
 
     private NotesDbAdapter mDbHelper;
     private Cursor mNotesCursor;
@@ -112,6 +114,9 @@ public class Notepadv3 extends AppCompatActivity {
             case SEND_ID:
                 info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 sendNote(info.position, info.id);
+                return true;
+            case TEST:
+                new Tests(mDbHelper).throwAllTest();
                 return true;
         }
         return super.onContextItemSelected(item);

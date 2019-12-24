@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Notepadv3</string>
+    <string name="no_notes">No hay notas guardadas</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="menu_insert">Añadir Nota</string>
+    <string name="menu_delete">Eliminar Nota</string>
+    <string name="menu_add_cat">Añadir Categoría</string>
+    <string name="menu_edit_cat">Editar Categoría</string>
+    <string name="menu_delete_cat">Eliminar Categoría</string>
+    <string name="menu_select_cat">Seleccionar Categoría</string>
+
+    <string name="menu_edit">Editar Nota</string>
+    <string name="menu_send">Enviar Nota</string>
+    <string name="menu_run_tests">Ejecutar Tests</string>
+    <string name="menu_delete_all">Eliminar Notas</string>
+    <string name="menu_delete_all_cats">Eliminar Categorías</string>
+    <string name="menu_order_title">Ordenar por Título</string>
+    <string name="menu_order_cat">Ordenar por Categoría</string>
+    <string name="menu_filter">Filtrar por Categoría</string>
+
+
+    <string name="menu_manage_categories">Gestionar Categorías</string>
+    <string name="iden">ID</string>
+    <string name="title">Título</string>
+    <string name="body">Cuerpo</string>
+    <string name="confirm">Confirmar</string>
+    <string name="category">Categoría</string>
+
+    <string name="edit_note">Editar Nota</string>
+    <string name="edit_category">Editar Categoría</string>
+
+    <string name="title_activity_category_selector">Gestor de Categorías</string>
+    <string name="title_activity_category_edit">Gestor de Categorías</string>
+    <string name="title_activity_category_manager">Gestor de Categorías</string>
+    <string name="title_activity_note_edit">Editar Nota</string>
+</resources>
