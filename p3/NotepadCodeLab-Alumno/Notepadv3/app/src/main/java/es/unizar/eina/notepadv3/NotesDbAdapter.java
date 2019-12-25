@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.net.ConnectException;
+
 /**
  * Simple notes database access helper class. Defines the basic CRUD operations
  * for the notepad example, and gives the ability to list all notes as well as
@@ -23,6 +25,7 @@ public class NotesDbAdapter {
     public static final String KEY_TITLE = "title";
     public static final String KEY_BODY = "body";
     public static final String KEY_ROWID = "_id";
+    public static final String KEY_CATEGORY =  "category";
 
     private static final String TAG = "NotesDbAdapter";
     private DatabaseHelper mDbHelper;
@@ -121,6 +124,14 @@ public class NotesDbAdapter {
         return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
     }
 
+
+    public boolean deleteCategory(String name){
+        ContentValues args = new ContentValues();
+        args.put(KEY_CATEGORY, name);
+
+        return mDb.update(DATABASE_TABLE, args, KEY_CATEGORY + "=  ''", null) > 0;
+
+    }
     /**
      * Deletes all notes stored in the database
      * @return true if the notes table is empty after it's execution.
@@ -178,5 +189,11 @@ public class NotesDbAdapter {
         args.put(KEY_BODY, body);
 
         return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;
+    }
+
+    public boolean updateCategory(String old, String newName){
+        ContentValues args = new ContentValues();
+        args.put(KEY_CATEGORY, newName);
+        return mDb.update(DATABASE_TABLE, args, KEY_CATEGORY + "=" + old, null) > 0;
     }
 }

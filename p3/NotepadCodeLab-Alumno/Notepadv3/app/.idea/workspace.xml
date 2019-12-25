@@ -11,15 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c419558-4c92-4040-8206-bca877ad0965" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryDbAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/category_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_category.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/unizar/eina/Test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/Test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryEdit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/note_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/note_edit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_4_API_23" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="958AX0F3WF" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -45,29 +42,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryEdit.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+            <state relative-caret-position="-673">
+              <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1323#1345#0" expanded="true" />
-                <element signature="e#2003#2538#0" expanded="true" />
-                <element signature="e#2537#2538#0" expanded="true" />
+                <element signature="e#2078#2098#0" expanded="true" />
+                <element signature="e#2715#2735#0" expanded="true" />
+                <element signature="e#2787#2805#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+            <state relative-caret-position="217">
+              <caret line="196" column="83" selection-start-line="196" selection-start-column="83" selection-end-line="196" selection-end-column="83" />
               <folding>
-                <element signature="e#1350#1368#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4099#4100#0" expanded="true" />
+                <element signature="e#4169#4170#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryDbAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/Notepadv3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -140,16 +160,17 @@
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/send/MailImplementor.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/send/SMSImplementor.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/Tests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/Notepadv3.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/Test/Tests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryDbAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/note_edit.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/category_edit.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryEdit.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_category.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java" />
       </list>
     </option>
   </component>
@@ -232,8 +253,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_4_API_23" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-25T13:14:17.825Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="958AX0F3WF" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-25T22:47:55.827Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -356,8 +377,8 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.25619835" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.14545454" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3570248" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Preview" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -417,33 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#4099#4170#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/Notepadv3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="110" column="31" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -451,20 +445,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryDbAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2419#2420#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
-            <element signature="e#3052#3053#0" expanded="true" />
-            <element signature="e#3085#3086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-23/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,16 +459,6 @@
           <caret line="118" column="31" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding>
-            <element signature="e#1350#1368#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -520,16 +490,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_category.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#471#489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_notepadv3.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="e#1350#1368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryEdit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+        <state relative-caret-position="1575">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1323#1345#0" expanded="true" />
             <element signature="e#2003#2538#0" expanded="true" />
             <element signature="e#2537#2538#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/CategoryDbAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/category/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-673">
+          <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2078#2098#0" expanded="true" />
+            <element signature="e#2715#2735#0" expanded="true" />
+            <element signature="e#2787#2805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="196" column="83" selection-start-line="196" selection-start-column="83" selection-end-line="196" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/Notepadv3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
