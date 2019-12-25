@@ -1,33 +1,33 @@
-package es.unizar.eina.notepadv3;
+package es.unizar.eina.category;
 
-import android.content.Intent;
-import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+        import android.content.Intent;
+        import android.database.Cursor;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.EditText;
 
-public class NoteEdit extends AppCompatActivity {
+        import es.unizar.eina.notepadv3.R;
+
+public class CategoryEdit extends AppCompatActivity {
 
     private EditText mRowIdText;
     private EditText mTitleText;
-    private EditText mBodyText;
+
     private Long mRowId;
-    private  NotesDbAdapter  mDbHelper;
+    private  CategoryDbAdapter  mDbHelper;
 
     private  void  populateFields () {
         if (mRowId  != null) {
-            Cursor note = mDbHelper.fetchNote(mRowId);
-            startManagingCursor(note);
-            mRowIdText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID)));
-            mTitleText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
-            mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
+            Cursor category = mDbHelper.fetchCategory(mRowId);
+            startManagingCursor(category);
+            mRowIdText.setText(category.getString(category.getColumnIndexOrThrow(CategoryDbAdapter.KEY_ROWID)));
+            mTitleText.setText(category.getString(category.getColumnIndexOrThrow(CategoryDbAdapter.KEY_TITLE)));
         }
     }
 
     public  void  onClick(View  view) {
-        //((Bundle)((Object) view)).clear();
         setResult(RESULT_OK);
         finish ();
     }
@@ -35,20 +35,20 @@ public class NoteEdit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mDbHelper = new  NotesDbAdapter(this);
+        mDbHelper = new  CategoryDbAdapter(this);
         mDbHelper.open();
-        setContentView(R.layout.note_edit);
-        setTitle(R.string.edit_note);
+        setContentView(R.layout.category_edit);
+        setTitle(R.string.edit_category);
 
-        mTitleText = (EditText) findViewById(R.id.title);
-        mBodyText = (EditText) findViewById(R.id.body);
-        mRowIdText = (EditText) findViewById(R.id.idRow);
-        Button confirmButton = (Button) findViewById(R.id.confirm);
+        mTitleText = (EditText) findViewById(R.id.category_name);
+        mRowIdText = (EditText) findViewById(R.id.category_id);
 
-        mRowId = (savedInstanceState  == null) ? null :(Long) savedInstanceState.getSerializable(NotesDbAdapter.KEY_ROWID);
+        Button confirmButton = (Button) findViewById(R.id.category_confirm);
+
+        mRowId = (savedInstanceState  == null) ? null :(Long) savedInstanceState.getSerializable(CategoryDbAdapter.KEY_ROWID);
         if (mRowId  == null) {
             Bundle  extras = getIntent ().getExtras ();
-            mRowId = (extras  != null) ? extras.getLong(NotesDbAdapter.KEY_ROWID): null;
+            mRowId = (extras  != null) ? extras.getLong(CategoryDbAdapter.KEY_ROWID): null;
         }
         populateFields();
         confirmButton.setOnClickListener(new View.OnClickListener() {
@@ -56,10 +56,9 @@ public class NoteEdit extends AppCompatActivity {
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
 
-                bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());
-                bundle.putString(NotesDbAdapter.KEY_BODY, mBodyText.getText().toString());
+                bundle.putString(CategoryDbAdapter.KEY_TITLE, mTitleText.getText().toString());
                 if (mRowId != null) {
-                    bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);
+                    bundle.putLong(CategoryDbAdapter.KEY_ROWID, mRowId);
                 }
 
                 Intent mIntent = new Intent();
@@ -73,13 +72,16 @@ public class NoteEdit extends AppCompatActivity {
 
     private  void  saveState () {
         String  title = mTitleText.getText ().toString ();
-        String  body = mBodyText.getText ().toString ();
+
+        if (title.isEmpty()){
+            title = "New category";
+        }
         if (mRowId  == null) {
-            long id = mDbHelper.createNote(title , body);
+            long id = mDbHelper.createCategory(title);
             if (id > 0) {mRowId = id;
             }
         } else {
-            mDbHelper.updateNote(mRowId , title , body);
+            mDbHelper.updateCategory(mRowId , title);
         }
     }
 
@@ -87,7 +89,7 @@ public class NoteEdit extends AppCompatActivity {
     protected  void  onSaveInstanceState(Bundle  outState){
         super.onSaveInstanceState(outState);
         saveState ();
-        outState.putSerializable(NotesDbAdapter.KEY_ROWID , mRowId);
+        outState.putSerializable(CategoryDbAdapter.KEY_ROWID , mRowId);
     }
 
     @Override
@@ -106,13 +108,13 @@ public class NoteEdit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.note_edit);
+        setContentView(R.layout.Category_edit);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_note_edit, menu);
+        getMenuInflater().inflate(R.menu.menu_Category_edit, menu);
         return true;
     }
 

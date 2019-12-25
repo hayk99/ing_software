@@ -2,6 +2,9 @@ package es.unizar.eina.Test.Tests;
 
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import es.unizar.eina.notepadv3.NotesDbAdapter;
 
 public class Tests {
@@ -16,6 +19,7 @@ public class Tests {
             myNotes.deleteAllNotes();
             startTest();
             start1002Notes();
+            addingAfter1000();
             overflow();
             //myNotes.deleteAllNotes();
         }
@@ -111,26 +115,65 @@ public class Tests {
             logger("TEST 14", success);
     }
 
+    private void addingAfter1000(){
+        Log.d("Test15", "After creating 1002 notes we're going to add another one, edit the 75th and the 76th note");
+        try {
+            Log.d("Test 15", "creating note");
+            long id = myNotes.createNote("Test 15", "creatin new note");
+            if (id > 0) {
+                Log.d("Test 15", "creted");
+                try {
+                    Log.d("Test 15", "Editing note with rowid: 75");
+                    boolean success = myNotes.updateNote(75, "New title for note 75", "the body");
+                    if (success) {
+                        Log.d("Test 15", "first edit completed");
+                        try {
+                            Log.d("Test 15", "Editing note with rowid: 75");
+                            success = myNotes.updateNote(76, "New title for note 76", "the body");
+                            Log.d("Test 15", "second update succes:" + success);
+                        }catch (Throwable t2){
+                            Log.d("Test 15"," second update throw exception" + t2.getMessage());
+                        }
+                    }
+                }catch (Throwable t1){
+                    Log.d("Test 15"," first update throw exception"+ t1.getMessage());
+                }
+            }
+        }catch(Throwable t){
+            Log.d("Test 15", " create throw exception"+ t.getMessage());
+        }
+    }
+
     private void  overflow(){
-        Log.d("TEST 15", "Trying to overflow database...");
+        Log.d("TEST 16", "Trying to overflow database...");
         String body = "Body";
-        String title = "Test 15";
+        String title = "Test 16";
         boolean works =true;
+        List <Long> idList = new ArrayList<Long>();
         while (works){
             try {
                 long id = myNotes.createNote(title, body);
                 if (id < 1){
-                    Log.d("Test 15", "overflow with body whose length is: " + body.length());
+                    Log.d("Test 16", "overflow with body whose length is: " + body.length());
                     works =false;
                 }
-                body = body + "B";
+                idList.add(id);
+                body = body + "BBBBB";
             }
             catch(Throwable t){
-                Log.d("Test 15", t.getMessage());
+                Log.d("Test 16", t.getMessage());
             }
         }
-        myNotes.deleteAllNotes();
-        Log.d("Test 15", "Deleting all create notes");
-        myNotes.createNote("New note after test 15", "body");
+        deleteOverflow(idList);
+//        myNotes.deleteAllNotes();
+//        Log.d("Test 15", "Deleting all create notes");
+//        myNotes.createNote("New note after test 15", "body");
+    }
+    private void deleteOverflow(List<Long> myList){
+        boolean can=true;
+        for (long temp : myList) {
+            myNotes.deleteNote(temp);
+        }
+        Log.d("Test 16", "done deleting all notes created by the test");
     }
 }

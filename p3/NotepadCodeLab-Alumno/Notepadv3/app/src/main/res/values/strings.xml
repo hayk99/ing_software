@@ -13,4 +13,10 @@
     <string name="confirm">Confirm</string>
     <string name="edit_note">Edit Note</string>
     <string name="title_activity_note_edit">EditNote</string>
+
+    <string name="edit_category">Edit Category</string>
+    <string name="category_id">Category Id</string>
+    <string name="category_name">Category Name</string>
+    <string name="no_category">No Category</string>
+    <string name="category_confirm">Confirm</string>
 </resources>
