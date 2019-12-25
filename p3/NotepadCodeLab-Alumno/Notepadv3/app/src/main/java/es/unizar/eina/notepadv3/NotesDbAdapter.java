@@ -122,6 +122,14 @@ public class NotesDbAdapter {
     }
 
     /**
+     * Deletes all notes stored in the database
+     * @return true if the notes table is empty after it's execution.
+     */
+    public boolean deleteAllNotes(){
+        return mDb.delete(DATABASE_TABLE, KEY_ROWID, null) > 0;
+    }
+
+    /**
      * Return a Cursor over the list of all notes in the database
      *
      * @return Cursor over all notes

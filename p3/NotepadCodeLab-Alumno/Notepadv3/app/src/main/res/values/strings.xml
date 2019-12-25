@@ -3,9 +3,11 @@
     <string name="no_notes">No Notes Yet</string>
     <string name="action_settings">Settings</string>
     <string name="menu_insert">Add Item</string>
+    <string name="delete_all_notes">Delete All Notes</string>
     <string name="menu_delete">Delete Note</string>
     <string name="menu_edit">Edit Note</string>
     <string name="menu_send">Send Note</string>
+    <string name="menu_test">Execute All Tests</string>
     <string name="title">Title</string>
     <string name="body">Body</string>
     <string name="confirm">Confirm</string>

@@ -3,11 +3,12 @@ package es.unizar.eina.notepadv3;
 
 import es.unizar.eina.send.SendAbstraction;
 import es.unizar.eina.send.SendAbstractionImpl;
-import es.unizar.eina.Test.Tests;
+import es.unizar.eina.Test.Tests.Tests;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,12 +26,14 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int ACTIVITY_CREATE=0;
     private static final int ACTIVITY_EDIT=1;
     private static final int ACTIVITY_SEND=2;
+    private static final int DELETE_ALL=3;
 
     private static final int INSERT_ID = Menu.FIRST;
     private static final int DELETE_ID = Menu.FIRST + 1;
     private static final int EDIT_ID = Menu.FIRST + 2;
     private static final int SEND_ID = Menu.FIRST + 3;
-    private static final int TEST = Menu.FIRST +4;
+    private static final int TEST_ID = Menu.FIRST +4;
+    private static final int DELETE_ALL_ID = Menu.FIRST +5;
 
     private NotesDbAdapter mDbHelper;
     private Cursor mNotesCursor;
@@ -75,6 +78,7 @@ public class Notepadv3 extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, INSERT_ID, Menu.NONE, R.string.menu_insert);
+        menu.add(Menu.NONE, 0, Menu.NONE, R.string.menu_delete );
         return result;
     }
 
@@ -97,6 +101,10 @@ public class Notepadv3 extends AppCompatActivity {
         menu.add(Menu.NONE, EDIT_ID, Menu.NONE, R.string.menu_edit);
 
         menu.add(Menu.NONE, SEND_ID, Menu.NONE, R.string.menu_send);
+
+        menu.add(Menu.NONE, TEST_ID, Menu.NONE, "Execute All Tests");
+
+        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, "delete all");
     }
 
     @Override
@@ -115,8 +123,11 @@ public class Notepadv3 extends AppCompatActivity {
                 info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 sendNote(info.position, info.id);
                 return true;
-            case TEST:
+            case TEST_ID:
                 new Tests(mDbHelper).throwAllTest();
+                return true;
+            case DELETE_ALL_ID:
+                mDbHelper.deleteAllNotes();
                 return true;
         }
         return super.onContextItemSelected(item);
@@ -153,8 +164,6 @@ public class Notepadv3 extends AppCompatActivity {
             case ACTIVITY_CREATE:
                 String title = extras.getString(NotesDbAdapter.KEY_TITLE);
                 String body = extras.getString(NotesDbAdapter.KEY_BODY);
-                //mDbHelper.createNote(title, body);
-                //fillData();
                 break;
             case ACTIVITY_EDIT:
                 Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
@@ -162,9 +171,7 @@ public class Notepadv3 extends AppCompatActivity {
 
                     String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
                     String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
-                    //mDbHelper.updateNote(rowId, editTitle, editBody);
                 }
-                //fillData();
                 break;
             case ACTIVITY_SEND:
                 Long rowId2 = extras.getLong(NotesDbAdapter.KEY_ROWID);
