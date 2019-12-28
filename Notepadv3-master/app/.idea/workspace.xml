@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97cde92d-a1fa-4d09-a854-e4e7ed3e387b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/Notepadv1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/Notepadv1Solution.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/Notepadv2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/Notepadv2Solution.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/Notepadv3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/Notepadv3Solution.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/notepadv3/CategoryEdit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/notepadv3/CategoryManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/notepadv3/CategorySelector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/notepadv3/NoteEdit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/notepadv3/Notepadv3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/send/MailImplementor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/send/SMSImplementor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/send/SendAbstraction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/send/SendAbstractionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/send/SendImplementor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/java/es/unizar/eina/tests/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/layout/activity_category_manager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/layout/activity_notepadv3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/layout/category_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/layout/note_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/layout/notes_row.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/menu/menu_note_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/menu/menu_notepadv1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notepadv3_git/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../p3/NotepadCodeLab-Alumno/Notepadv3/app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../p3/NotepadCodeLab-Alumno/Notepadv3/app/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="286" />
+    <option name="width" value="1296" />
+    <option name="height" value="738" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="unizar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="unizar" type="462c0819:PsiDirectoryNode" />
+              <item name="eina" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="unizar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="unizar" type="462c0819:PsiDirectoryNode" />
+              <item name="eina" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="unizar" type="462c0819:PsiDirectoryNode" />
+              <item name="eina" type="462c0819:PsiDirectoryNode" />
+              <item name="catlist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="unizar" type="462c0819:PsiDirectoryNode" />
+              <item name="eina" type="462c0819:PsiDirectoryNode" />
+              <item name="notepadv3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97cde92d-a1fa-4d09-a854-e4e7ed3e387b" name="Default Changelist" comment="" />
+      <created>1577471793374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577471793374</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="70" y="27" width="1296" height="741" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3296" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.3289256" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/unizar/eina/notepadv3/NotesDbAdapter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -38,7 +38,7 @@ public class CategoryEdit extends AppCompatActivity {
         mDbHelper = new  CategoryDbAdapter(this);
         mDbHelper.open();
         setContentView(R.layout.category_edit);
-        setTitle(R.string.edit_category);
+        setTitle(R.string.menu_edit_cat);
 
         mTitleText = (EditText) findViewById(R.id.category_name);
         mRowIdText = (EditText) findViewById(R.id.category_id);

@@ -1,6 +1,7 @@
 package es.unizar.eina.notepadv3;
 
 
+import es.unizar.eina.category.Category;
 import es.unizar.eina.send.SendAbstraction;
 import es.unizar.eina.send.SendAbstractionImpl;
 import es.unizar.eina.Test.Tests.Tests;
@@ -26,14 +27,21 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int ACTIVITY_CREATE=0;
     private static final int ACTIVITY_EDIT=1;
     private static final int ACTIVITY_SEND=2;
-    private static final int DELETE_ALL=3;
 
     private static final int INSERT_ID = Menu.FIRST;
     private static final int DELETE_ID = Menu.FIRST + 1;
     private static final int EDIT_ID = Menu.FIRST + 2;
     private static final int SEND_ID = Menu.FIRST + 3;
+
+
     private static final int TEST_ID = Menu.FIRST +4;
     private static final int DELETE_ALL_ID = Menu.FIRST +5;
+    private static final int CREATE_CAT = Menu.FIRST +6;
+    private static final int ORDER_CAT = Menu.FIRST +7;
+    private static final int ORDER_TIT = Menu.FIRST +8;
+    private static final int FILTER_CAT =Menu.FIRST +9;
+
+    private static String orderBy = "Title";
 
     private NotesDbAdapter mDbHelper;
     private Cursor mNotesCursor;
@@ -49,6 +57,8 @@ public class Notepadv3 extends AppCompatActivity {
 
         mDbHelper = new NotesDbAdapter(this);
         mDbHelper.open();
+
+
         mList = (ListView)findViewById(R.id.list);
         fillData();
 
@@ -58,7 +68,7 @@ public class Notepadv3 extends AppCompatActivity {
 
     private void fillData() {
         // Get all of the notes from the database and create the item list
-        Cursor  notesCursor = mDbHelper.fetchAllNotes ();
+        Cursor  notesCursor = mDbHelper.fetchAllNotes (orderBy);
         startManagingCursor(notesCursor);
 
         // Create an array to specify the fields we want to display in the list (only TITLE)
@@ -78,7 +88,11 @@ public class Notepadv3 extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, INSERT_ID, Menu.NONE, R.string.menu_insert);
-        menu.add(Menu.NONE, 0, Menu.NONE, R.string.menu_delete );
+        menu.add(Menu.NONE, ORDER_CAT, Menu.NONE, R.string.menu_ordCat);
+        menu.add(Menu.NONE, ORDER_TIT, Menu.NONE, R.string.menu_ordTit);
+        menu.add(Menu.NONE, FILTER_CAT, Menu.NONE, R.string.menu_filter);
+        menu.add(Menu.NONE, TEST_ID, Menu.NONE, R.string.menu_test);
+        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, R.string.menu_test);
         return result;
     }
 
@@ -87,6 +101,21 @@ public class Notepadv3 extends AppCompatActivity {
         switch (item.getItemId()) {
             case INSERT_ID:
                 createNote();
+                return true;
+            case ORDER_CAT:
+                orderBy="CATEGORY";
+                return true;
+            case ORDER_TIT:
+                orderBy="TITLE";
+                return true;
+            case FILTER_CAT:
+
+                return true;
+            case TEST_ID:
+                new Tests(mDbHelper).throwAllTest();
+                return true;
+            case DELETE_ALL_ID:
+                mDbHelper.deleteAllNotes();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -101,10 +130,6 @@ public class Notepadv3 extends AppCompatActivity {
         menu.add(Menu.NONE, EDIT_ID, Menu.NONE, R.string.menu_edit);
 
         menu.add(Menu.NONE, SEND_ID, Menu.NONE, R.string.menu_send);
-
-        menu.add(Menu.NONE, TEST_ID, Menu.NONE, "Execute All Tests");
-
-        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, "delete all");
     }
 
     @Override
@@ -123,18 +148,17 @@ public class Notepadv3 extends AppCompatActivity {
                 info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 sendNote(info.position, info.id);
                 return true;
-            case TEST_ID:
-                new Tests(mDbHelper).throwAllTest();
-                return true;
-            case DELETE_ALL_ID:
-                mDbHelper.deleteAllNotes();
-                return true;
         }
         return super.onContextItemSelected(item);
     }
 
     private void createNote() {
         Intent i = new Intent(this, NoteEdit.class);
+        startActivityForResult(i, ACTIVITY_CREATE);
+    }
+
+    private void filterCategories(){
+        Intent i = new Intent(this, Category.class);
         startActivityForResult(i, ACTIVITY_CREATE);
     }
 

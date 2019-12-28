@@ -36,7 +36,8 @@ public class NotesDbAdapter {
      */
     private static final String DATABASE_CREATE =
             "create table notes (_id integer primary key autoincrement, "
-                    + "title text not null, body text not null);";
+                    + "title text not null, body text not null, category integer," +
+                    "foreign key (category) references categories(_id) ON DELETE SET NULL);";
 
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE = "notes";
@@ -60,7 +61,7 @@ public class NotesDbAdapter {
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
                     + newVersion + ", which will destroy all old data");
-            db.execSQL("DROP TABLE IF EXISTS notes");
+            db.execSQL("DROP TABLE IF EXISTS " + DATABASE_TABLE);
             onCreate(db);
         }
     }
@@ -104,11 +105,12 @@ public class NotesDbAdapter {
      * @param body the body of the note
      * @return rowId or -1 if failed
      */
-    public long createNote(String title, String body) {
+    public long createNote(String title, String body, Long catId) {
         ContentValues initialValues = new ContentValues();
 
         initialValues.put(KEY_TITLE, title);
         initialValues.put(KEY_BODY, body);
+        initialValues.put(KEY_CATEGORY, catId);
 
         return mDb.insert(DATABASE_TABLE, null, initialValues);
     }
@@ -120,8 +122,9 @@ public class NotesDbAdapter {
      * @return true if deleted, false otherwise
      */
     public boolean deleteNote(long rowId) {
-
-        return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
+        if ( rowId > 0) {
+            return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
+        } else return false;
     }
 
 
@@ -145,10 +148,15 @@ public class NotesDbAdapter {
      *
      * @return Cursor over all notes
      */
-    public Cursor fetchAllNotes() {
-
-        return mDb.query(DATABASE_TABLE, new String[] {KEY_ROWID, KEY_TITLE,
-                KEY_BODY}, null, null, null, null, KEY_TITLE);
+    public Cursor fetchAllNotes(String order) {
+        if (order.equals("TITLE")) {
+            return mDb.query(DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE,
+                    KEY_BODY, KEY_CATEGORY}, null, null, null, null, KEY_TITLE + " adbASC");
+        }
+        else {//(order.equals("CATEGORY")){
+            return mDb.query(DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE,
+                    KEY_BODY}, null, null, null, null, KEY_CATEGORY + " ASC");
+        }
     }
 
     /**
@@ -172,6 +180,21 @@ public class NotesDbAdapter {
 
     }
 
+
+    public Cursor fetchAllFromCategory(String category) throws SQLException {
+
+        Cursor mCursor =
+
+                mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID,
+                                KEY_TITLE, KEY_CATEGORY}, KEY_CATEGORY + "=" + category, null,
+                        null, null, KEY_TITLE, "ASC");
+        if (mCursor != null) {
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+
+    }
+
     /**
      * Update the note using the details provided. The note to be updated is
      * specified using the rowId, and it is altered to use the title and body
@@ -182,18 +205,14 @@ public class NotesDbAdapter {
      * @param body value to set note body to
      * @return true if the note was successfully updated, false otherwise
      */
-    public boolean updateNote(long rowId, String title, String body) {
+    public boolean updateNote(long rowId, String title, String body, Long cat_id) {
         ContentValues args = new ContentValues();
         args.put(KEY_ROWID, rowId);
         args.put(KEY_TITLE, title);
         args.put(KEY_BODY, body);
+        args.put(KEY_CATEGORY, cat_id);
 
         return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;
     }
 
-    public boolean updateCategory(String old, String newName){
-        ContentValues args = new ContentValues();
-        args.put(KEY_CATEGORY, newName);
-        return mDb.update(DATABASE_TABLE, args, KEY_CATEGORY + "=" + old, null) > 0;
-    }
 }

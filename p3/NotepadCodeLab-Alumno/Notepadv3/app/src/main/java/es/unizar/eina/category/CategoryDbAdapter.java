@@ -20,7 +20,7 @@ package es.unizar.eina.category;
  */
 public class CategoryDbAdapter {
 
-    public static final String KEY_TITLE = "title";
+    public static final String KEY_TITLE = "cat_name";
     public static final String KEY_ROWID = "_id";
 
     private static final String TAG = "CategoryDbAdapter";
@@ -31,16 +31,19 @@ public class CategoryDbAdapter {
      * Database creation sql statement
      */
     private static final String DATABASE_CREATE =
-            "create table notes (_id integer primary key autoincrement, "
-                    + "title text not null);";
+            "create table categories (_id integer primary key autoincrement, "
+                    + "cat_name text not null);";
 
-    private static final String DATABASE_NAME = "category_data";
+    private static final String DATABASE_NAME = "categories";
     private static final String DATABASE_TABLE = "categories";
     private static final int DATABASE_VERSION = 2;
 
     private final Context mCtx;
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
+
+        public static final String KEY_TITLE = "cat_name";
+        public static final String KEY_ROWID = "_id";
 
         DatabaseHelper(Context context) {
 
@@ -57,7 +60,7 @@ public class CategoryDbAdapter {
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
                     + newVersion + ", which will destroy all old data");
-            db.execSQL("DROP TABLE IF EXISTS categories");
+            db.execSQL("DROP TABLE IF EXISTS " + DATABASE_NAME);
             onCreate(db);
         }
     }
@@ -115,10 +118,14 @@ public class CategoryDbAdapter {
      * @return true if deleted, false otherwise
      */
     public boolean deleteCategory(long rowId) {
-
-        return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
+        if ( rowId>0) {
+            return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
+        }else return false;
     }
 
+    public boolean deleteAllCategories(){
+        return mDb.delete(DATABASE_TABLE, KEY_ROWID, null) >0;
+    }
     /**
      * Return a Cursor over the list of all notes in the database
      *
@@ -129,7 +136,7 @@ public class CategoryDbAdapter {
         return mDb.query(DATABASE_TABLE, new String[] {
                 KEY_ROWID, KEY_TITLE,
                 },
-                null, null, null, null, KEY_TITLE);
+                null, null, null, null, KEY_TITLE + " ASC");
     }
 
     /**
@@ -153,6 +160,8 @@ public class CategoryDbAdapter {
 
     }
 
+
+
     /**
      * Update the note using the details provided. The note to be updated is
      * specified using the rowId, and it is altered to use the title and body
@@ -167,5 +176,23 @@ public class CategoryDbAdapter {
         args.put(KEY_TITLE, title);
 
         return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;
+    }
+
+
+    public Long idFromName(String name){
+        if (!name.equals("")){
+            Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE}, KEY_TITLE + "=" + name, null,
+                        null, null, null, null);
+            Long id = 0L;
+            if (mCursor != null) {
+                mCursor.moveToFirst();
+                String idSting = mCursor.getString(mCursor.getColumnIndex(mDbHelper.KEY_ROWID));
+                id = Long.parseLong(idSting);
+                Log.d("Query SQL", "Searching category id from name: " + name);
+            }
+            return id;
+        }
+        else return -1L;
+
     }
 }
