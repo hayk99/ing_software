@@ -36,10 +36,9 @@ public class Notepadv3 extends AppCompatActivity {
 
     private static final int TEST_ID = Menu.FIRST +4;
     private static final int DELETE_ALL_ID = Menu.FIRST +5;
-    private static final int CREATE_CAT = Menu.FIRST +6;
-    private static final int ORDER_CAT = Menu.FIRST +7;
-    private static final int ORDER_TIT = Menu.FIRST +8;
-    private static final int FILTER_CAT =Menu.FIRST +9;
+    private static final int ORDER_CAT = Menu.FIRST +6;
+    private static final int ORDER_TIT = Menu.FIRST +7;
+    private static final int FILTER_CAT =Menu.FIRST +8;
 
     private static String orderBy = "Title";
 
@@ -88,7 +87,6 @@ public class Notepadv3 extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, INSERT_ID, Menu.NONE, R.string.menu_insert);
-        menu.add(Menu.NONE, ORDER_CAT, Menu.NONE, R.string.menu_ordCat);
         menu.add(Menu.NONE, ORDER_TIT, Menu.NONE, R.string.menu_ordTit);
         menu.add(Menu.NONE, FILTER_CAT, Menu.NONE, R.string.menu_filter);
         menu.add(Menu.NONE, TEST_ID, Menu.NONE, R.string.menu_test);
@@ -109,7 +107,7 @@ public class Notepadv3 extends AppCompatActivity {
                 orderBy="TITLE";
                 return true;
             case FILTER_CAT:
-
+                mDbHelper.fetchAllFromCategory("");
                 return true;
             case TEST_ID:
                 new Tests(mDbHelper).throwAllTest();
@@ -152,16 +150,15 @@ public class Notepadv3 extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
-    private void createNote() {
-        Intent i = new Intent(this, NoteEdit.class);
-        startActivityForResult(i, ACTIVITY_CREATE);
-    }
-
-    private void filterCategories(){
+    private void filter(){
         Intent i = new Intent(this, Category.class);
         startActivityForResult(i, ACTIVITY_CREATE);
     }
 
+    private void createNote() {
+        Intent i = new Intent(this, NoteEdit.class);
+        startActivityForResult(i, ACTIVITY_CREATE);
+    }
 
     protected void editNote(int position, long id) {
 

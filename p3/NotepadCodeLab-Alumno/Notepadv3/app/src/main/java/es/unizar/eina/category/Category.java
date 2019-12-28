@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,13 +21,13 @@ import es.unizar.eina.send.SendAbstractionImpl;
 
 public class Category extends AppCompatActivity {
 
-    private static final int ACTIVITY_CREATE=0;
-    private static final int ACTIVITY_EDIT=1;
+    private static final int ACTIVITY_CREATE=10;
+    private static final int ACTIVITY_EDIT=11;
 
     private static final int INSERT_CAT = Menu.FIRST;
-    private static final int DELETE_ALL_CAT = Menu.FIRST + 1;
-    private static final int EDIT_CAT = Menu.FIRST + 2;
-    private static final int DELETE_CAT =Menu.FIRST +3;
+    private static final int DELETE_ALL_CAT = Menu.FIRST + 10;
+    private static final int EDIT_CAT = Menu.FIRST + 12;
+    private static final int DELETE_CAT =Menu.FIRST +13;
 
 
 
@@ -44,6 +45,7 @@ public class Category extends AppCompatActivity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.d("CATEGORY", "oncreeate category");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);

@@ -46,7 +46,7 @@ public class NoteEdit extends AppCompatActivity {
             mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
 
             mCatText.setText("Category: NOT DEFINED");
-            catId = note.getLong(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
+            catId = note.getLong(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID));
         }
         catDbHelper.open();
         Cursor catCursor = catDbHelper.fetchAllCategories();

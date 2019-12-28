@@ -36,8 +36,8 @@ public class NotesDbAdapter {
      */
     private static final String DATABASE_CREATE =
             "create table notes (_id integer primary key autoincrement, "
-                    + "title text not null, body text not null, category integer," +
-                    "foreign key (category) references categories(_id) ON DELETE SET NULL);";
+                    + "title text not null, body text not null, category integer,"
+                   + "foreign key (category) references categories(_id) ON DELETE SET NULL);";
 
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE = "notes";
