@@ -38,20 +38,25 @@ public class NoteEdit extends AppCompatActivity {
 
     private  void  populateFields () {
         Long catId = null;
+        String title= "none", body="none", cat="none";
         if (mRowId  != null) {
             Cursor note = mDbHelper.fetchNote(mRowId);
             startManagingCursor(note);
             mRowIdText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID)));
             mTitleText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
+            title=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE));
             mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
+            body=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY));
 
-            mCatText.setText("Category: NOT DEFINED");
-            catId = note.getLong(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID));
+            mCatText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY)));
+            cat = note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
         }
+
+        Log.d("VARS POPULATES: ", "  rowId: "+ mRowId+  " title: "+title+  " body: " + body +  "cat: " + catId);
         catDbHelper.open();
         Cursor catCursor = catDbHelper.fetchAllCategories();
 
-        //if (catCursor.moveToFirst()) {
+        if (catCursor.moveToFirst()) {
             while (catCursor.moveToNext()) {
                 String name = catCursor.getString(catCursor.getColumnIndex(catDbHelper.KEY_TITLE));
                 categories.add(name);
@@ -59,7 +64,7 @@ public class NoteEdit extends AppCompatActivity {
                 catIds.add(id);
 
             }
-        //}
+        }
 
         //spiner
         ArrayAdapter<String> spinner = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
@@ -95,7 +100,6 @@ public class NoteEdit extends AppCompatActivity {
         mRowIdText = (EditText) findViewById(R.id.idRow);
         mCatText = (TextView) findViewById(R.id.cat_txt);
         Button confirmButton = (Button) findViewById(R.id.confirm);
-
         Log.d("Noteedit", "llego hasta button");
 
         mRowId = (savedInstanceState  == null) ? null :(Long) savedInstanceState.getSerializable(NotesDbAdapter.KEY_ROWID);
@@ -105,7 +109,7 @@ public class NoteEdit extends AppCompatActivity {
         }
         Log.d("noteedit", "voy al populates: "+mRowId);
 
-        //populateFields();
+        populateFields();
         Log.d("noteedit", "vuelvo populates");
         confirmButton.setOnClickListener(new View.OnClickListener() {
 
@@ -137,26 +141,17 @@ public class NoteEdit extends AppCompatActivity {
     }
 
     private  void  saveState () {
-        String title ="", body="", cat="";
-        if (mTitleText != null) {
-            title = mTitleText.getText().toString();
-        }
-        else if (mBodyText != null) {
-            body = mBodyText.getText().toString();
-        }
-        else if (mCategorySpin != null){
-
-            cat = mCategorySpin.getSelectedItem().toString();
-        }
-        Long catId = null;
-
-        catId = catDbHelper.idFromName(cat);
+        String title = mTitleText.getText().toString();
+        String body = mBodyText.getText().toString();
+        String cat = mCategorySpin.getSelectedItem().toString();
+        //String catId = catDbHelper.idFromName(cat);
+        Log.d("Debugg saveState: ", "tit: "+title+ " body: "+body+"  cat: "+cat);
         if (mRowId  == null) {
-            long id = mDbHelper.createNote(title , body, catId);
+            long id = mDbHelper.createNote(title , body, cat);
             if (id > 0) {mRowId = id;
             }
         } else {
-            mDbHelper.updateNote(mRowId , title , body, catId);
+            mDbHelper.updateNote(mRowId , title , body, cat);
         }
     }
 

@@ -71,10 +71,12 @@ public class CategoryEdit extends AppCompatActivity {
     }
 
     private  void  saveState () {
+        int value = 0;
         String  title = mTitleText.getText ().toString ();
 
         if (title.isEmpty()){
-            title = "New category";
+            title = "New category"+value;
+            value++;
         }
         if (mRowId  == null) {
             long id = mDbHelper.createCategory(title);

@@ -2,6 +2,7 @@ package es.unizar.eina.notepadv3;
 
 
 import es.unizar.eina.category.Category;
+import es.unizar.eina.category.CategoryEdit;
 import es.unizar.eina.send.SendAbstraction;
 import es.unizar.eina.send.SendAbstractionImpl;
 import es.unizar.eina.Test.Tests.Tests;
@@ -39,6 +40,7 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int ORDER_CAT = Menu.FIRST +6;
     private static final int ORDER_TIT = Menu.FIRST +7;
     private static final int FILTER_CAT =Menu.FIRST +8;
+    private static final int CREATE_CAT = Menu.FIRST+9;
 
     private static String orderBy = "Title";
 
@@ -88,23 +90,32 @@ public class Notepadv3 extends AppCompatActivity {
         boolean result = super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, INSERT_ID, Menu.NONE, R.string.menu_insert);
         menu.add(Menu.NONE, ORDER_TIT, Menu.NONE, R.string.menu_ordTit);
+        menu.add(Menu.NONE, ORDER_CAT, Menu.NONE, R.string.menu_ordCat);
         menu.add(Menu.NONE, FILTER_CAT, Menu.NONE, R.string.menu_filter);
         menu.add(Menu.NONE, TEST_ID, Menu.NONE, R.string.menu_test);
-        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, R.string.menu_test);
+        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, R.string.menu_delete);
+        menu.add(Menu.NONE, CREATE_CAT, Menu.NONE, R.string.menu_create_cat);
         return result;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case CREATE_CAT:
+                createCategory();
+                return true;
             case INSERT_ID:
                 createNote();
                 return true;
             case ORDER_CAT:
                 orderBy="CATEGORY";
+                mDbHelper.fetchAllNotes(orderBy);
+                startActivity(getIntent());
                 return true;
             case ORDER_TIT:
                 orderBy="TITLE";
+                mDbHelper.fetchAllNotes(orderBy);
+                startActivity(getIntent());
                 return true;
             case FILTER_CAT:
                 mDbHelper.fetchAllFromCategory("");
@@ -154,6 +165,12 @@ public class Notepadv3 extends AppCompatActivity {
         Intent i = new Intent(this, Category.class);
         startActivityForResult(i, ACTIVITY_CREATE);
     }
+
+    private void createCategory() {
+        Intent i = new Intent(this, CategoryEdit.class);
+        startActivityForResult(i, ACTIVITY_CREATE);
+    }
+
 
     private void createNote() {
         Intent i = new Intent(this, NoteEdit.class);

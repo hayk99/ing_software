@@ -28,17 +28,12 @@
                 android:value=".Notepadv3" />
         </activity>
         <activity android:name="es.unizar.eina.category.Category"
-            android:label="@string/title_activity_category" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:label="@string/title_activity_category"
+            android:parentActivityName="es.unizar.eina.notepadv3.Notepadv3">
         </activity>
-        <activity android:name = "es.unizar.eina.category.CategoryEdit"
-            android:label="@string/title_activity_category_edit" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="es.unizar.eina.category.Category" />
+        <activity
+            android:name = "es.unizar.eina.category.CategoryEdit"
+            android:label="@string/title_activity_category_edit">
         </activity>
     </application>
 

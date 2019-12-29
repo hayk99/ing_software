@@ -180,8 +180,9 @@ public class CategoryDbAdapter {
 
 
     public Long idFromName(String name){
+        Log.d("query sql", "name : "+ name);
         if (!name.equals("")){
-            Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE}, KEY_TITLE + "=" + name, null,
+            Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID}, KEY_TITLE + "=" + name, null,
                         null, null, null, null);
             Long id = 0L;
             if (mCursor != null) {

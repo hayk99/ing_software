@@ -36,8 +36,7 @@ public class NotesDbAdapter {
      */
     private static final String DATABASE_CREATE =
             "create table notes (_id integer primary key autoincrement, "
-                    + "title text not null, body text not null, category integer,"
-                   + "foreign key (category) references categories(_id) ON DELETE SET NULL);";
+                    + "title text not null, body text not null, category text not null);";
 
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE = "notes";
@@ -105,7 +104,7 @@ public class NotesDbAdapter {
      * @param body the body of the note
      * @return rowId or -1 if failed
      */
-    public long createNote(String title, String body, Long catId) {
+    public long createNote(String title, String body, String catId) {
         ContentValues initialValues = new ContentValues();
 
         initialValues.put(KEY_TITLE, title);
@@ -151,7 +150,7 @@ public class NotesDbAdapter {
     public Cursor fetchAllNotes(String order) {
         if (order.equals("TITLE")) {
             return mDb.query(DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE,
-                    KEY_BODY, KEY_CATEGORY}, null, null, null, null, KEY_TITLE + " adbASC");
+                    KEY_BODY, KEY_CATEGORY}, null, null, null, null, KEY_TITLE + " ASC");
         }
         else {//(order.equals("CATEGORY")){
             return mDb.query(DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE,
@@ -171,7 +170,7 @@ public class NotesDbAdapter {
         Cursor mCursor =
 
                 mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID,
-                                KEY_TITLE, KEY_BODY}, KEY_ROWID + "=" + rowId, null,
+                                KEY_TITLE, KEY_BODY, KEY_CATEGORY}, KEY_ROWID + "=" + rowId, null,
                         null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();
@@ -187,7 +186,7 @@ public class NotesDbAdapter {
 
                 mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID,
                                 KEY_TITLE, KEY_CATEGORY}, KEY_CATEGORY + "=" + category, null,
-                        null, null, KEY_TITLE, "ASC");
+                        null, null, null, KEY_TITLE+  " ASC");
         if (mCursor != null) {
             mCursor.moveToFirst();
         }
@@ -205,7 +204,7 @@ public class NotesDbAdapter {
      * @param body value to set note body to
      * @return true if the note was successfully updated, false otherwise
      */
-    public boolean updateNote(long rowId, String title, String body, Long cat_id) {
+    public boolean updateNote(long rowId, String title, String body, String cat_id) {
         ContentValues args = new ContentValues();
         args.put(KEY_ROWID, rowId);
         args.put(KEY_TITLE, title);
