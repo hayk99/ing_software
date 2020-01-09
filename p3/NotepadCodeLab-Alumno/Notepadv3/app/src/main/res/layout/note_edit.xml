@@ -38,9 +38,11 @@
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/body" />
-    <EditText android:id="@+id/body"
+
+    <EditText
+        android:id="@+id/body"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="465dp"
         android:layout_weight="1"
         android:scrollbars="vertical" />
 
@@ -55,16 +57,17 @@
             android:textSize="16dp" />
 
         <Spinner
-            android:layout_width="154dp"
-            android:layout_height="wrap_content"
             android:id="@+id/spinner_category"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.71" />
 
     </LinearLayout>
 
-    <Button android:id="@+id/confirm"
-        android:text="@string/confirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
 
 </LinearLayout>

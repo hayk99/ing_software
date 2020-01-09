@@ -2,6 +2,7 @@ package es.unizar.eina.notepadv3;
 
 
 import es.unizar.eina.category.Category;
+import es.unizar.eina.category.CategoryDbAdapter;
 import es.unizar.eina.category.CategoryEdit;
 import es.unizar.eina.send.SendAbstraction;
 import es.unizar.eina.send.SendAbstractionImpl;
@@ -25,9 +26,11 @@ import java.util.Arrays;
 
 public class Notepadv3 extends AppCompatActivity {
 
-    private static final int ACTIVITY_CREATE=0;
-    private static final int ACTIVITY_EDIT=1;
-    private static final int ACTIVITY_SEND=2;
+    public static final int ACTIVITY_CREATE=0;
+    public static final int ACTIVITY_EDIT=1;
+    public static final int ACTIVITY_SEND=2;
+    public static final int ACTIVITY_CREATE_CAT = 3;
+    private static final int ACTIVITY_DELETE_CAT = 4;
 
     private static final int INSERT_ID = Menu.FIRST;
     private static final int DELETE_ID = Menu.FIRST + 1;
@@ -41,10 +44,12 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int ORDER_TIT = Menu.FIRST +7;
     private static final int FILTER_CAT =Menu.FIRST +8;
     private static final int CREATE_CAT = Menu.FIRST+9;
+    private static final int DELETE_CAT = Menu.FIRST+10;
 
     private static String orderBy = "Title";
 
     private NotesDbAdapter mDbHelper;
+    private CategoryDbAdapter catDbHelper;
     private Cursor mNotesCursor;
     private ListView mList;
 
@@ -58,6 +63,9 @@ public class Notepadv3 extends AppCompatActivity {
 
         mDbHelper = new NotesDbAdapter(this);
         mDbHelper.open();
+
+        catDbHelper = new CategoryDbAdapter(this);
+        catDbHelper.open();
 
 
         mList = (ListView)findViewById(R.id.list);
@@ -93,8 +101,10 @@ public class Notepadv3 extends AppCompatActivity {
         menu.add(Menu.NONE, ORDER_CAT, Menu.NONE, R.string.menu_ordCat);
         menu.add(Menu.NONE, FILTER_CAT, Menu.NONE, R.string.menu_filter);
         menu.add(Menu.NONE, TEST_ID, Menu.NONE, R.string.menu_test);
-        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, R.string.menu_delete);
+        menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, R.string.menu_delete_all_notes);
         menu.add(Menu.NONE, CREATE_CAT, Menu.NONE, R.string.menu_create_cat);
+        menu.add(Menu.NONE, DELETE_CAT, Menu.NONE, R.string.menu_delete_cat);
+
         return result;
     }
 
@@ -125,6 +135,10 @@ public class Notepadv3 extends AppCompatActivity {
                 return true;
             case DELETE_ALL_ID:
                 mDbHelper.deleteAllNotes();
+                fillData();
+                return true;
+            case DELETE_CAT:
+                deleteCat();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -161,6 +175,15 @@ public class Notepadv3 extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
+
+    private void deleteCat(){
+        Intent i = new Intent(this, CategoryEdit.class);
+        Bundle extras = new Bundle();
+        extras.putString("action", "delete");
+        i.putExtras(extras);
+        startActivityForResult(i, ACTIVITY_DELETE_CAT);
+    }
+
     private void filter(){
         Intent i = new Intent(this, Category.class);
         startActivityForResult(i, ACTIVITY_CREATE);
@@ -168,7 +191,7 @@ public class Notepadv3 extends AppCompatActivity {
 
     private void createCategory() {
         Intent i = new Intent(this, CategoryEdit.class);
-        startActivityForResult(i, ACTIVITY_CREATE);
+        startActivityForResult(i, ACTIVITY_CREATE_CAT);
     }
 
 
@@ -202,7 +225,10 @@ public class Notepadv3 extends AppCompatActivity {
             case ACTIVITY_CREATE:
                 String title = extras.getString(NotesDbAdapter.KEY_TITLE);
                 String body = extras.getString(NotesDbAdapter.KEY_BODY);
+                String cat = extras.getString(NotesDbAdapter.KEY_CATEGORY);
                 break;
+            case ACTIVITY_CREATE_CAT:
+                String catTitle = extras.getString(CategoryDbAdapter.KEY_TITLE);
             case ACTIVITY_EDIT:
                 Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
                 if (rowId != null) {

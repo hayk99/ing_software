@@ -13,7 +13,7 @@
     <string name="menu_ordTit">Order by Title</string>
     <string name="menu_filter">Filter by Category</string>
     <string name="menu_test">Execute All Tests</string>
-    <string name="delete_all_notes">Delete All Notes</string>
+    <string name="menu_delete_all_notes">Delete All Notes</string>
     <string name="menu_create_cat">Create new Category</string>
     <string name="menu_edit_cat">Edit Category</string>
     <string name="menu_delete_all_cat">Delete all categories</string>

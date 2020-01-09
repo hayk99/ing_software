@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -57,16 +58,19 @@ public class NoteEdit extends AppCompatActivity {
         Cursor catCursor = catDbHelper.fetchAllCategories();
 
         if (catCursor.moveToFirst()) {
-            while (catCursor.moveToNext()) {
+            categories.clear();
+            categories.add("");
+            do {
                 String name = catCursor.getString(catCursor.getColumnIndex(catDbHelper.KEY_TITLE));
                 categories.add(name);
                 Long id = catCursor.getLong(catCursor.getColumnIndex(catDbHelper.KEY_ROWID));
                 catIds.add(id);
 
-            }
+            }while (catCursor.moveToNext());
         }
 
         //spiner
+        //mCategorySpin.setAdapter(null);
         ArrayAdapter<String> spinner = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
         spinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mCategorySpin = (Spinner) findViewById(R.id.spinner_category);
@@ -110,6 +114,7 @@ public class NoteEdit extends AppCompatActivity {
         Log.d("noteedit", "voy al populates: "+mRowId);
 
         populateFields();
+        //mCategorySpin.setSelection(Adapter.NO_SELECTION);
         Log.d("noteedit", "vuelvo populates");
         confirmButton.setOnClickListener(new View.OnClickListener() {
 
@@ -143,7 +148,11 @@ public class NoteEdit extends AppCompatActivity {
     private  void  saveState () {
         String title = mTitleText.getText().toString();
         String body = mBodyText.getText().toString();
-        String cat = mCategorySpin.getSelectedItem().toString();
+        String cat = null;
+        try {cat = mCategorySpin.getSelectedItem().toString();}
+        catch (Exception e){
+            cat = "";
+        }
         //String catId = catDbHelper.idFromName(cat);
         Log.d("Debugg saveState: ", "tit: "+title+ " body: "+body+"  cat: "+cat);
         if (mRowId  == null) {
