@@ -23,7 +23,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/category_confirm"
+        android:id="@+id/category_confirm_delete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/confirm" />

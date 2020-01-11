@@ -107,6 +107,7 @@ public class CategoryDbAdapter {
         ContentValues initialValues = new ContentValues();
 
         initialValues.put(KEY_TITLE, title);
+        Log.d("catDB", "titulo: "+title);
 
         return mDb.insert(DATABASE_TABLE, null, initialValues);
     }
@@ -182,7 +183,7 @@ public class CategoryDbAdapter {
     public Long idFromName(String name){
         Log.d("query sql", "name : "+ name);
         if (!name.equals("")){
-            Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID}, KEY_TITLE + "=" + name, null,
+            Cursor mCursor = mDb.query(false, DATABASE_TABLE, new String[] {KEY_ROWID}, KEY_TITLE + "= '"+ name+ "'" , null,
                         null, null, null, null);
             Long id = 0L;
             if (mCursor != null) {

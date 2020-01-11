@@ -190,7 +190,11 @@ public class Notepadv3 extends AppCompatActivity {
     }
 
     private void createCategory() {
+        Log.d("notepadv3", "create cat");
         Intent i = new Intent(this, CategoryEdit.class);
+        Bundle extras = new Bundle();
+        extras.putString("action", "create");
+        i.putExtras(extras);
         startActivityForResult(i, ACTIVITY_CREATE_CAT);
     }
 
