@@ -185,8 +185,8 @@ public class NotesDbAdapter {
         Cursor mCursor =
 
                 mDb.query(true, DATABASE_TABLE, new String[] {KEY_ROWID,
-                                KEY_TITLE, KEY_CATEGORY}, KEY_CATEGORY + "=" + category, null,
-                        null, null, null, KEY_TITLE+  " ASC");
+                                KEY_TITLE, KEY_CATEGORY}, KEY_CATEGORY + "= '" + category+"'", null,
+                        null, null,  KEY_TITLE+  " ASC", null);
         if (mCursor != null) {
             mCursor.moveToFirst();
         }

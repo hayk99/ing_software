@@ -26,6 +26,7 @@ public class CategoryEdit extends AppCompatActivity {
     private String action;
     private ArrayList<String> categories = new ArrayList<>();
     private Spinner mCategorySpin;
+    private int value = 0;
 
     private  void  populateFields () {
         Log.d("populates", action);
@@ -51,9 +52,9 @@ public class CategoryEdit extends AppCompatActivity {
 
         Bundle param = getIntent().getExtras();
         action = param.getString("action");
-        if (action.equals("delete")){
+        if (action.equals("delete") || action.equals("filter")){
             setContentView(R.layout.category_delete);
-            setTitle("Delete Category");
+            setTitle("Delete or Filter Category");
             Log.d("BUNDLE ACTION", action);
 
             mDbHelper.open();
@@ -61,6 +62,9 @@ public class CategoryEdit extends AppCompatActivity {
 
             if (catCursor.moveToFirst()) {
                 categories.clear();
+                if (action.equals("filter")){
+                    categories.add("");
+                }
                 do {
                     String name = catCursor.getString(catCursor.getColumnIndex(mDbHelper.KEY_TITLE));
                     Log.d("Cat", name);
@@ -80,19 +84,18 @@ public class CategoryEdit extends AppCompatActivity {
             confirmButton.setOnClickListener(new View.OnClickListener() {
 
                 public void onClick(View view) {
-                    String title = mCategorySpin.getSelectedItem().toString();
-                    Log.d("DELETE CAT", title);
+                    String title = null;
+                    try {title = mCategorySpin.getSelectedItem().toString();}
+                    catch (Exception e){
+                        title = "";
+                    }
                     Long idCat = mDbHelper.idFromName(title);
-                    Log.d("DELETE CAT ID", "el id es" +idCat);
-                    mDbHelper.deleteCategory(idCat);
-                    Log.d("noteedit", "antes intent");
-                    setResult(RESULT_OK);
-                    Log.d("delete cat", "fin");
-
 
                     Bundle bundle = new Bundle();
+                    bundle.putLong("id_cat", idCat);
+                    bundle.putString("tit_cat", title);
+                    bundle.putString("op",action);
 
-                    bundle.putString("borrado", title);
                     Intent mIntent = new Intent();
                     mIntent.putExtras(bundle);
                     setResult(RESULT_OK, mIntent);
@@ -127,6 +130,9 @@ public class CategoryEdit extends AppCompatActivity {
                     if (mRowId != null) {
                         bundle.putLong(CategoryDbAdapter.KEY_ROWID, mRowId);
                     }
+                    bundle.putString("op",action);
+                    bundle.putString("tit_cat", mTitleText.getText().toString());
+
 
                     Intent mIntent = new Intent();
                     mIntent.putExtras(bundle);
@@ -143,7 +149,7 @@ public class CategoryEdit extends AppCompatActivity {
     private  void  saveState () {
         if (action.equals("create")) {
             Log.d("saveState", "save");
-            int value = 0;
+
             String title = mTitleText.getText().toString();
             Log.d("SaveState", "name: " + title);
             if (title.isEmpty()) {

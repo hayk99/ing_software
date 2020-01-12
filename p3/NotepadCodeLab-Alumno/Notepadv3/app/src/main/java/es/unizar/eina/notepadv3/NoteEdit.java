@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,7 +27,8 @@ public class NoteEdit extends AppCompatActivity {
     private EditText mRowIdText;
     private EditText mTitleText;
     private EditText mBodyText;
-    private TextView mCatText;
+   // private TextView mCatText;
+    private String mCatText;
     private Long mRowId;
     private  NotesDbAdapter  mDbHelper;
     private CategoryDbAdapter catDbHelper;
@@ -35,25 +37,10 @@ public class NoteEdit extends AppCompatActivity {
 
     private ArrayList<String> categories = new ArrayList<>();
     private ArrayList<Long> catIds = new ArrayList<>();
-
+    private ArrayAdapter<String> spinner;
 
     private  void  populateFields () {
         Long catId = null;
-        String title= "none", body="none", cat="none";
-        if (mRowId  != null) {
-            Cursor note = mDbHelper.fetchNote(mRowId);
-            startManagingCursor(note);
-            mRowIdText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID)));
-            mTitleText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
-            title=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE));
-            mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
-            body=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY));
-
-            mCatText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY)));
-            cat = note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
-        }
-
-        Log.d("VARS POPULATES: ", "  rowId: "+ mRowId+  " title: "+title+  " body: " + body +  "cat: " + catId);
         catDbHelper.open();
         Cursor catCursor = catDbHelper.fetchAllCategories();
 
@@ -69,12 +56,32 @@ public class NoteEdit extends AppCompatActivity {
             }while (catCursor.moveToNext());
         }
 
-        //spiner
+        //spinner
         //mCategorySpin.setAdapter(null);
-        ArrayAdapter<String> spinner = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+        spinner = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
         spinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mCategorySpin = (Spinner) findViewById(R.id.spinner_category);
         mCategorySpin.setAdapter(spinner);
+
+        String title= "none", body="none", cat="none";
+        if (mRowId  != null) {
+            Cursor note = mDbHelper.fetchNote(mRowId);
+            startManagingCursor(note);
+            mRowIdText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_ROWID)));
+            mTitleText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
+            title=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE));
+            mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
+            body=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY));
+
+            mCatText = note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
+            Log.d("popu+++++++", mCatText);
+            int pos = spinner.getPosition(mCatText);
+            mCategorySpin.setSelection(pos);
+            //mCatText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY)));
+            //cat = note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
+        }
+
+        Log.d("VARS POPULATES: ", "  rowId: "+ mRowId+  " title: "+title+  " body: " + body +  "cat: " + catId);
 
 
     }
@@ -102,20 +109,18 @@ public class NoteEdit extends AppCompatActivity {
         mTitleText = (EditText) findViewById(R.id.title);
         mBodyText = (EditText) findViewById(R.id.body);
         mRowIdText = (EditText) findViewById(R.id.idRow);
-        mCatText = (TextView) findViewById(R.id.cat_txt);
+        //mCategorySpin = (Spinner) findViewById(R.id.spinner_category)
         Button confirmButton = (Button) findViewById(R.id.confirm);
-        Log.d("Noteedit", "llego hasta button");
 
         mRowId = (savedInstanceState  == null) ? null :(Long) savedInstanceState.getSerializable(NotesDbAdapter.KEY_ROWID);
         if (mRowId  == null) {
             Bundle  extras = getIntent ().getExtras ();
             mRowId = (extras  != null) ? extras.getLong(NotesDbAdapter.KEY_ROWID): null;
         }
-        Log.d("noteedit", "voy al populates: "+mRowId);
 
         populateFields();
-        //mCategorySpin.setSelection(Adapter.NO_SELECTION);
-        Log.d("noteedit", "vuelvo populates");
+
+        mCatText = mCategorySpin.getSelectedItem().toString();
         confirmButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -127,12 +132,11 @@ public class NoteEdit extends AppCompatActivity {
                     bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);
                 }
                 if (mCatText != null){
-                    bundle.putString(NotesDbAdapter.KEY_CATEGORY, mCatText.getText().toString());
+                    bundle.putString(NotesDbAdapter.KEY_CATEGORY, mCatText);
                 }
                 else{
                     bundle.putString(NotesDbAdapter.KEY_CATEGORY, "Category: none");
                 }
-                Log.d("noteedit", "antes intent");
 
                 Intent mIntent = new Intent();
                 mIntent.putExtras(bundle);

@@ -31,6 +31,7 @@ public class Notepadv3 extends AppCompatActivity {
     public static final int ACTIVITY_SEND=2;
     public static final int ACTIVITY_CREATE_CAT = 3;
     private static final int ACTIVITY_DELETE_CAT = 4;
+    private static final int ACTIVITY_FILTER = 5;
 
     private static final int INSERT_ID = Menu.FIRST;
     private static final int DELETE_ID = Menu.FIRST + 1;
@@ -92,6 +93,22 @@ public class Notepadv3 extends AppCompatActivity {
         mList.setAdapter(notes);
     }
 
+    private void fillFiltredData(String cat_name){
+        Cursor filtrado = mDbHelper.fetchAllFromCategory(cat_name);
+
+        // Create an array to specify the fields we want to display in the list (only TITLE)
+        String[] from = new String[]{NotesDbAdapter.KEY_TITLE};
+
+        // and an array of the fields we want to bind those fields to (in this case just text1)
+        int[] to = new int[]{R.id.text1};
+
+        // Now create an array adapter and set it to display using our row
+        SimpleCursorAdapter notes =
+                new SimpleCursorAdapter(this, R.layout.notes_row, filtrado, from, to);
+        mList.setAdapter(notes);
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -120,21 +137,24 @@ public class Notepadv3 extends AppCompatActivity {
             case ORDER_CAT:
                 orderBy="CATEGORY";
                 mDbHelper.fetchAllNotes(orderBy);
-                startActivity(getIntent());
+                //startActivity(getIntent());
+                fillData();
                 return true;
             case ORDER_TIT:
                 orderBy="TITLE";
                 mDbHelper.fetchAllNotes(orderBy);
-                startActivity(getIntent());
+                //startActivity(getIntent());
+                fillData();
                 return true;
             case FILTER_CAT:
-                mDbHelper.fetchAllFromCategory("");
+                filter();
                 return true;
             case TEST_ID:
                 new Tests(mDbHelper).throwAllTest();
                 return true;
             case DELETE_ALL_ID:
                 mDbHelper.deleteAllNotes();
+                catDbHelper.deleteAllCategories();
                 fillData();
                 return true;
             case DELETE_CAT:
@@ -185,8 +205,11 @@ public class Notepadv3 extends AppCompatActivity {
     }
 
     private void filter(){
-        Intent i = new Intent(this, Category.class);
-        startActivityForResult(i, ACTIVITY_CREATE);
+        Intent i = new Intent(this, CategoryEdit.class);
+        Bundle extras = new Bundle();
+        extras.putString("action", "filter");
+        i.putExtras(extras);
+        startActivityForResult(i, ACTIVITY_FILTER);
     }
 
     private void createCategory() {
@@ -230,15 +253,36 @@ public class Notepadv3 extends AppCompatActivity {
                 String title = extras.getString(NotesDbAdapter.KEY_TITLE);
                 String body = extras.getString(NotesDbAdapter.KEY_BODY);
                 String cat = extras.getString(NotesDbAdapter.KEY_CATEGORY);
+                fillData();
                 break;
             case ACTIVITY_CREATE_CAT:
                 String catTitle = extras.getString(CategoryDbAdapter.KEY_TITLE);
+                fillData();
+
+            case ACTIVITY_FILTER:
+                String op = extras.getString("op");
+                String cat_tit = extras.getString("tit_cat");
+                if (cat_tit.equals("") && op.equals("filter")) {
+                    fillData();
+                }
+                else {
+                    fillFiltredData(cat_tit);
+                }
+
+            case ACTIVITY_DELETE_CAT:
+                op = extras.getString("op");
+                if(op.equals("delete")) {
+                    Long id_cat = extras.getLong("id_cat");
+                    Log.d("notepadv3", "borro cat " + id_cat);
+                    catDbHelper.deleteCategory(id_cat);
+                }
             case ACTIVITY_EDIT:
                 Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
                 if (rowId != null) {
 
                     String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
                     String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
+                    String editCategory = extras.getString(NotesDbAdapter.KEY_CATEGORY);
                 }
                 break;
             case ACTIVITY_SEND:
