@@ -258,7 +258,7 @@ public class Notepadv3 extends AppCompatActivity {
             case ACTIVITY_CREATE_CAT:
                 String catTitle = extras.getString(CategoryDbAdapter.KEY_TITLE);
                 fillData();
-
+                break;
             case ACTIVITY_FILTER:
                 String op = extras.getString("op");
                 String cat_tit = extras.getString("tit_cat");
@@ -268,14 +268,15 @@ public class Notepadv3 extends AppCompatActivity {
                 else {
                     fillFiltredData(cat_tit);
                 }
-
+                break;
             case ACTIVITY_DELETE_CAT:
                 op = extras.getString("op");
-                if(op.equals("delete")) {
+                //if(op.equals("delete")) {
                     Long id_cat = extras.getLong("id_cat");
                     Log.d("notepadv3", "borro cat " + id_cat);
                     catDbHelper.deleteCategory(id_cat);
-                }
+                //}
+                break;
             case ACTIVITY_EDIT:
                 Long rowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
                 if (rowId != null) {
@@ -300,6 +301,9 @@ public class Notepadv3 extends AppCompatActivity {
                     }
                     mensaje.send(sendTitle, sendBody);
                 }
+                break;
+            default:
+                break;
         }
     }
 

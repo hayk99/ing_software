@@ -120,10 +120,11 @@ public class NoteEdit extends AppCompatActivity {
 
         populateFields();
 
-        mCatText = mCategorySpin.getSelectedItem().toString();
         confirmButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
+                //mCatText = mCategorySpin.getSelectedItem().toString();
+
                 Bundle bundle = new Bundle();
 
                 bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());
