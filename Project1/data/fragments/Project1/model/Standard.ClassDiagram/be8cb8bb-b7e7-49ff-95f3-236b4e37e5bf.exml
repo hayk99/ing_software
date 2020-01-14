@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="eliminar nota" version="4">
+  <OBJECT>
+    <ID name="eliminar nota" mc="Standard.ClassDiagram" uid="be8cb8bb-b7e7-49ff-95f3-236b4e37e5bf"/>
+    <PID name="NotepadV3" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">5</ATT>
+      <ATT name="UiData"><![CDATA[eJztmVtv4joQgP9KlHdCIOEm2K5aqDjV0ovK2SOd81JNEkO9TWxkO1vy79fOpQvpNidACKsVT5BJPB57vhlnJqPP68DXviPGMSWf9JZh6trni9G98w25QsOeFOmaiFbok07Z0gioh3xMDQ/DkkFgIA8LygwuQOAXA/koQETw5NrNHpoG8/h6klzrWgDfKHt6m9TUL0YPjK4QE5FGIJBz+RDRUExAgLz3D/ghSo0goe/rzYtRMxvwbuhcRD7St5bQLloCV89zw6UMGcnYEvaNgbvgIS+b7HotHtGi5Cx3UkU6UkNrMXFupI3xX/XnNhmpWcY6t9BmsqSixTPkg0CetCW3b7dKpH1XErVFQDxgnjH2gfPULZqD+q7Td5yG00O9hj1YLBqDzsJqtK2uYyOrhzrOonjrpTbxhdBXMgMH+TkL5oJhstQv5OICTIBphAoYNeNHCpdEfXRDxjRYUY6FdMgHekuoGj9j32NIaZhhLrYYsUpgHnLkAkc/OQdXiafBpfo9iOtHaQeQpUIidVJr0Bna/WHXHvZ7OxNvH514hXsSW8eGNN5czeovBrZpQqMPjtWwwYEGDPpmo932eo7pdNt226uAzq8csd8Hys7BUD4wHACL7uTYivk0h6aCs2vvDGe3LJxS1To6mNC8gWdCN9XdAiaKjgNJ7e3xlqC08hW46BlJvylk7zLJX7Gk/jeFfr1ods9oFqCZQFBCIX+mr0/YfafoisqZgLztimAhKl5mrOkFRa+UeYcrE+C+PHGBGKLVWOb/YvN3VwUOF0yeEv+jaAE+z2t6A3QjZgZ7hD4I6WMnFGjJaLhSh1UmmCpB/YHfMs+R//tE/jYN+xxNzfSnGN3WPsWtUgjK+Izd+0xwKnZL17dndmt4oULimXrHBrdMuZoHFxN5FBGZ1eUR4YpQ8jANblLZPJOdAN/SxeoZ3+PjmwFxYD3QKlO67gXoqZJszVVr6w8rWytE9Ni5dZ9athS6/1Fyivxac1H7p5FbcYJVEFQM7063cvO87xMaqdNz9iual6onkzrjw8bvJnrFtWEWPC4NAkqMuLpNnkpvySCaoAWEvoi/ilwn0sRZFXfbO6qZadnDtrX756Waa8dzfBXF11wu1PexKBNkZRtHv2qF7N85KqOtfOuorG179o4qSTIzTF54QSbLPX61nDB4ld6cQSQzznawFZfsWUrxEgVcJpUobi1vaaznDN5t1Gk/3eI8tFk4TabG7PLf68enq8vxl+nj/de7SdWn14daNn32E59NGAo7H2cYjgbD3/cPtb3D/AAZgyUl]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAErklEQVR4nO2ba0ybVRjH50fjB42ZmZcvWzSabFEz70ad92u8xHmbi9FpZrIYNSbLoiZmLl7DkE12AVZA2BjCuDgYbNVeWEvX0ntLb7QUSi/Qe0vbt/TeF59AthDNtBr6nA/v+ecNKe1p8v+d//Occwpv1yxyWGtIGyApCs9VUXiuisJzVRSeq6LwXBWF56ooPFdF4UmILRcWYk4mbC3lGVIeCMDHPFJd9yuq9kf1PVu1XS8pWu5Ttm/x6VtYtoTsBBUe0rae+1jf81rIPhB1iSJT/KCtz6dvnpZ9rzr+OExHjvFj+kGFN/623SH+MuHXMGELE7Glgsa4VwYT4dUdc0q+hkKQNWwsZGJofvDgfYZW08B7Sb92IT6dYwL5dCib9EHPQxf4Ld0uRa2N/ynUv/7Uq2iWkOChn6G3Y25JOjIB2KVCulzMFnOJTMINhRBynPFojtiFewx9b44cuCEZ0OO4QoKH8tZ1vww/YYWHwi6X8jAdMAXZ1GwyYAg7z3q1jQ7RF8b+bbLGTTALOK6Q4N2qeujqlcmXiplCdv5i8oOXkpc336M68QSOKyR4p3QfBAsJX+x5/1LPe2Hlgxm51POwBcp5dynbHsFxhQQPwZqHdvrNndFpQWJOzYTMgA0FH/eMBu2nvbomqAvTmQ/UHU/Dgq8+8SSOKyT4xJxqrPVBt+rnOVMHFDlMQdQlDDvPBWy9Xh1vSvbd0v6/daz1gZEDN9pFn+O4Qlvty4rme2GTd8lrPNoG2PZmjW2APaM8CB0BBQ9Lner4YxC74MerUsFxHFd4+zyEDP1s5X8CzT95fq9Tsm9y5KsJwW7z0If63tfhhCdrul1ct87Q9xaaJdQTnvXsR5C/sf9tOO2YBneMn37H0PuGpvP5sV8egh0OyC8cuxO2ADQ/yB9sWAhcUr9e2fYwFDmc5xQt919oukN6+GZhzdWww2GebReJfKqDpd40+L708C2i2rWi/dcKa67RdD4XsJ7Cd0LyjxlQBZA/QQMUnpAoPIUnJAq/eoJTKmzjFV5//HAl/5srKh8P1+q6XWX4HBPIzM9UeFmGd8l5mysfD9fquqVlT0gUnsITEoUnJApP4QmJwhMShafwhEThCYm78CxbUp98RnJoQzGXIOWBGLxHc1Td8ZTt98/gIuWBDHwhGxfXXZ8KjucXIuK6dUzITMQGGXhI2zK8a/mxW31Ic/JZIjZI/LsqbIW0IfPlX9lyQda4KeQYxHdCAF776wtuVf3KZ6LTAumRW8ulHLITbPjw5LCsYSOk/ZfntV0vuhT7kc2gwpdL+dGjt0Wm+H9/KR11iH+6LscEMP2gwrsUtZDw5V61C/eYh3Zi+sGDz6eDkG06ar/cADjtjBy8KenXoVnCg4dUJwS7/3mMT9+ydBMei2MJCT4Z0MOp5l/vt2HZsrz5br+lC8cVDjyrbN/i1fEqGRr3yiT160vFTLU9LeLAB6w9ct7myr9IYezfNjX6bVUtLavq8JAhJBnzSCt/SybhFtWuzSY81XO1rKrDQ4b/477CyfN7xwferYaflao6fGZ+Jpua/a/vKuUZyL8aflaKfq+Oq6LwXBWF56ooPFdF4bkqCs9V/Ql0WBNoUroa7wAAAABJRU5ErkJggg==]]></ATT>
+      <ATT name="Name"><![CDATA[eliminar nota]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="User" mc="Standard.Actor" uid="38f9400a-8ab3-4aba-a980-22d7b0b6242d"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="68e2f876-875a-4764-9d9d-a65dfe7cf672"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

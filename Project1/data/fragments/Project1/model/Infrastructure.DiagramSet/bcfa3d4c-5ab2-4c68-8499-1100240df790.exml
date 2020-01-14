@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Auto Diagrams" version="4">
+  <OBJECT>
+    <ID name="Auto Diagrams" mc="Infrastructure.DiagramSet" uid="bcfa3d4c-5ab2-4c68-8499-1100240df790"/>
+    <PID name="Project1" mc="Infrastructure.DiagramSet" uid="febed7c9-3c1e-4e95-9638-c198488f26d9"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Auto Diagrams]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Sub">
+        <COMPID name="Package Structure" mc="Infrastructure.DiagramSet" uid="c7da471b-df8d-4603-bebe-97326c87964d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
