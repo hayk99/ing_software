@@ -14,7 +14,6 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Actor" mc="Standard.Actor" uid="4e6165be-300a-457f-9f19-0908e8379ce2"/>
         <COMPID name="Mostrar notas" mc="Standard.UseCase" uid="b87bbcc7-0906-46ce-ac04-7b4f60c373d9"/>
         <COMPID name="Crear nota" mc="Standard.UseCase" uid="12140a8d-9c3e-41fc-9a26-30fe3f766458"/>
         <COMPID name="Modificar notas" mc="Standard.UseCase" uid="7272b48c-28c6-4fae-ba34-d7edea39eaa0"/>
@@ -27,6 +26,7 @@
         <COMPID name="Mostrar de una determinada categoría" mc="Standard.UseCase" uid="821dc9f5-4b13-436c-81a0-2b524dd16369"/>
         <COMPID name="Enviar notas por mail" mc="Standard.UseCase" uid="8adb4d7d-1416-49f4-a068-bef5f9257dcf"/>
         <COMPID name="Enviar notas por SMS" mc="Standard.UseCase" uid="5c89ee1a-413f-41b4-bd3b-d716cd09f7fc"/>
+        <COMPID name="Usuario" mc="Standard.Actor" uid="14ed8003-038b-4cb1-9e62-87faede5b55e"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

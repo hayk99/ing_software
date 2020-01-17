@@ -18,9 +18,10 @@
         <COMPID name="Interaction1" mc="Standard.Interaction" uid="1a1f7430-5a5c-4c8b-aa6c-63c9f91d9feb"/>
         <COMPID name="Interaction2" mc="Standard.Interaction" uid="e75c228e-f39c-4760-b4a0-6df991022bb8"/>
         <COMPID name="Interaction3" mc="Standard.Interaction" uid="c8216055-eb6b-4b09-8934-6eea5bf9fbe3"/>
+        <COMPID name="Interaction4" mc="Standard.Interaction" uid="be1ed6e4-6876-4d0e-9585-c3ff3f702ed3"/>
+        <COMPID name="Interaction5" mc="Standard.Interaction" uid="fe535c70-52cc-4a10-8c1f-7d8677858c48"/>
       </COMP>
       <COMP relation="OwnedElement">
-        <COMPID name="User" mc="Standard.Actor" uid="38f9400a-8ab3-4aba-a980-22d7b0b6242d"/>
         <COMPID name="es" mc="Standard.Package" uid="f1885ecd-59e8-4bb8-8804-37d2ff1da729"/>
         <COMPID name="Diagramas de secuencias" mc="Standard.Package" uid="7764d12a-1032-497a-b68f-f96c2cd4c03e"/>
         <COMPID name="aplication" mc="Standard.Component" uid="d7f30fcf-65e7-42bb-bd8f-02b3b482855f"/>

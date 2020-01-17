@@ -16,7 +16,6 @@
       <COMP relation="OwnedElement">
         <COMPID name="CategoryEdit" mc="Standard.Class" uid="6e468914-cfe6-45bb-82ee-7bc757c3521a"/>
         <COMPID name="CategoryDbAdapter" mc="Standard.Class" uid="e35fd522-01d5-4a74-8246-765672b78683"/>
-        <COMPID name="Category" mc="Standard.Class" uid="f16ad1c3-0c97-4f1f-b21b-8904fb549533"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

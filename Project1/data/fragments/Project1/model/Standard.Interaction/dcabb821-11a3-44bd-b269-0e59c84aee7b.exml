@@ -469,11 +469,7 @@
                   <ATT name="Name"><![CDATA[r]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="User" mc="Standard.Actor" uid="38f9400a-8ab3-4aba-a980-22d7b0b6242d"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r1" mc="Standard.BindableInstance" uid="a01c7c8f-c447-4b2b-b319-1f68d211b77f"/>
