@@ -164,9 +164,8 @@ public class CategoryDbAdapter {
 
 
     /**
-     * Update the note using the details provided. The note to be updated is
-     * specified using the rowId, and it is altered to use the title and body
-     * values passed in
+     * Update the category using the details provided. The category to be updated is
+     * specified using the rowId, and it is altered to use the title
      *
      * @param rowId id of category to update
      * @param title value to set category title to

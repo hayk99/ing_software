@@ -165,6 +165,7 @@ public class Notepadv3 extends AppCompatActivity {
                 return true;
             case EDIT_CAT:
                 editCat();
+                fillData();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -214,7 +215,7 @@ public class Notepadv3 extends AppCompatActivity {
         Intent i = new Intent (this, CategoryEdit.class);
         Bundle extras = new Bundle();
         extras.putString("action", "edit");
-        i.putExtras(extras);s
+        i.putExtras(extras);
         startActivityForResult(i,ACTIVITY_EDIT_CAT);
     }
 
@@ -273,6 +274,8 @@ public class Notepadv3 extends AppCompatActivity {
                 String catTitle = extras.getString(CategoryDbAdapter.KEY_TITLE);
                 fillData();
                 break;
+            case ACTIVITY_EDIT_CAT:
+                break;
             case ACTIVITY_FILTER:
                 String op = extras.getString("op");
                 String cat_tit = extras.getString("tit_cat");
@@ -297,7 +300,8 @@ public class Notepadv3 extends AppCompatActivity {
 
                     String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
                     String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
-                    String editCategory = extras.getString(NotesDbAdapter.KEY_CATEGORY);
+                    int editCategory = extras.getInt(NotesDbAdapter.KEY_CATEGORY);
+                    //mDbHelper.updateNote(rowId, editTitle, editBody, editCategory);
                 }
                 break;
             case ACTIVITY_SEND:

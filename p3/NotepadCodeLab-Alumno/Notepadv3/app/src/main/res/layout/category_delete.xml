@@ -16,14 +16,14 @@
             android:textSize="16dp" />
 
         <Spinner
-            android:id="@+id/spinner_category_delete"
+            android:id="@+id/spinner_category"
             android:layout_width="254dp"
             android:layout_height="149dp"
             android:layout_weight="0.71" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/category_confirm_delete"
+        android:id="@+id/category_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/confirm" />

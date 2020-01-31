@@ -8,15 +8,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/category_name" />
-        <EditText android:id="@+id/category_name_modify"
+        <TextView
+            android:id="@+id/cat_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    </LinearLayout>
+            android:text="@string/category_name"
+            android:textSize="20sp" />
 
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.71" />
+
+    </LinearLayout>
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/category_new_name" />
@@ -25,11 +30,12 @@
     <EditText
         android:id="@+id/cat_new_name"
         android:layout_width="match_parent"
-        android:layout_height="213dp"
+        android:layout_height="0dp"
         android:layout_weight="500"
+        android:inputType="text"
         android:scrollbars="vertical" />
 
-    <Button android:id="@+id/category_confirm_modify"
+    <Button android:id="@+id/category_confirm"
         android:text="@string/confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

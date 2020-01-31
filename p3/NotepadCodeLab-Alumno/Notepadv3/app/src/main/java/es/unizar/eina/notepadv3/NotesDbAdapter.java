@@ -10,6 +10,8 @@ import android.util.Log;
 
 import java.net.ConnectException;
 
+import es.unizar.eina.category.CategoryDbAdapter;
+
 /**
  * Simple notes database access helper class. Defines the basic CRUD operations
  * for the notepad example, and gives the ability to list all notes as well as
@@ -29,6 +31,7 @@ public class NotesDbAdapter {
 
     private static final String TAG = "NotesDbAdapter";
     private DatabaseHelper mDbHelper;
+    private SQLiteDatabase catDb;
     private SQLiteDatabase mDb;
 
     /**
@@ -36,7 +39,7 @@ public class NotesDbAdapter {
      */
     private static final String DATABASE_CREATE =
             "create table notes (_id integer primary key autoincrement, "
-                    + "title text not null, body text not null, category text not null);";
+                    + "title text not null, body text not null, category integer, foreign key (category) references categories(_id) on delete set null);";
 
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE = "notes";
@@ -104,7 +107,7 @@ public class NotesDbAdapter {
      * @param body the body of the note
      * @return rowId or -1 if failed
      */
-    public long createNote(String title, String body, String catId) {
+    public long createNote(String title, String body, int catId) {
         ContentValues initialValues = new ContentValues();
 
         initialValues.put(KEY_TITLE, title);
@@ -204,11 +207,12 @@ public class NotesDbAdapter {
      * @param body value to set note body to
      * @return true if the note was successfully updated, false otherwise
      */
-    public boolean updateNote(long rowId, String title, String body, String cat_id) {
+    public boolean updateNote(long rowId, String title, String body, int cat_id) {
         ContentValues args = new ContentValues();
         args.put(KEY_ROWID, rowId);
         args.put(KEY_TITLE, title);
         args.put(KEY_BODY, body);
+    Log.d("update", ""+cat_id);
         args.put(KEY_CATEGORY, cat_id);
 
         return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;

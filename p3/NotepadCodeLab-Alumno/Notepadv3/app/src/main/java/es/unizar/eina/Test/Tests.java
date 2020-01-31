@@ -46,27 +46,27 @@ public class Tests {
         try {
             Log.d("TEST 1", "Trying to create correct note...");
 
-            long id = myNotes.createNote("Some title", "Some body", "cat");
+            long id = myNotes.createNote("Some title", "Some body", 1);
             logger("TEST 1", id);
 
             Log.d("TEST 2", "Trying to create note without title ...");
-            id = myNotes.createNote("", "Some body","cat");
+            id = myNotes.createNote("", "Some body",1);
             logger("TEST 2", id);
 
             Log.d("TEST 3", "Trying to create note without body ...");
-            id = myNotes.createNote("Some title", "","cat");
+            id = myNotes.createNote("Some title", "",1);
             logger("TEST 3", id);
 
             Log.d("TEST 4", "Trying to create note title null...");
-            id = myNotes.createNote(null, "Some body","cat");
+            id = myNotes.createNote(null, "Some body",1);
             logger("TEST 4", id);
 
             Log.d("TEST 5", "Trying to create note body null...");
-            id = myNotes.createNote("Some title", null,"cat");
+            id = myNotes.createNote("Some title", null,1);
             logger("TEST 5", id);
 
             Log.d("TEST 6", "Trying to create correct note and delete the same one...");
-            id = myNotes.createNote("Some title", "Some body","cat");
+            id = myNotes.createNote("Some title", "Some body",1);
             boolean returned = myNotes.deleteNote(id);
             logger("TEST 6", returned);
 
@@ -80,24 +80,24 @@ public class Tests {
 
 
             Log.d("TEST 9", "Trying to update exisiting note...");
-            id = myNotes.createNote("Some title", "Some body","cat");
-            returned = myNotes.updateNote(id, "New Title", "New body TEST 9","cat");
+            id = myNotes.createNote("Some title", "Some body",1);
+            returned = myNotes.updateNote(id, "New Title", "New body TEST 9",1);
             logger("TEST 9", returned);
 
             Log.d("TEST 10", "Trying to update whit null title...");
-            returned = myNotes.updateNote(id, null, "New body 2","cat");
+            returned = myNotes.updateNote(id, null, "New body 2",1);
             logger("TEST 10", returned);
 
             Log.d("TEST 11", "Trying to update whit null body...");
-            returned = myNotes.updateNote(id, "New Title 11", null,"cat");
+            returned = myNotes.updateNote(id, "New Title 11", null,1);
             logger("TEST 11", returned);
 
             Log.d("TEST 12", "Trying to update whit empty body...");
-            returned = myNotes.updateNote(id, "New Title 12", "","cat");
+            returned = myNotes.updateNote(id, "New Title 12", "",1);
             logger("TEST 12", returned);
 
             Log.d("TEST 13", "Trying to update whit empty title...");
-            returned = myNotes.updateNote(id, "", "New body 13","cat");
+            returned = myNotes.updateNote(id, "", "New body 13",1);
             logger("TEST 13", returned);
         } catch (Throwable a){
             Log.d("exception thrown", a.getMessage());
@@ -109,7 +109,7 @@ public class Tests {
             boolean success = true;
             Log.d("TEST 14", "Trying to create 1002 notes...");
             for (int i = 0; i < 1002 && success; i++) {
-                long id = myNotes.createNote("Note Test 1002 notes " + i, "body of note","cat");
+                long id = myNotes.createNote("Note Test 1002 notes " + i, "body of note",1);
                 success = id > 0;
             }
             logger("TEST 14", success);
@@ -119,17 +119,17 @@ public class Tests {
         Log.d("Test15", "After creating 1002 notes we're going to add another one, edit the 75th and the 76th note");
         try {
             Log.d("Test 15", "creating note");
-            long id = myNotes.createNote("Test 15", "creatin new note","cat");
+            long id = myNotes.createNote("Test 15", "creatin new note",1);
             if (id > 0) {
                 Log.d("Test 15", "creted");
                 try {
                     Log.d("Test 15", "Editing note with rowid: 75");
-                    boolean success = myNotes.updateNote(75, "New title for note 75", "the body","cat");
+                    boolean success = myNotes.updateNote(75, "New title for note 75", "the body",1);
                     if (success) {
                         Log.d("Test 15", "first edit completed");
                         try {
                             Log.d("Test 15", "Editing note with rowid: 75");
-                            success = myNotes.updateNote(76, "New title for note 76", "the body","cat");
+                            success = myNotes.updateNote(76, "New title for note 76", "the body",1);
                             Log.d("Test 15", "second update succes:" + success);
                         }catch (Throwable t2){
                             Log.d("Test 15"," second update throw exception" + t2.getMessage());
@@ -152,7 +152,7 @@ public class Tests {
         List <Long> idList = new ArrayList<Long>();
         while (works){
             try {
-                long id = myNotes.createNote(title, body,"cat");
+                long id = myNotes.createNote(title, body,1);
                 if (id < 1){
                     Log.d("Test 16", "overflow with body whose length is: " + body.length());
                     works =false;

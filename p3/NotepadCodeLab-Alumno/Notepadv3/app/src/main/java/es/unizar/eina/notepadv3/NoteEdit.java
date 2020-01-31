@@ -28,7 +28,7 @@ public class NoteEdit extends AppCompatActivity {
     private EditText mTitleText;
     private EditText mBodyText;
    // private TextView mCatText;
-    private String mCatText;
+    private int mCatText;
     private Long mRowId;
     private  NotesDbAdapter  mDbHelper;
     private CategoryDbAdapter catDbHelper;
@@ -73,15 +73,14 @@ public class NoteEdit extends AppCompatActivity {
             mBodyText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
             body=note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY));
 
-            mCatText = note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
-            Log.d("popu+++++++", mCatText);
-            int pos = spinner.getPosition(mCatText);
-            mCategorySpin.setSelection(pos);
+            mCatText = note.getInt(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
+            Log.d("pop", ""+mCatText);
+            mCategorySpin.setSelection(mCatText);
             //mCatText.setText(note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY)));
             //cat = note.getString(note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY));
         }
 
-        Log.d("VARS POPULATES: ", "  rowId: "+ mRowId+  " title: "+title+  " body: " + body +  "cat: " + catId);
+        Log.d("VARS POPULATES: ", "  rowId: "+ mRowId+  " title: "+title+  " body: " + body );
 
 
     }
@@ -132,11 +131,11 @@ public class NoteEdit extends AppCompatActivity {
                 if (mRowId != null) {
                     bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);
                 }
-                if (mCatText != null){
-                    bundle.putString(NotesDbAdapter.KEY_CATEGORY, mCatText);
+                if (mCatText != -1){
+                    bundle.putInt(NotesDbAdapter.KEY_CATEGORY, mCatText);
                 }
                 else{
-                    bundle.putString(NotesDbAdapter.KEY_CATEGORY, "Category: none");
+                    bundle.putInt(NotesDbAdapter.KEY_CATEGORY, -1);
                 }
 
                 Intent mIntent = new Intent();
@@ -159,13 +158,19 @@ public class NoteEdit extends AppCompatActivity {
             cat = "";
         }
         //String catId = catDbHelper.idFromName(cat);
-        Log.d("Debugg saveState: ", "tit: "+title+ " body: "+body+"  cat: "+cat);
+
         if (mRowId  == null) {
-            long id = mDbHelper.createNote(title , body, cat);
+            Long idCat = catDbHelper.idFromName(cat);
+            Log.d("Debugg saveState: ", "tit: "+title+ " body: "+body+"  cat: "+idCat.toString());
+            long id = mDbHelper.createNote(title , body, idCat.intValue());
             if (id > 0) {mRowId = id;
             }
         } else {
-            mDbHelper.updateNote(mRowId , title , body, cat);
+            Long id = catDbHelper.idFromName(cat);
+            Log.d("saveState", cat);
+            Log.d("saveState", id.toString());
+            Log.d("Debugg saveState: ", "tit: "+title+ " body: "+body+"  cat: "+ id.toString());
+            mDbHelper.updateNote(mRowId , title , body, id.intValue());
         }
     }
 

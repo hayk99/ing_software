@@ -27,6 +27,7 @@ public class CategoryEdit extends AppCompatActivity {
     private ArrayList<String> categories = new ArrayList<>();
     private Spinner mCategorySpin;
     private int value = 0;
+    private EditText new_cat_name;
 
     private  void  populateFields () {
         Log.d("populates", action);
@@ -43,6 +44,11 @@ public class CategoryEdit extends AppCompatActivity {
         setResult(RESULT_OK);
         finish ();
     }
+    private void updateCat(String newName, String oldName){
+        Long id = mDbHelper.idFromName(oldName);
+        mDbHelper.updateCategory(id, newName);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +59,15 @@ public class CategoryEdit extends AppCompatActivity {
         Bundle param = getIntent().getExtras();
         action = param.getString("action");
         if (action.equals("delete") || action.equals("filter") || action.equals("edit")) {
-            setContentView(R.layout.category_delete);
-            setTitle("Delete or Filter Category");
+            if (action.equals("edit")){
+                setTitle("Edit Category");
+                setContentView(R.layout.category_modify);
+              new_cat_name = (EditText) findViewById(R.id.cat_new_name);
+            }
+            else {
+                setTitle("Delete or Filter Category");
+                setContentView(R.layout.category_delete);
+            }
             Log.d("BUNDLE ACTION", action);
 
             mDbHelper.open();
@@ -77,10 +90,10 @@ public class CategoryEdit extends AppCompatActivity {
             //mCategorySpin.setAdapter(null);
             ArrayAdapter<String> spinner = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
             spinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            mCategorySpin = (Spinner) findViewById(R.id.spinner_category_delete);
+            mCategorySpin = (Spinner) findViewById(R.id.spinner_category);
             mCategorySpin.setAdapter(spinner);
 
-            Button confirmButton = (Button) findViewById(R.id.category_confirm_delete);
+            Button confirmButton = (Button) findViewById(R.id.category_confirm);
             confirmButton.setOnClickListener(new View.OnClickListener() {
 
                 public void onClick(View view) {
@@ -90,7 +103,11 @@ public class CategoryEdit extends AppCompatActivity {
                         title = "";
                     }
                     Long idCat = mDbHelper.idFromName(title);
-
+                    if (action.equals("edit")){
+                        String newName = new_cat_name.getText().toString();
+                        updateCat(newName, title);
+                        title = newName;
+                    }
                     Bundle bundle = new Bundle();
                     bundle.putLong("id_cat", idCat);
                     bundle.putString("tit_cat", title);
@@ -99,6 +116,7 @@ public class CategoryEdit extends AppCompatActivity {
                     Intent mIntent = new Intent();
                     mIntent.putExtras(bundle);
                     setResult(RESULT_OK, mIntent);
+
                     finish();
                 }
 
@@ -168,6 +186,8 @@ public class CategoryEdit extends AppCompatActivity {
             }
         }
     }
+
+
 
     @Override
     protected  void  onSaveInstanceState(Bundle  outState){
