@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CDU" version="4">
+  <OBJECT>
+    <ID name="CDU" mc="Standard.Package" uid="b171f769-14bd-44d2-ad9e-266229ebaf65"/>
+    <PID name="NotepadV3" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[CDU]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Mostrar notas" mc="Standard.UseCase" uid="b87bbcc7-0906-46ce-ac04-7b4f60c373d9"/>
+        <COMPID name="Crear nota" mc="Standard.UseCase" uid="12140a8d-9c3e-41fc-9a26-30fe3f766458"/>
+        <COMPID name="Modificar notas" mc="Standard.UseCase" uid="7272b48c-28c6-4fae-ba34-d7edea39eaa0"/>
+        <COMPID name="Eliminar nota" mc="Standard.UseCase" uid="9270d01a-f6ff-4800-8c09-fbf34acb504d"/>
+        <COMPID name="Crear categoría" mc="Standard.UseCase" uid="421faee2-9008-46f0-beb2-e6bf25cc3a11"/>
+        <COMPID name="Modificar categoría" mc="Standard.UseCase" uid="35ad3c84-5ada-4443-b09b-8bdd6c6365dc"/>
+        <COMPID name="Eliminar categoría" mc="Standard.UseCase" uid="6aa44b64-6351-4bb3-8464-3ab1f370e18e"/>
+        <COMPID name="Mostrar categorías" mc="Standard.UseCase" uid="4881f913-1e76-4759-ad7d-0202b3075924"/>
+        <COMPID name="Mostrar por categoría" mc="Standard.UseCase" uid="82751978-a9f7-46f8-a0a5-182c6ec9c24d"/>
+        <COMPID name="Mostrar de una determinada categoría" mc="Standard.UseCase" uid="821dc9f5-4b13-436c-81a0-2b524dd16369"/>
+        <COMPID name="Enviar notas por mail" mc="Standard.UseCase" uid="8adb4d7d-1416-49f4-a068-bef5f9257dcf"/>
+        <COMPID name="Enviar notas por SMS" mc="Standard.UseCase" uid="5c89ee1a-413f-41b4-bd3b-d716cd09f7fc"/>
+        <COMPID name="Usuario" mc="Standard.Actor" uid="14ed8003-038b-4cb1-9e62-87faede5b55e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

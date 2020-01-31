@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Android" version="4">
+  <OBJECT>
+    <ID name="Android" mc="Standard.Package" uid="f8390dea-8cc4-4290-9641-d0d406706c2a"/>
+    <PID name="notepad" mc="Standard.Package" uid="143283eb-9dc4-48b9-a111-4b3270758775"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Android]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Widget" mc="Standard.Package" uid="a58ae4d1-85bf-4614-afc8-6131e8d9d395"/>
+        <COMPID name="Database" mc="Standard.Package" uid="a59638d0-80d7-42a3-b43f-22d1b73961f4"/>
+        <COMPID name="Support" mc="Standard.Package" uid="6fd9c1e2-f7b0-446e-a278-77e44650c6a3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

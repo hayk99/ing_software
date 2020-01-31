@@ -1,0 +1,10 @@
+#Fri Jan 31 16:44:08 CET 2020
+org.modelio.diagram.editor.OpenedDiagrams8='enviar nota' {3264d9e4-9651-4a6a-a015-a713173a232c} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='eliminar categor\u00EDa' {08ad45ec-6ce0-47e1-b590-2dcb5b021948} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='crear categor\u00EDa' {5a89e060-ac6c-43d3-b8b5-036d1d3f9296} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='eliminar nota' {8c0899fc-784f-4b11-a1b3-0a04ab90594e} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='modificiar nota dise\u00F1o prueba' {2845299a-ecbf-4d2c-9b22-6329cf209c08} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='crear nota dise\u00F1o prueba' {78a35780-8f68-4f1f-aba1-26574195f719} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='mostrarPorCategoria' {be197c97-f754-4e3a-b8f5-7394e496a06d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Diagrama de caso de uso' {004ec376-eb8d-4948-8b64-22a882875192} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='project1 Class diagram' {09b210d2-7d5e-4e5f-a5c5-7211a42f75aa} Standard.ClassDiagram
