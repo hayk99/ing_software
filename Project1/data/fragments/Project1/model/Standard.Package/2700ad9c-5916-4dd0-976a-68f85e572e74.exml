@@ -18,8 +18,6 @@
         <COMPID name="Interaction1" mc="Standard.Interaction" uid="1a1f7430-5a5c-4c8b-aa6c-63c9f91d9feb"/>
         <COMPID name="Interaction2" mc="Standard.Interaction" uid="e75c228e-f39c-4760-b4a0-6df991022bb8"/>
         <COMPID name="Interaction3" mc="Standard.Interaction" uid="c8216055-eb6b-4b09-8934-6eea5bf9fbe3"/>
-        <COMPID name="Interaction4" mc="Standard.Interaction" uid="be1ed6e4-6876-4d0e-9585-c3ff3f702ed3"/>
-        <COMPID name="Interaction5" mc="Standard.Interaction" uid="fe535c70-52cc-4a10-8c1f-7d8677858c48"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="es" mc="Standard.Package" uid="f1885ecd-59e8-4bb8-8804-37d2ff1da729"/>
@@ -35,6 +33,8 @@
         <COMPID name="Central proveedor de telefonía" mc="Standard.Node" uid="25fa945e-2504-4517-b291-ffc11c8dc3b0"/>
         <COMPID name="CDU" mc="Standard.Package" uid="b171f769-14bd-44d2-ad9e-266229ebaf65"/>
         <COMPID name="Data type" mc="Standard.Package" uid="fe1b5b30-cc1f-4495-b022-37f11c1e7c0d"/>
+        <COMPID name="Secuencias análisis" mc="Standard.Package" uid="c4b8bfbd-842a-46a5-9c21-edd93e50b67e"/>
+        <COMPID name="Secuencias diseño" mc="Standard.Package" uid="18eb10ac-e349-4e30-885e-45302451c0e4"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="project1 Class diagram" mc="Standard.ClassDiagram" uid="09b210d2-7d5e-4e5f-a5c5-7211a42f75aa"/>

@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Secuencias diseño" version="4">
+  <OBJECT>
+    <ID name="Secuencias diseño" mc="Standard.Package" uid="18eb10ac-e349-4e30-885e-45302451c0e4"/>
+    <PID name="NotepadV3" mc="Standard.Package" uid="2700ad9c-5916-4dd0-976a-68f85e572e74"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Secuencias diseño]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction4" mc="Standard.Interaction" uid="be1ed6e4-6876-4d0e-9585-c3ff3f702ed3"/>
+        <COMPID name="Interaction5" mc="Standard.Interaction" uid="fe535c70-52cc-4a10-8c1f-7d8677858c48"/>
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="2f611abd-7a8d-4fe9-a64b-b21ed41fca64"/>
+        <COMPID name="Interaction1" mc="Standard.Interaction" uid="786a6c94-a104-437b-a72f-090f1da63653"/>
+        <COMPID name="Interaction2" mc="Standard.Interaction" uid="af77c3eb-b67b-4e6d-a64e-001e7f09033d"/>
+        <COMPID name="Interaction3" mc="Standard.Interaction" uid="20d0a385-907d-4223-9a7a-508dbd063c5d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
