@@ -52,7 +52,7 @@ public class CategoryEdit extends AppCompatActivity {
 
         Bundle param = getIntent().getExtras();
         action = param.getString("action");
-        if (action.equals("delete") || action.equals("filter")){
+        if (action.equals("delete") || action.equals("filter") || action.equals("edit")) {
             setContentView(R.layout.category_delete);
             setTitle("Delete or Filter Category");
             Log.d("BUNDLE ACTION", action);

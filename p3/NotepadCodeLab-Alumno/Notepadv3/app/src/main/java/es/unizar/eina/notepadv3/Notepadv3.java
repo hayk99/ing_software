@@ -32,6 +32,7 @@ public class Notepadv3 extends AppCompatActivity {
     public static final int ACTIVITY_CREATE_CAT = 3;
     private static final int ACTIVITY_DELETE_CAT = 4;
     private static final int ACTIVITY_FILTER = 5;
+    private static final int ACTIVITY_EDIT_CAT = 6;
 
     private static final int INSERT_ID = Menu.FIRST;
     private static final int DELETE_ID = Menu.FIRST + 1;
@@ -46,6 +47,7 @@ public class Notepadv3 extends AppCompatActivity {
     private static final int FILTER_CAT =Menu.FIRST +8;
     private static final int CREATE_CAT = Menu.FIRST+9;
     private static final int DELETE_CAT = Menu.FIRST+10;
+    private static final int EDIT_CAT = Menu.FIRST+11;
 
     private static String orderBy = "Title";
 
@@ -121,6 +123,7 @@ public class Notepadv3 extends AppCompatActivity {
         menu.add(Menu.NONE, DELETE_ALL_ID, Menu.NONE, R.string.menu_delete_all_notes);
         menu.add(Menu.NONE, CREATE_CAT, Menu.NONE, R.string.menu_create_cat);
         menu.add(Menu.NONE, DELETE_CAT, Menu.NONE, R.string.menu_delete_cat);
+        menu.add(Menu.NONE, EDIT_CAT, Menu.NONE, R.string.menu_edit_cat );
 
         return result;
     }
@@ -159,6 +162,9 @@ public class Notepadv3 extends AppCompatActivity {
                 return true;
             case DELETE_CAT:
                 deleteCat();
+                return true;
+            case EDIT_CAT:
+                editCat();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -202,6 +208,14 @@ public class Notepadv3 extends AppCompatActivity {
         extras.putString("action", "delete");
         i.putExtras(extras);
         startActivityForResult(i, ACTIVITY_DELETE_CAT);
+    }
+
+    private void editCat(){
+        Intent i = new Intent (this, CategoryEdit.class);
+        Bundle extras = new Bundle();
+        extras.putString("action", "edit");
+        i.putExtras(extras);s
+        startActivityForResult(i,ACTIVITY_EDIT_CAT);
     }
 
     private void filter(){
