@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/credits_name"
+        android:layout_width="216dp"
+        android:layout_height="33dp"
+        android:text="@string/authors"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/credits_autor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/autor1" />
+
+    <TextView
+        android:id="@+id/credits_autor2"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:text="@string/autor2" />
+
+    <Button
+        android:id="@+id/credits_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return" />
+</LinearLayout>
