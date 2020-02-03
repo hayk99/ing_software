@@ -1,27 +1,30 @@
-package es.unizar.eina.Test.Tests;
+package es.unizar.eina.Test;
 
 import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import es.unizar.eina.category.CategoryDbAdapter;
 import es.unizar.eina.notepadv3.NotesDbAdapter;
 
 public class Tests {
     private NotesDbAdapter myNotes;
+    private CategoryDbAdapter myCats;
 
-    public Tests(NotesDbAdapter currentNotes){
+    public Tests(NotesDbAdapter currentNotes, CategoryDbAdapter currentCat){
         myNotes = currentNotes;
+        myCats = currentCat;
     }
 
     public void throwAllTest(){
         try {
             myNotes.deleteAllNotes();
+            myCats.deleteAllCategories();
             startTest();
             start1002Notes();
             addingAfter1000();
             overflow();
-            //myNotes.deleteAllNotes();
         }
         catch(Throwable t){
             Log.d("Tests error", t.getMessage());
@@ -44,25 +47,30 @@ public class Tests {
 
     private void startTest(){
         try {
+            Log.d( "START", "Creamos una categoria para poder añadir notas");
+            int catId= (int)myCats.createCategory("Test Category");
+
+            logger("START", catId);
+
             Log.d("TEST 1", "Trying to create correct note...");
 
-            long id = myNotes.createNote("Some title", "Some body", 1);
+            long id = myNotes.createNote("Some title", "Some body", catId);
             logger("TEST 1", id);
 
             Log.d("TEST 2", "Trying to create note without title ...");
-            id = myNotes.createNote("", "Some body",1);
+            id = myNotes.createNote("", "Some body",catId);
             logger("TEST 2", id);
 
             Log.d("TEST 3", "Trying to create note without body ...");
-            id = myNotes.createNote("Some title", "",1);
+            id = myNotes.createNote("Some title", "",catId);
             logger("TEST 3", id);
 
             Log.d("TEST 4", "Trying to create note title null...");
-            id = myNotes.createNote(null, "Some body",1);
+            id = myNotes.createNote(null, "Some body",catId);
             logger("TEST 4", id);
 
             Log.d("TEST 5", "Trying to create note body null...");
-            id = myNotes.createNote("Some title", null,1);
+            id = myNotes.createNote("Some title", null,catId);
             logger("TEST 5", id);
 
             Log.d("TEST 6", "Trying to create correct note and delete the same one...");
@@ -84,21 +92,26 @@ public class Tests {
             returned = myNotes.updateNote(id, "New Title", "New body TEST 9",1);
             logger("TEST 9", returned);
 
-            Log.d("TEST 10", "Trying to update whit null title...");
+            Log.d("TEST 10", "Trying to update with null title...");
             returned = myNotes.updateNote(id, null, "New body 2",1);
             logger("TEST 10", returned);
 
-            Log.d("TEST 11", "Trying to update whit null body...");
+            Log.d("TEST 11", "Trying to update with null body...");
             returned = myNotes.updateNote(id, "New Title 11", null,1);
             logger("TEST 11", returned);
 
-            Log.d("TEST 12", "Trying to update whit empty body...");
+            Log.d("TEST 12", "Trying to update with empty body...");
             returned = myNotes.updateNote(id, "New Title 12", "",1);
             logger("TEST 12", returned);
 
-            Log.d("TEST 13", "Trying to update whit empty title...");
+            Log.d("TEST 13", "Trying to update with empty title...");
             returned = myNotes.updateNote(id, "", "New body 13",1);
             logger("TEST 13", returned);
+
+            Log.d("TEST 13", "Trying to update with empty category...");
+            returned = myNotes.updateNote(id, "", "New body 13",0);
+            logger("TEST 13", returned);
+
         } catch (Throwable a){
             Log.d("exception thrown", a.getMessage());
         }
@@ -165,9 +178,6 @@ public class Tests {
             }
         }
         deleteOverflow(idList);
-//        myNotes.deleteAllNotes();
-//        Log.d("Test 15", "Deleting all create notes");
-//        myNotes.createNote("New note after test 15", "body");
     }
     private void deleteOverflow(List<Long> myList){
         boolean can=true;

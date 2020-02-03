@@ -38,6 +38,8 @@ public class NoteEdit extends AppCompatActivity {
     private ArrayList<String> categories = new ArrayList<>();
     private ArrayList<Long> catIds = new ArrayList<>();
     private ArrayAdapter<String> spinner;
+    //  contador de notas sin titulo
+    private static int counter = 0;
 
     private  void  populateFields () {
         Long catId = null;
@@ -57,7 +59,7 @@ public class NoteEdit extends AppCompatActivity {
         }
 
         //spinner
-        //mCategorySpin.setAdapter(null);
+       // mCategorySpin.setAdapter(null);
         spinner = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
         spinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mCategorySpin = (Spinner) findViewById(R.id.spinner_category);
@@ -108,7 +110,6 @@ public class NoteEdit extends AppCompatActivity {
         mTitleText = (EditText) findViewById(R.id.title);
         mBodyText = (EditText) findViewById(R.id.body);
         mRowIdText = (EditText) findViewById(R.id.idRow);
-        //mCategorySpin = (Spinner) findViewById(R.id.spinner_category)
         Button confirmButton = (Button) findViewById(R.id.confirm);
 
         mRowId = (savedInstanceState  == null) ? null :(Long) savedInstanceState.getSerializable(NotesDbAdapter.KEY_ROWID);
@@ -126,7 +127,13 @@ public class NoteEdit extends AppCompatActivity {
 
                 Bundle bundle = new Bundle();
 
-                bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());
+                if ( mTitleText.getText().toString().equals("")){
+                    String name = "New Note " + counter;
+                    bundle.putString(NotesDbAdapter.KEY_TITLE, name);
+                }
+                else {
+                    bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());
+                }
                 bundle.putString(NotesDbAdapter.KEY_BODY, mBodyText.getText().toString());
                 if (mRowId != null) {
                     bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);
@@ -151,6 +158,10 @@ public class NoteEdit extends AppCompatActivity {
 
     private  void  saveState () {
         String title = mTitleText.getText().toString();
+        if (mTitleText.getText().toString().equals("")){
+            title = "New note " + counter;
+            counter ++;
+        }
         String body = mBodyText.getText().toString();
         String cat = null;
         try {cat = mCategorySpin.getSelectedItem().toString();}

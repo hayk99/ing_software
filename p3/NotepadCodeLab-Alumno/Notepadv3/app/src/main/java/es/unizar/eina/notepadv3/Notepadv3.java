@@ -1,12 +1,12 @@
 package es.unizar.eina.notepadv3;
 
 
+import es.unizar.eina.Test.Tests;
 import es.unizar.eina.category.Category;
 import es.unizar.eina.category.CategoryDbAdapter;
 import es.unizar.eina.category.CategoryEdit;
 import es.unizar.eina.send.SendAbstraction;
 import es.unizar.eina.send.SendAbstractionImpl;
-import es.unizar.eina.Test.Tests.Tests;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -153,7 +153,7 @@ public class Notepadv3 extends AppCompatActivity {
                 filter();
                 return true;
             case TEST_ID:
-                new Tests(mDbHelper).throwAllTest();
+                new Tests(mDbHelper, catDbHelper).throwAllTest();
                 return true;
             case DELETE_ALL_ID:
                 mDbHelper.deleteAllNotes();
